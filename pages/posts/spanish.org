@@ -1,0 +1,801 @@
+#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+options: timestamp:t title:t toc:t todo:t |:t
+#+title: spanish
+#+date: <2023-04-13 Thu>
+#+author: Horhik
+#+email: horhik@teapod
+#+language: en
+#+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 28.2 (Org mode 9.6)
+#+cite_export:
+#+SETUPFILE: ~/Blog/assets/templates/main.org
+https://lib.rudn.ru/MegaPro/Download/MObject/8362
+http://lib.rudn.ru/MegaPro/UserEntry?Action=FindDocs&ids=492396&idb=All
+
+* Lecciones
+** Deber 1
+:PROPERTIES:
+:collapsed: true
+:END:
+*** EL padre
+
+Mi padre se llama Ivan, tiene es 52 años, tiene el pelo corte liso y gris, la nariz mediana y los ojos marron. El es alto y  delgado . Mi padre tiene camisa roja y pantalones del mismo color. Su caracter es tranquilo, pero veces es iracible, el es intelegente.~
+*** El madre
+
+~Mí madre es morena, tiene el pelo largo y liso, su  estatura es mediana y su ojos  son verdes, tiene 47 años y ella no es muy alta.  Su caracter es divertido, sociable  y ella es muy habladora. Ella tiene un vestido largo azul , café sandalias y lentes ovales.~
+*** El hermana
+
+~Mi hermana tiene 12 años y es muy activa y sociable, pero irascible. Ella tiene ojos marrones y pelo corto,  anaranjado camiseta y shorts azules~
+*** El Abuela
+
+~Mí abuela tiene 74 años, ella tiene pelo gris mediano y ojos oscuro-marron , ella tiene  gafas redonas, bufanda roja, pantalones largos y blancos  y camisa grande blanca .  Ella hablar muy ruidoso y su caracter es muy amable, cariñosa y ciudadosa~
+** Lesson 22-10-17
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Parablas
+**** Necesariamente
+**** Verde azulado
+**** Medias
+**** Traje
+**** Calcetines
+**** Demodera
+**** Placico
+**** cristal
+**** Cómodo
+**** No es alta, tampoco es baja
+**** Alta
+**** Baja
+**** Cordés
+**** perezoso
+**** laborioso
+**** zapatos de portivos
+**** sombrero
+**** aburrido
+**** armario
+**** conción
+**** rayos
+**** abierta
+***** Открытый, открыть
+**** hospitalarios
+**** orgullosos
+**** separatistas
+**** trabajadores
+**** tacaños
+**** juerguistats
+***** Гуляка, бездельник
+****
+**** alegres
+**** supersticiosos
+**** conservadores
+**** humildes
+**** amantes
+**** humildes
+**** amantes
+***** Веселый, жизнерадостный, счастливый
+***** https://glosbe.com/fb_aud/mp3/at1944418_audio-by-166373.mp3
+**** gracioso
+***** Забавный, остроумный
+***** https://glosbe.com/fb_aud/mp3/MR1920333_audio-by-166373.mp3
+**** charlatanes
+*** LLEVAR
+Носить
+**** Yo llev _o_
+**** Tú llev _as_
+**** Ella llev _a_
+**** Nosotros Lleva _mos_
+**** Vosotros Llev _áis_
+**** Ellas LLev _an_
+*** Comprar
+**** YO compr _o_
+**** Tú Compr _as_
+** Lección 22-10-20
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Parablas
+**** limpia
+Чистый
+**** Donde
+**** abierta
+**** estado
+состояние
+**** Lugar
+**** Ejemplos
+**** El basurero
+Мусорка
+**** Vacío
+Пустой
+**** Lleno
+Полный
+**** Cansado
+Уставший
+**** ¿Cómo está?
+**** Habitación
+комната
+**** Pronombre
+Существительное
+**** Verbo
+Глаго
+*** ESTAR
+иногда быть, иногда находится
+se utiliza para temporal
+| noun          | verb  | noun                | verb    |
+|---------------+-------+---------------------+---------|
+| yo            | estoy | nosotros            | estamos |
+| tú            | estás | vosotros            | estáis  |
+| el,ella,usted | está  | ellos,ellas,ustedes | estań   |
+*** Utilizar por
+**** Lugar (местонахождение)
+**** Estado (состояние)
+*** Ehemplos
+**** Esto _está_ aquí
+**** _Estoy_ ahi
+** Lección 22-10-24
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Parablas
+*** Anked
+redonde
+desordendada
+estrecha
+cerrada
+roto
+interesante
+parque
+agradable
+espacioso
+cortés
+notas
+mira
+¿Estás seguro?
+calle
+ahora - теперь
+barrio - район
+hay
+facil
+Lejos - далеко
+Al lado de - рядом
+El deporte - спорт
+El campo  - площадка
+  A dos pasos - в двух шагах
+Delante de - перед
+Detrás de - сзади
+**** Preposiciones
+***** sobre
+el libro está sobre el quaderno
+****
+***
+**** Izquerda
+... a la izquerda de ...
+**** Derecha
+... a la derecha de ...
+**** Lado/junto
+... al lado de .../ junto a
+**** Detrás de
+... detrás de ...
+**** Delante 
+... delante de ..
+**** Entre
+entre
+**** Dentro
+dentro de
+внутри
+**** Fuera
+fuero de
+снаружт
+**** Debajo de
+debajo de
+под
+**** Encima de
+над
+**** Al frente de
+перед
+**** Al Lado de hunto A
+**** Arriba Abata
+*** De + el = del
+*** Al + el = al
+** Leccion 22-10-31
+:PROPERTIES:
+:collapsed: true
+:END:
+*** 16
+1. El coche está dentro de el garaje
+2. El quaderno está sobre de la pared
+3. La botella está debajo de la maes
+4. La jardín está detras de la casa
+5. La tienda está derecha
+6. La casa está izquerda
+7. El profesor ahora está  dentro de la universidad
+8. Secretaria está trabajar dentro de la oficina
+9. Piloto está dentro del taxi
+10. El médico  está trabajar en el hospital
+11. Camarero está luga en restaraunte
+12. No sé
+13. No estóy aqí
+
+
+esta canción
+*** Anked
+botella
+jardín
+oficina
+primero - no primero - primer_ con masculino, con femenina primer_a_
+segundo
+tercero
+tercera
+cuatro
+quinto
+sexto
+sexta
+octavo
+novento
+noventa
+décima
+piso - этаж/квартира/пол
+planta - **этаж** или **растение**
+cuatro = habitacion комната
+**** sober
+ | tú    | e    | nosotros | vosotros | ellas |
+|----+-------+------+----------+----------+-------|
+| sé | sabes | sabe | sabemos  | sabéis   | saben |
+**** compitición
+sober
+**** Hay
+просто указать наличие. Estar местоположения
+¿Qué crees? -
+**** Mucha gente (много людей)
+**** Personas
+**** Ir
+Ir + a
+el va a aula
+ | tú  | e   | nosotros | vosotros | ellas |     |
+ |-----+-----+----------+----------+-------+-----|
+ | voy | vas | va       | vamos    | vais  | van |
+**** Ultima
+**** arededor de la casa - вокруг/возле
+**** Un recibidor
+**** Un comedor
+**** Una cocina
+**** Un cuatro de baño
+**** Arriba
+**** Un dormitorio
+**** Un sótano
+**** Un estudio
+**** Preciosa
+**** La electricidad
+**** La calefacción
+**** De acuerdo
+**** Alguno - alguna
+**** Algunos - algunas
+**** algo
+**** Alguien
+**** ordenador - computador
+**** ningún
+**** Nada
+**** Limpiador
+**** maquinista
+**** conductor
+**** chofer
+*** Parablas
+*** NÚMEROS ordinales
+x1
+** Leccion 22-11-03
+:PROPERTIES:
+:collapsed: true
+:END:
+*** anked 
+Despacho
+sillon
+escritorio
+cliente
+carpetas
+cajone
+cajones
+ lampara de píe
+ ancha
+ mercado
+ paradas de autobús
+ sano
+ saludadble
+ piscina publica
+*** Parablas
+** Leccion 22-11-07
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Parablas
+bañera
+ducha
+jabón
+grifo
+El cepillo de dientes
+La pasta dentificia
+El agua
+La toalla
+La esponja
+El lavabo
+El inodoro
+La alfombrilla
+Caliente
+Frio
+trapo
+servir
+llevar
+transportar
+noticias
+lavarse
+El lavabo
+La toalla
+El jabón
+La ducha
+El cepillo de dientes
+secarse
+ducharse
+Bañarse
+limpiarse los dientes
+sentarse
+enfriar
+poner - включить/положить/хранить
+patio
+Las cortinas
+El colchón
+La almohada
+La sábana
+La colcha
+El tapiz
+El armario
+La mesita
+El despertador
+El tocador
+El frasco
+El peine
+El cepillo
+dar
+alcoba
+almoada
+¿Por qué?
+Porque
+autopista
+climatizador
+** Leccion 22-11-10
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Verbos regulares
+**** Trabaj ~AR~
+***** o
+***** as
+***** amos
+***** áis
+***** an
+**** Com ~ER~
+***** O
+***** ES
+***** E
+***** EMOS
+***** ÉIS
+***** EN
+**** Escrib ~IR~
+***** O
+***** ES
+***** E
+***** IMOS
+***** ÍS
+***** EN
+*** Parablas
+companeros
+Venir
+participar
+cuando
+cuanto
+cada
+decir - say tell 
+siempre - всегда 
+nunca o jamás
+a menudo
+hablar
+charlar - беседовать/болтать
+estudiar 
+fumar - курение
+cantar - петь
+bailar - танцевать
+pintar - рисовать
+lavar - мыть
+tomar - взять, есть, пить, взять такси... принимать - получить like ~take~
+beber
+codificar
+programar
+empresa
+empezar - начинать
+terminar
+acabar
+finalizar - заканчивать/финишировать
+comenzar
+descansar
+Querer
+Necesitar
+Almorzar - 
+La suerte
+El éxito
+dedone
+adonde -  куда
+Ya - уже
+desear - желать
+adivinar
+explicar
+utilizar
+usar
+** Leccion 22-11-14
+:PROPERTIES:
+:collapsed: true
+:END:
+Quiero aydar_te_
+
+¿Desde y hast qué hora trabajas?
+Desde las 9 y hasta las 18
+de 9 a 18
+
+9 15 - son las 9 y cuarto
+9 30 - son las 9 y media
+9 45 - son las 10 menutos quarto
+9 55 / son las 5 para las 10
+*** Prablas
+aydar
+almorzar
+rara vez
+Desde qué hora trabajas
+Hasta qué hora trabajas
+9 en punto - точно в девять
+
+#+begin_quote
+¿Qué hora es?
+
+Son las once
+Es la una
+
+#+end_quote
+** Leccion 22-24-14
+:PROPERTIES:
+:END:
+*** Parablas
+salir - выйти/гулять/встречаться  (yo salgo)
+oír -  (tu oyes) (yo oigo, nosotros oímos, vosotros oís, ellos oyen) слушать
+decir (digo, dices, dice, decimos, decís, dicen)
+traducir (yo traduzco)
+agradecer (y agradezco)
+*** Leccion 22-28-11
+:PROPERTIES:
+:collapsed: true
+:END:
+**** Parablas
+La pupila - Зрачок
+Padecer - Болеть/Страдать
+Pronto
+Pedir
+Encender
+Correr
+Coger
+**** 5
+Vivo en el campo
+
+Vivo en el extranjero
+Навещать
+Apenar los veo
+Siempre tengo noticias
+Ser perezoso
+Ser cartero
+Заказать телефонный разговор 
+Traer dos cartas
+La carta certificada
+El carnet de conducir
+** Leccion 2201-12
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Parablas
+ deja
+ maleta
+ llamar - звонить/Вызвать
+ acaso
+ pone
+ tarjeta - карточка
+ salario
+
+
+curar - лечится
+*** Irregulares 
+llegar 
+
+vecino
+caer - упасть
+ cambiar - поменять
+ aumentar - увеличить, добавить
+ merendar - перекусить
+ costar        - стоить
+ recordar   - помнить
+ mostrar    - показать
+ encontrar  - найти/столкнуться 
+ acordar     - договориться
+ colgar        -вешать/положить трубку
+*** Verbos irregulares
+**** 1 group
+e por ie ~(-ar, -er, -ir)~
+**** 2 group ~(-ar, -er, -ir)~
+o por ue ~(-ir)~
+**** 3 group
+e por i
+**** 4 group
+Tienen doble irregularidad
+**** 5 group
+Cambio solo la primera persona (yo)
+**** 6 group
+Aumenta la (y) (-uir)
+**** 7 group
+Totalmente irregulares
+*** Deber
+
+El sabado duermo y leo algunos libros, a veces me paseo al parque o tomo  monopatín
+Cada segundo domingo, yo y mis amigos reúnen y juegan Calabozos y Dragones
+Pero a veces, puedo sentarme todo el día en la tarea
+Cuando es invierno, los fines de semana, voy a esquiar
+En verano, a veces, puedo ir de excursión el fin  de la semana
+rara vez juego todo el fin de semana juegos o veo Series de televisión
+Si tengo dinero, voy a los salones de té los domingos
+Me encanta el té y, a veces, los fines de semana vienen amigos a mí y organizamos ceremonias de té
+A veces,
+** Leccion 22-05-12
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Parablas
+época de examenes - эпоха экзаменов/сессия 
+después - после
+regresamos e casa
+nadar
+cambain ruedas
+arreglar
+Generalmente
+privada
+*** Verbos Irregulares
+sonar - Звучать 
+soñar - видеть сны
+conducir 
+tanto
+** Leccion 22-08-12
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Deber
+Меня зовут карлос. Я из румынии. Я работаю на одну компанию по импорту, а по вечерам учусь. Я учусь на курсах по иностранным языкам. Учу испанский. Я немного говорю по испански. Мне нужно улучшать мой язык. Я пользуюсь испанским на работе. Мы импортируем продукты из испании и южной америки. Я говорю на английском и французком и также хочу говорить на испанском
+
+Я Мария. Моего мужа зовут Люис. Люис работает в одной компании и он учится в в университете.  Сегодня воскрессень. Мы отдыхакм. В девять мы завтракаем и вспоминаем вечеринку. Мы слушаем музыку. Мой муж очень хорошо играет на гитаре. Мы подготавливаем еду и обедаем. После обеда я мою тарелки и мы идем гулять. Мы гуляем с нашей собакой. Мы возвращаемся домой. Я готовлю кофе и  его пьем. Люис курит сигарету и слушает последние новости. Вечером мы идем в бассейн где купаемся. Затем мы идм в кино. Фильм начинается в девять. Мы возвращаемся домой поздно.
+
+Карлос и Мигель работают в мастерской. Они работают весь день. Уних там очень много работы. Восстанавливать машины, менять колеса, чинить двигатели. Они очень заняты на протяжении всего дня. Они завтракают в кафе, которое находится через дорогу. В этом кофетерии очень хорошее меню. Обычно они работают до шести. Они возвращаются домой после работы очень уставшие, но довольные своей работой. И им за это довольно хорошо платят.
+
+Дон Томас Бланко - директор одной частной клиники. Клиника большая и поэтому там много сотрудников. Врачи, медсестры оффисные клерки и так далее. Дон томас работает очень много и у него очень хороший секретарь. ее завут Асун. Она очень привликательна, умна и очень хорошо выполняет свою работу. Она брюнетка и всегда ходит с длинными и прямыми волосами. На ней очень элегантный костюм.
+
+Как все, каждый день, томас прибывает в клинику в без пяти девять утра. Между
+*** Mi deber
+Me llama Jorge. Por la mañana duermo cada día en mi cama. Despierto de mi despertador y bebo té de un termo. Después tomo desayuno y pogo los cosas en mi mochila. Salgo de casa a las nuevo y media y vengo a la universidad. Después de estudiar yo siento en sala de lectura y trabajo hasta de cierre de la universidad. A las veinte yo tomo tranvía y voy a mi casa. Mientras conduzco voy, yo leo. Después elaboro de té en casa y vengo duermo.
+** Leccion 22-12-12
+*** Leccion
+**** Verbos (-ir)
+***** Irrgeulares grupo 1
+- Preferir  - почитать
+- mentir - Лгать
+- sugerir - рекомендовать
+***** Irregulares grupo 2
+
+- morir - умереть
+- dormir
+***** Irregulares grupo 3
+- pedir        - просить
+- despedir - увольнять
+- despedirse - прощаться
+- repetir - повторять
+- corregir - проверять
+- medir - измерять
+- vestir - надевать
+** Leccion 22-12-19
+:PROPERTIES:
+:collapsed: true
+:END:
+*** Parablas
+Falta
+
+bajar
+sub
+** Leccion de 23-02-13 ~Futuro Próximo~
+IR *A* * infinitivo
+Y voy
+** Leccion de 2023-02-27 ~Vervos Reflectivos (se)~
+levantar
+levantarse
+
+ducharSE
+/типа мыть - мытьСЯ/
+
+*Pronombres reflectivos:*
+- me
+- te
+- se
+- nos
+- os
+- se
+
+  me pongo:
+** Leccion de 2024-03-13 ~GERUNDIO~
+ESTAR + GERUNDIO
+ESTAR + /-ando/ =(-ar)=
+ESTAR + /-iendo/ =(-er, -ir)=
+** Leccion de 2023-03-22 ~Pretérito Perfecto de Modo Indicativo~
+Indicativo
+*** P. Perfecto
+     haber         +     participio =(-ar, -er ir) |-> (-ado; -ido)=
+en presente
+Haber
+He
+Has
+Ha
+Hemos
+Habéis
+Han
+**** escrito -  =NO Escribido=
+**** Hecho - =No hacido=
+*** P. Imperfecto
+*** P. Pluscamperfecto
+*** P- Indefinido
+*** P. Anterior
+** Leccion de 2023-04-13 ~Futuro Imperfecto (Simple)~
+Hacer - harél
+Salir - saldre
+Venir - vendré
+Poder - podré
+Noner - pondré
+Tener - tendré
+Decir - diré
+Saber - sabré
+Querer - querré
+Haber - habré
+Valer - valdré
+Caber - cabré
+*Habrá - hay, ha, habido 
+infinitivo ...
+
+- é
+- ás
+- á
+- emos
+- éis
+- án
+* Verbos irregulares
+:PROPERTIES:
+:collapsed: true
+:END:
+** Grupo 6
+*** Haber
+
+- he
+- has
+- ha
+- hemos
+- habeis
+- han
+
+  *
+* Parablas nuevas
+:PROPERTIES:
+:collapsed: true
+:END:
+** Leccion..
+Ahijado(a) - Крестный сын/дочь
+El cuñado(a) - брат/сестра мужа/жены
+El esposo - супруг/супруга
+Los familiares - родственники
+La madrina - крестная мать
+La padrina - Крестный отец
+La nuera - невевста
+El prima , la prima, los primos - двоюродные братья/брат/сестры
+El sobrino - племенник
+El suegro - отец супруга
+La suegra - мать жены
+El tío(a)(os) - дядя мужик/чувак
+El yerno - Муж дочери
+El pobre - бедный
+El viaje - путешествие
+El beso/besar - поцелуй/поцеловать
+El boca - рот
+El equipaje - багаж
+El Vacaciones - отпуск/каникулы
+La mono - мотоцикл
+Los recursos - ресурсы
+madesta - скромный/уверенный
+La maestra - учительница
+La escuela - школа
+El casado - женатый
+Los gemelos - близнецы
+Soltero - холостой/не женат
+Border - вышивать
+Bastidor
+Planchar - гладить вещи
+pag 155 number 13 - muchas parablas
+
+
+- Es tu aquerdo que tenemos la fiesta 
+- Sí, voy a hacer presente para él por la mañana, qué tu presentar para nuestro padre
+- ...
+- Yo deseo para preparar los tortas, pero yo quemó el horno. Tenemos deneros para presentar horno nuevo para él
+- ...
+- Yo voy a invitar mis compañeros de la clase. Quén va a reparar nuestros horno
+
+- ...
+- Nosotros vamos a jugar la playstation y bailar, por la notche voy a encender discoteca. Que vamos cocinar para la fiesta?
+- ... .........
+- Voy a ir a la tienda. Hasta la visa
+** Leccion 2023-03-02
+- dependienta
+
+- madrugada
+- detallado - подробнее
+- mismo
+- afietarse - бриться
+- acostar - положить/уложить
+
+
+- Manos - руки
+- reflejar - отражаться
+- maquina de afeitar - бритвенный станок
+- miel - мед 
+- bata - халат
+- en seguida - в момент
+- levantarse - вставать
+- afietarse - бриться
+- clazarse - обуваться
+- arreglarse - приводить себя в порядок
+- reunirse - собираться
+ - acostarse - ложиться спать
+- de nuevo - снова
+- dlástima - жалость/сожаление
+
+ - Disparo выстрел
+ - Cañón пушка
+ - Aplastar раздавить
+ - Tirar бросить
+** Leccion 2023-03-23
+Silbar - свистеть
+Polvo
+Pretérido - pasado
+** Leccion de 2023-04-13
+Valer 
+
+* Deberes
+** 2023-02-27
+Мы живем в мадриде. В доме на улице Santa Teresa, под номером 54. Мой отец работает в банке, который не слишком далеко от дома. Кажддоые утро он ездит в банк на машине. Мама по утрам работает сама на себя. Она работает продавцом в обувном магазине
+Она выходит из дома рано. Есть автобус, который довозит до центра, где находится магазин
+
+Я иду в университет, иногда хожу пешкуом, иногда еду с отцом на машине. Я не иду домой что бы пообедать, я обедаю в кафе со своими друзьями. Мои родители обедают дома вместе.
+
+Вечером мама делает работу по домоу, убирает комнаты, гладит,
+
+Папа скоро возвращается домой, но я прихожу вечером. Я немного ем приготовленный мамой ужин, поосле ужина мы смотрим телевизор. Я учусь до полуночи или до часа ночи
+* Pronombres
+*Pronombres reflectivos:*
+- me
+- te
+- se
+- nos
+- os
+- se
+*Pronombres de objecto inderecto:*
+- me
+- te
+- le
+- nos
+- os
+- les

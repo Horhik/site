@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-04-17 Mon 23:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Сопряженный оператор</title>
+<meta name="author" content="HORHIK" />
+<meta name="generator" content="Org Mode" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<link rel="stylesheet" type="text/css" href="../../assets/site.css" />
+
+<header>
+  <ul>
+    <li>
+      <a href='../posts/index.html'>
+	Posts 📜</a>
+    </li>
+    <li>
+      <a href='../portfolio/index.html'>
+	Portfolio 📓   </a>
+    </li>
+    <li>
+      <a href='../about/index.html'>
+	About 🫠</a>
+    </li>
+    <li>
+      <a href='../donate/index.html'>
+	Donate 💸</a>
+    </li>
+    <li>
+      <a href='../projects/index.html'>
+	Projects 📦</a>
+    </li>
+  </ul>
+</header>
+</div>
+<div id="content" class="content">
+<h1 class="title">Сопряженный оператор
+<br />
+<span class="subtitle">Published on Apr 13, 2023 by HORHIK.</span>
+</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org33385a6">1. Post about my day</a></li>
+<li><a href="#org91a33af">2. СОпряженное пространство</a>
+<ul>
+<li><a href="#org1775592">2.1. Определение</a></li>
+<li><a href="#orgd55e2f4">2.2. Теорема о единственности \(f^*\)</a>
+<ul>
+<li><a href="#orgff9eea2">2.2.1. <b>Доказательство</b></a></li>
+</ul>
+</li>
+<li><a href="#orgd13fd18">2.3. Определение</a></li>
+<li><a href="#orgf0536b8">2.4. Пример пространства функционалов над \(V\)</a></li>
+<li><a href="#org3d4d688">2.5. Изоморфизм \(V \cong V^{**}\) с нуля (попытка расписать понятно)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org33385a6" class="outline-2">
+<h2 id="org33385a6"><span class="section-number-2">1.</span> Post about my day</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<a href="./testfile2.html">./testfile2.html</a>
+It was a good day
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">require</span> '<span style="color: #268bd2; font-weight: bold;">ox-publish</span><span style="color: #2aa198;">)</span>
+<span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">setq</span> org-publish-project-alist
+      '<span style="color: #b58900;">(</span>
+        <span style="color: #268bd2;">(</span><span style="color: #2aa198;">"Blog"</span>
+         <span style="color: #839496; font-weight: bold;">:base-directory</span> <span style="color: #2aa198;">"~/Space/Code/Blog/"</span>
+         <span style="color: #839496; font-weight: bold;">:base-extension</span> <span style="color: #2aa198;">"org"</span>
+         <span style="color: #839496; font-weight: bold;">:publishing-directory</span> <span style="color: #2aa198;">"~/Code/Blog/html/"</span>
+         <span style="color: #839496; font-weight: bold;">:recursive</span> t
+         <span style="color: #839496; font-weight: bold;">:publishing-function</span> org-html-publish-to-html
+         <span style="color: #839496; font-weight: bold;">:headline-levels</span> 8             <span style="color: #586e75;">; </span><span style="color: #586e75;">Just the default for this project.</span>
+         <span style="color: #839496; font-weight: bold;">:auto-preamble</span> t
+         <span style="color: #268bd2;">)</span>
+
+        <span style="color: #268bd2;">(</span><span style="color: #2aa198;">"org-static"</span>
+         <span style="color: #839496; font-weight: bold;">:base-directory</span> <span style="color: #2aa198;">"~/Space/Code/Blog"</span>
+         <span style="color: #839496; font-weight: bold;">:base-extension</span> <span style="color: #2aa198;">"css</span><span style="color: #859900; font-weight: bold;">\\</span><span style="color: #b58900; font-weight: bold;">|</span><span style="color: #2aa198;">js</span><span style="color: #859900; font-weight: bold;">\\</span><span style="color: #b58900; font-weight: bold;">|</span><span style="color: #2aa198;">png</span><span style="color: #859900; font-weight: bold;">\\</span><span style="color: #b58900; font-weight: bold;">|</span><span style="color: #2aa198;">jpg</span><span style="color: #859900; font-weight: bold;">\\</span><span style="color: #b58900; font-weight: bold;">|</span><span style="color: #2aa198;">gif</span><span style="color: #859900; font-weight: bold;">\\</span><span style="color: #b58900; font-weight: bold;">|</span><span style="color: #2aa198;">pdf</span><span style="color: #859900; font-weight: bold;">\\</span><span style="color: #b58900; font-weight: bold;">|</span><span style="color: #2aa198;">mp3</span><span style="color: #859900; font-weight: bold;">\\</span><span style="color: #b58900; font-weight: bold;">|</span><span style="color: #2aa198;">ogg</span><span style="color: #859900; font-weight: bold;">\\</span><span style="color: #b58900; font-weight: bold;">|</span><span style="color: #2aa198;">swf"</span>
+         <span style="color: #839496; font-weight: bold;">:publishing-directory</span> <span style="color: #2aa198;">"~/public_html/"</span>
+         <span style="color: #839496; font-weight: bold;">:recursive</span> t
+         <span style="color: #839496; font-weight: bold;">:publishing-function</span> org-publish-attachment
+         <span style="color: #268bd2;">)</span>
+        <span style="color: #268bd2;">(</span><span style="color: #2aa198;">"org"</span> <span style="color: #839496; font-weight: bold;">:components</span> <span style="color: #6c71c4;">(</span><span style="color: #2aa198;">"org-notes"</span> <span style="color: #2aa198;">"org-static"</span><span style="color: #6c71c4;">)</span><span style="color: #268bd2;">)</span>
+
+        <span style="color: #b58900;">)</span>
+      <span style="color: #2aa198;">)</span>
+
+</pre>
+</div>
+
+
+<div id="orgd6380a9" class="figure">
+<p><img src="../../../../Notes/assets/Post_about_my_day/2023-04-13_10-41-06_screenshot.png" alt="2023-04-13_10-41-06_screenshot.png" />
+</p>
+</div>
+
+
+<blockquote>
+<p>
+If your a human, your a human
+</p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-org91a33af" class="outline-2">
+<h2 id="org91a33af"><span class="section-number-2">2.</span> СОпряженное пространство</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Пусть \(V, W\) - евклидовы пространства
+</p>
+
+<p>
+\(f: V \to W\) - линейный оператор
+</p>
+</div>
+<div id="outline-container-org1775592" class="outline-3">
+<h3 id="org1775592"><span class="section-number-3">2.1.</span> Определение</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Оператор \(f^*: W \to V\) называется сопряженным к \(f\), если
+\(\forall x \in V, y \in W\) выполнено равенство \(\langle f(x), y \rangle = \langle x, f^*(y) \rangle\)
+</p>
+</div>
+</div>
+<div id="outline-container-orgd55e2f4" class="outline-3">
+<h3 id="orgd55e2f4"><span class="section-number-3">2.2.</span> Теорема о единственности \(f^*\)</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Если в \(V\) и \(W\) выбраны ортонормированные базисы и \(f\) имеет в этих базисах метрику \(A\) то \(f^* = A^T\)
+</p>
+</div>
+<div id="outline-container-orgff9eea2" class="outline-4">
+<h4 id="orgff9eea2"><span class="section-number-4">2.2.1.</span> <b>Доказательство</b></h4>
+<div class="outline-text-4" id="text-2-2-1">
+<p>
+\(x = \sum\limits_{i} x_i e_i , \ y = \sum \limits_{i}y_kf_j\)
+</p>
+
+<p>
+\(\langle f(\sum x_ie_j, \sum y_j f_j \rangle = \langle \sum x_j e_i\rangle\)
+</p>
+
+
+<div class="org-center">
+<p>
+Можно начать читать сразу с <a href="#org3d4d688">изоморфизма  \(V\) и \(V^{**}\)</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd13fd18" class="outline-3">
+<h3 id="orgd13fd18"><span class="section-number-3">2.3.</span> Определение</h3>
+<div class="outline-text-3" id="text-2-3">
+<blockquote>
+<p>
+Мне лень исправлять, но здесь под линейными функциями подразумеваются линейные функционалы. Т.е. такие функции \(f: V \to K\), отображающие вектор из \(V\)  в поле \(K\) (сопоставляющие вектору число, если по человечески)
+</p>
+</blockquote>
+
+<p>
+<a href="../../../Notes/pages/пространство.html#ID-9b31d08d-dfe1-49df-bd29-822e521ef7a9">Пространство</a> линейных функций \(V^*\) изоморфное <i>(не заметно, но изоморфное)</i> \(V\), базисами которого являются <a href="../../../Notes/pages/линеиная_функция.html#ID-a51d8ecf-8900-49fb-876b-482f7c60974d">линейные функции</a> \((\varepsilon_0, \varepsilon_1, \cdots,  \varepsilon_n)\), такие что \(\varepsilon_i(x) = x_i\), где \(x_i\) - это коэффицент при \(e_i\) в разложении \(x \in V = x_0e_0 + x_1a_1 + \cdots + x_na_n\) по базисам \(V\)
+</p>
+
+
+<blockquote>
+<p>
+То есть базисы пространства \(V^*\) сопряженного по отношению к \(V\) есть такие функции \(\varepsilon_i(x)\), каждая из которых достает из данного вектора \(x\) коэффициент, на который домножается базисный вектор \(e_i \in V\) в разложении \(x\) по базисам.   
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orgf0536b8" class="outline-3">
+<h3 id="orgf0536b8"><span class="section-number-3">2.4.</span> Пример пространства функционалов над \(V\)</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+Пусть \(\alpha(x)\)  - линейная функция \(\alpha: V \to K\) в пространстве \(V\) над полем \(K\). То есть линейный функционал.
+</p>
+
+\begin{align}
+\alpha(x) = a_1x_1+a_2x_2+a_3x_3+\cdots+a_nx_n
+\end{align}
+
+
+<p>
+где \(\alpha(e_i)  = a_i\) , то есть - \(a_i\) коэффициент при базисном векторе \(e_i\) - по сути единица??
+</p>
+
+<p>
+<i>Множество всех линейных функционалов в пространстве \(V\) над полем \(K\) тоже составляет пространство.</i>
+</p>
+
+<p>
+<b><b>Доказательство:</b></b>
+Так как \(\alpha(x)\) - линейная функция, то \(\alpha(x) = x_1\alpha(e_1) + \cdots + x_n\alpha(e_n), x_i \in K\)
+Тогда \((\alpha(e_1), \cdots, \alpha(e_n))\)  - базис пространства всех линейных функционалов в пространстве \(V\) над полем \(K\). Будем его называть сопряженным к \(V\) пространством \(V^*\)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3d4d688" class="outline-3">
+<h3 id="org3d4d688"><span class="section-number-3">2.5.</span> Изоморфизм \(V \cong V^{**}\) с нуля (попытка расписать понятно)</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+Есть линейное пространство  \(V\) над \(K\)
+Множество всех линейных функционалов над этим пространством \(V\) в поле \(K\), тоже образует пространство. Так как это функционал, назовем его \(\alpha\) из определения следует что \(a(x) = x_1\alpha(e_1) + ... + x_n\alpha(e_n)\)
+То есть это линейная комбинация функционалов \(\alpha(e_1)...\alpha(e_n)\). И тогда эти функционалы являются базисом. Значит, этими базисными функционалами определяется все пространство функционалов из  \(V\)  в \(K\).
+</p>
+
+<p>
+Возьмем такой базис \((\varepsilon_1, ... , \varepsilon_n)\), что \(\varepsilon_i(x) = x_{i}\). То есть что $i$-ый функционал от \(x\) возвращает \(i\) координату \(x \in V\).
+А почему мы взяли именно такой базис? А почему бы и нет? Что бы потом назвать его сопряженным к базису \(V\), да и все равно все линейные функционалы определеяются через базисные, а про них ничего не сказанно (могу тут ошибаться), поэтому почему не придумать бы такие.
+</p>
+
+<p>
+Итак. Мы определили базис пространства всех линейных функционалов из \(V\)  в \(K\), такое пространство мы будем называть сопряженным к \(V\) или двойственным к \(V\) и обозночать \(V^*\)
+</p>
+
+<p>
+Из определения видно что \(x = \sum\limits_{i=0}^n \varepsilon_i(x)e_i\) то есть вектор из \(V\) можно представить как линейную комбинацию базисов с коэффцииентами \(\varepsilon_i(x)\) - т.е. обычные коэффициенты.
+Теперь рассмотрим линейные функционалы из \(V^*\) в \(K\). Т.е. такие функционалы \(f\) над пространством функционалов \(V^*\).
+</p>
+
+<p>
+\(f: V^* \to K\)
+</p>
+
+<p>
+\(f: (V \to K) \to K\)
+</p>
+
+<p>
+Так как функционалы линейные, мы можем прийти к такому виду: \(f(v) = a_1f(\varepsilon_1) + ... + a_nf(\varepsilon_n), v: V \to K\). То есть также видим, что \(\langle f(\varepsilon_{1}), ... ,f(\varepsilon_{n})\rangle\)  будет образовывать пространство всех линейных функционалов из \(V^*\) в \(K\).
+Такое пространство мы будет отмечать как \(V^{**}\) <i>(doble Dual space, пространство, двойственное двойственному, сопряженное к сопряженному к \(V\))</i>
+</p>
+
+<p>
+Раз уж это пространство <b>всех</b> линейный функионалов, то мы можем найти в нем такую функцию \(f_x(\alpha) = \alpha(x), \alpha: V \rightarrow K, \alpha \in V^{*}\), то есть функционал из \(V^{**}\) принимает функционал из \(V^*\) и возвращает значение \(\alpha \in V^*\) от вектора \(x \in V\). А вспоминая, что  \(x = \sum\limits_{i=0}^n \varepsilon_i(x)e_i\) мы можем представить это в виде \(x = \sum\limits_{i=0}^n f_x(\varepsilon_i)e_i\), откуда можно установить биекцию \(x \mapsto f_x\)
+</p>
+
+
+<p>
+Винберг приходит к биекции по другому. Исходя из того, что \(f_x(\alpha) = \alpha(x)\), можем взять \(f_{e_i}(\varepsilon_j) = \varepsilon_j(e_i) = \delta_{ij}\), что равно <a href="../../../Notes/pages/символ_кронекера.html#ID-089d11aa-4769-4974-befa-b5e5cd7d2d41">символу кронекера</a> (\(\delta_{ij} = 1, i=j\)) чего достаточно для того, что бы утвержать что \((f_{e_1}, ... ,f_{e_n})\) являются базисом \(V^{**}\), а отображение \(x \mapsto f_x\) по сути переводит линейную комбинацию векторов из базиса \(V\) в линейную комбинацию векторов из базиса \(V^{**}\) с такими же координатами.
+</p>
+
+<p>
+<i>(Почему с такими же? )</i>
+</p>
+\begin{align*}
+x = \sum\limits_{i=0}^n f_x(\varepsilon_i)e_i \Rightarrow x = \sum\limits_{i=0}^n f_{a_1e_1+...+a_ne_{n}}(\varepsilon_i)e_i \\
+(a_{1}f_{e_1}+...+a_nf_{e_{n}})(\varepsilon_i)e_i = \\ (a_1f_{e_1}(\varepsilon_{i}) + ... + a_nf_{e_n}(\varepsilon_{i}))e_{i}=a_{i}f_{e_{i}}(\varepsilon_{i})e_{i} = a_{i}e_{i} \\
+\Rightarrow x = \sum\limits_{i=0}^n f_x(\varepsilon_i)e_i = \sum\limits_{i=0}^n a_{i}e_i \\
+\end{align*}
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<footer class="footer">
+  <b> Made by Horhik with 🤟 and Apr 17, 2023 </b> <br>
+  <i> Last update: Emacs 28.2 (Org mode 9.6) </i>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+options: timestamp:t title:t toc:t todo:t |:t
+#+title: Holechat
+#+date: <2023-04-13 Thu>
+#+author: Horhik
+#+email: horhik@teapod
+#+language: en
+#+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 28.2 (Org mode 9.6)
+#+cite_export:
+#+OPTIONS: html-postamble:auto html-preamble:t tex:t
+#+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.50.3 (<a href="https://orgmode.org">Org</a> mode 8.0.3)
+#+HTML_CONTAINER: div
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_HEAD:
+#+HTML_HEAD_EXTRA:
+#+HTML_HTML5_FANCY:
+#+HTML_INCLUDE_SCRIPTS:
+#+HTML_INCLUDE_STYLE:
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
+#+HTML_MATHJAX:
+#+INFOJS_OPT:
+#+INCLUDE: ~/Code/Blog/sitemap.org
+
+#+SETUPFILE: ~/Blog/assets/templates/main.org
+* Holechat
+My chat.
