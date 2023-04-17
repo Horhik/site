@@ -1,5 +1,6 @@
 :root{
     --background-main: black;
+    --background-second:  #060606;
     --main-font: 'Liberation Sans';
     --second-font: "Mononoki Nerd Font", "mononoki";
 
@@ -18,6 +19,9 @@ body {
 
 header {
     margin: 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
 }
 
 *content{
@@ -31,7 +35,7 @@ header ul {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 header li {
@@ -40,8 +44,8 @@ header li {
 }
 
 header a{
-    font-weight: bold;
-    font-size: 2em;
+    font-weight: bold;4
+    font-size: 1.5em;
     color: #848484;
 }
 
@@ -59,9 +63,14 @@ li a{
     
 }
 
-code{
+code, .src, .org-src{
 
+    background: var(--background-main);
+    border-radius: 10px;
+    padding: 15px;
     font-family: var(--second-font);
+    line-height: 1.7em;
+    overflow: scroll;
 }
 
 a:visited {
@@ -84,6 +93,7 @@ a:active{
     padding: 20px;
     background: var(--background-main);
     line-height: 2em;
+    border-radius: 10px;
 		
 }
 
@@ -95,4 +105,48 @@ a:active{
     font-size: 2.6em;
     font-weight: bold;
     font-family: var(--second-font);
+}
+
+.subtitle{
+    font-size: 0.6em;
+    opacity: 0.4;
+}
+
+@media (min-width: 900px) { 
+
+#table-of-contents{
+  font-size: 11pt;
+  position: fixed;
+  z-index: 1000000;
+  background: var(--background-second); 
+  right: -430px;
+  top: 3em;
+  text-align: center;
+  color: #dcdccc;
+  -webkit-box-shadow: 0 0 1em #454545;
+  -moz-box-shadow: 0 0 1em #545454;
+  border-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  max-height: 600px;
+  transform: rotate(-90deg);
+  overflow: auto;
+  padding: 10px;
+  line-height: 1.5em;
+
+}
+
+#table-of-contents:hover {
+
+  transform: rotate(0deg);
+  right: 0px;
+}
+
+#table-of-contents li, #table-of-contents ul{
+    
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 }
