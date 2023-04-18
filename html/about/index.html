@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-04-18 Tue 09:49 -->
+<!-- 2023-04-18 Tue 10:08 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>About</title>
@@ -50,23 +50,48 @@
 </header>
 
  <script>
-      const themeButton = document.getElementById('theme-button');
 
-      themeButton.addEventListener('click', () => {
-        const root = document.documentElement;
-        const hueMain = getComputedStyle(root).getPropertyValue('--lightness').trim();
-	  console.log(hueMain);
+const root = document.documentElement;
+const themeButton = document.getElementById('theme-button');
+function setLight () {
+    root.style.setProperty('--lightness', '93%')
+    themeButton.textContent = '😎';
+    localStorage.setItem("theme", "light");
+    console.log("changing theme to LIGHT")
+}
+function setDark () {
+    root.style.setProperty('--lightness', '10%');
+    themeButton.textContent = '🌚';
+    localStorage.setItem("theme", "dark");
+    console.log("changing theme to DARK")
+}
 
-        if (hueMain == '93%') {
-          root.style.setProperty('--lightness', '93%');
-          themeButton.textContent = '😎';
-        } else {
-          root.style.setProperty('--lightness', '10%');
-          themeButton.textContent = '🌚';
-        }
+const savedTheme = localStorage.getItem("theme");
 
-      });
-</script>
+if (savedTheme == "dark") {
+    setDark();
+}
+else if (savedTheme == "light"){
+    setLight();
+}
+
+
+
+
+themeButton.addEventListener('click', () => {
+    const hueMain = getComputedStyle(root).getPropertyValue('--lightness').trim();
+    console.log(hueMain);
+
+    if (hueMain == '93%') {
+	setDark();
+    }
+    else {
+	setLight(); 
+    }
+
+});
+
+ </script>
 </div>
 <div id="content" class="content">
 <h1 class="title">About
@@ -77,12 +102,12 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org302de44">1. About</a></li>
+<li><a href="#org4e6ce2f">1. About</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org302de44" class="outline-2">
-<h2 id="org302de44"><span class="section-number-2">1.</span> About</h2>
+<div id="outline-container-org4e6ce2f" class="outline-2">
+<h2 id="org4e6ce2f"><span class="section-number-2">1.</span> About</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Hi, i'm george (aka Horhik), i'm iterested in electornic music, functional programming and interpreters, here' you can find my blogposts on programming challenges.

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-04-18 Tue 09:49 -->
+<!-- 2023-04-18 Tue 10:08 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Donate</title>
@@ -51,23 +51,48 @@
 </header>
 
  <script>
-      const themeButton = document.getElementById('theme-button');
 
-      themeButton.addEventListener('click', () => {
-        const root = document.documentElement;
-        const hueMain = getComputedStyle(root).getPropertyValue('--lightness').trim();
-	  console.log(hueMain);
+const root = document.documentElement;
+const themeButton = document.getElementById('theme-button');
+function setLight () {
+    root.style.setProperty('--lightness', '93%')
+    themeButton.textContent = '😎';
+    localStorage.setItem("theme", "light");
+    console.log("changing theme to LIGHT")
+}
+function setDark () {
+    root.style.setProperty('--lightness', '10%');
+    themeButton.textContent = '🌚';
+    localStorage.setItem("theme", "dark");
+    console.log("changing theme to DARK")
+}
 
-        if (hueMain == '93%') {
-          root.style.setProperty('--lightness', '93%');
-          themeButton.textContent = '😎';
-        } else {
-          root.style.setProperty('--lightness', '10%');
-          themeButton.textContent = '🌚';
-        }
+const savedTheme = localStorage.getItem("theme");
 
-      });
-</script>
+if (savedTheme == "dark") {
+    setDark();
+}
+else if (savedTheme == "light"){
+    setLight();
+}
+
+
+
+
+themeButton.addEventListener('click', () => {
+    const hueMain = getComputedStyle(root).getPropertyValue('--lightness').trim();
+    console.log(hueMain);
+
+    if (hueMain == '93%') {
+	setDark();
+    }
+    else {
+	setLight(); 
+    }
+
+});
+
+ </script>
 </div>
 <div id="content" class="content">
 <h1 class="title">Donate
@@ -84,7 +109,7 @@
 </p></li>
 </ul>
 
-<div id="org2de4b10" class="figure">
+<div id="org97bde44" class="figure">
 <p><img src="2023-04-14_18-09-05_screenshot.png" alt="2023-04-14_18-09-05_screenshot.png" />
 </p>
 </div>

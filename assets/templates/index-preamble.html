@@ -1,7 +1,4 @@
 <link rel="stylesheet" type="text/css" href="../assets/site.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,800&display=swap" rel="stylesheet">
 
 <header>
 
@@ -39,22 +36,60 @@
 </header>
 
  <script>
-      const themeButton = document.getElementById('theme-button');
 
-      themeButton.addEventListener('click', () => {
-        const root = document.documentElement;
-        const hueMain = getComputedStyle(root).getPropertyValue('--lightness').trim();
-	  console.log(hueMain);
 
-        if (hueMain == '93%') {
-          root.style.setProperty('--lightness', '10%');
-          themeButton.textContent = '🌚';
-        } else {
-          root.style.setProperty('--lightness', '93%');
-          themeButton.textContent = '😎';
-        }
+// get the cookie value
+const cookies = document.cookie.split(';').map(cookie => cookie.trim());
+const themeCookie = cookies.find(cookie => cookie.startsWith('theme='));
+const themeValue = themeCookie ? themeCookie.split('=')[1] : null;
 
-      });
+// use the theme value to set the current theme
+
+const root = document.documentElement;
+const themeButton = document.getElementById('theme-button');
+function setLight () {
+    root.style.setProperty('--lightness', '93%')
+    themeButton.textContent = '😎';
+    //localStorage.setItem("theme", "light");
+    document.cookie = `theme=light; expires=${new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toUTCString()}; path=/`;
+    console.log("changing theme to LIGHT")
+}
+function setDark () {
+    root.style.setProperty('--lightness', '10%');
+    themeButton.textContent = '🌚';
+    //localStorage.setItem("theme", "dark");
+    document.cookie = `theme=dark; expires=${new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toUTCString()}; path=/`;
+    console.log("changing theme to DARK")
+}
+
+const savedTheme = localStorage.getItem("theme");
+console.log("current theme are: ", savedTheme);
+
+if (themeValue == "dark") {
+    setDark();
+}
+else if (themeValue == "light"){
+    setLight();
+}
+
+
+
+
+themeButton.addEventListener('click', () => {
+    const cookies = document.cookie.split(';').map(cookie => cookie.trim());
+    const themeCookie = cookies.find(cookie => cookie.startsWith('theme='));
+    const themeValue = themeCookie ? themeCookie.split('=')[1] : null;
+    console.log(themeValue);
+
+    if (themeValue == "light") {
+	setDark();
+    }
+    else {
+	setLight(); 
+    }
+
+});
+
 </script>
 
 
