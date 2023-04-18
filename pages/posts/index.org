@@ -3,7 +3,7 @@
 - *[[file:emacs-blog.org][Creating blog with emacs]]*
   #+html: <p class='pubdate'>by nil on Apr 17, 2023.</p>
 - *[[file:my-emacs-config.org][Emacs config.]]*
-  #+html: <p class='pubdate'>by nil on Apr 14, 2023.</p>
+  #+html: <p class='pubdate'>by Horhik on Apr 14, 2023.</p>
 - *[[file:kek.org][kek]]*
   #+html: <p class='pubdate'>by nil on Apr 15, 2023.</p>
 - *[[file:spanish.org][spanish]]*
