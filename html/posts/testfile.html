@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-04-18 Tue 10:08 -->
+<!-- 2023-04-18 Tue 10:51 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Сопряженный оператор</title>
@@ -44,11 +44,202 @@
 </head>
 <body>
 <div id="preamble" class="status">
-<link rel="stylesheet" type="text/css" href="../../assets/site.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,800&display=swap" rel="stylesheet">
+    <style>
+:root{
+    --hue-main: 235;
+    --hue-shift: 98;
+    --lightness: 93%;
+    --font-color: hsl(var(--hue-main), 5%, calc(100% - var(--lightness)));
+    --background-main: hsl(var(--hue-main), 5%, var(--lightness));
+    --background-second: hsl(var(--hue-main), 14%, calc(5% + var(--lightness)));
+    --background-shadow: hsl(var(--hue-main), 30%, calc(70% - var(--lightness)));
+    --link-color: hsl(var(--hue-main), 15%, calc(100%-var(--lightness)));
+    --hover-color: hsl(calc(var(--hue-main) ), 55%, 59%);
+    --visited-color: hsl(calc(var(--hue-main) + var(--hue-shift)), 40%, 45%);
+    --inverted-color: hsl(var(--hue-main), 50%, var(--lightness));
+    --main-font: 'Liberation Sans';
+    --second-font: "Mononoki Nerd Font", "mononoki";
 
+}
+html{
+    background: var(--background-main);
+    color: var(--font-color);
+}
+body {
+    font-family: var(--main-font), serif;
+    width: 80vw;
+    margin: 0 auto;
+    background-color: var(--background-second);
+    padding: 20px 24px;
+}
+
+header {
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+*content{
+    width: 80vw;
+}
+ul{
+    list-style: upper-roman;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    font-size: 1em;
+}
+
+header li {
+    list-style: none;
+    padding: 10px;
+}
+
+header a{
+    font-weight: bold;4
+    font-size: 1.5em;
+    color: var(--link-color);
+}
+
+a {
+    color: var(--link-color);
+    font-family: var(--second-font);
+    text-decoration: underline;
+    text-decoration-color: currentcolor;
+    text-decoration-thickness: auto;
+    text-decoration-thickness: 2px;
+    text-decoration-line: underline;
+    text-decoration-color: var(--link-color);
+    transition:0.2s;
+
+}
+
+li a{
+    font-family: var(--second-font);
+    font-size: 1.4em;
+    transition: 0.2s;
+    
+}
+
+code{
+    background: var(--background-main);
+    padding: 7px 10px;
+    line-height: 2em;
+    border-radius: 10px;
+}
+
+ .src, .org-src{
+
+    background: var(--background-main);
+    border-radius: 10px;
+    padding: 15px;
+    font-family: var(--second-font);
+    line-height: 1.7em;
+    overflow: scroll;
+}
+
+a:visited {
+
+    text-decoration-color: var(--visited-color);
+}
+
+a:hover, a:focus {
+    text-decoration-color: var(--hover-color);
+    text-decoration-thickness: 7px;
+    
+}
+
+a:active{
+    background: var(--hover-color);
+    color: var(--background-main);
+}
+
+
+.footer {
+    padding: 20px;
+    background: var(--background-main);
+    line-height: 2em;
+    border-radius: 10px;
+		
+}
+
+
+.title{
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+    font-size: 2.6em;
+    font-weight: bold;
+    font-family: var(--second-font);
+}
+
+.subtitle{
+    font-size: 0.6em;
+    opacity: 0.4;
+}
+
+#table-of-contents ul{
+    list-style: none;
+    margin: 0;
+}
+
+@media (min-width: 900px) { 
+
+#table-of-contents{
+  font-size: 11pt;
+  position: fixed;
+  z-index: 1000000;
+  background: var(--background-main); 
+  right: 40px;
+  bottom: -540px;
+  text-align: center;
+  -webkit-box-shadow: 0px 20px 46px var(--background-shadow);
+  -moz-box-shadow: 0px 20px 46px var(--background-shadow);
+  border-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  height: 600px;
+  overflow: auto;
+  padding: 0px;
+  line-height: 1.7em;
+  transition:0.2s;
+  width: 500px;
+
+}
+
+#table-of-contents:hover {
+
+  bottom: 0%;
+  transform: rotate(0deg);
+}
+
+#table-of-contents li, #table-of-contents ul{
+    
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+}
+
+#theme-button{
+    background-color: --background-main: hsl(var(--hue-main), 5%, calc(100%  -var(--lightness)));
+    margin: 10px;
+    border-width: 5px;
+}
+#theme-button:hover{
+    filter:invert(1);
+    color: red;
+}
+
+    </style>
 <header>
   <div class="head-right">
   <ul>
@@ -82,27 +273,38 @@
 
  <script>
 
+
+// get the cookie value
+const cookies = document.cookie.split(';').map(cookie => cookie.trim());
+const themeCookie = cookies.find(cookie => cookie.startsWith('theme='));
+const themeValue = themeCookie ? themeCookie.split('=')[1] : null;
+
+// use the theme value to set the current theme
+
 const root = document.documentElement;
 const themeButton = document.getElementById('theme-button');
 function setLight () {
     root.style.setProperty('--lightness', '93%')
     themeButton.textContent = '😎';
-    localStorage.setItem("theme", "light");
+    //localStorage.setItem("theme", "light");
+    document.cookie = `theme=light; expires=${new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toUTCString()}; path=/`;
     console.log("changing theme to LIGHT")
 }
 function setDark () {
     root.style.setProperty('--lightness', '10%');
     themeButton.textContent = '🌚';
-    localStorage.setItem("theme", "dark");
+    //localStorage.setItem("theme", "dark");
+    document.cookie = `theme=dark; expires=${new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toUTCString()}; path=/`;
     console.log("changing theme to DARK")
 }
 
 const savedTheme = localStorage.getItem("theme");
+console.log("current theme are: ", savedTheme);
 
-if (savedTheme == "dark") {
+if (themeValue == "dark") {
     setDark();
 }
-else if (savedTheme == "light"){
+else if (themeValue == "light"){
     setLight();
 }
 
@@ -110,10 +312,12 @@ else if (savedTheme == "light"){
 
 
 themeButton.addEventListener('click', () => {
-    const hueMain = getComputedStyle(root).getPropertyValue('--lightness').trim();
-    console.log(hueMain);
+    const cookies = document.cookie.split(';').map(cookie => cookie.trim());
+    const themeCookie = cookies.find(cookie => cookie.startsWith('theme='));
+    const themeValue = themeCookie ? themeCookie.split('=')[1] : null;
+    console.log(themeValue);
 
-    if (hueMain == '93%') {
+    if (themeValue == "light") {
 	setDark();
     }
     else {
@@ -133,25 +337,25 @@ themeButton.addEventListener('click', () => {
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orge784b42">1. Post about my day</a></li>
-<li><a href="#orgb974b48">2. СОпряженное пространство</a>
+<li><a href="#orgc88197f">1. Post about my day</a></li>
+<li><a href="#org75763c4">2. СОпряженное пространство</a>
 <ul>
-<li><a href="#org53d2f5e">2.1. Определение</a></li>
-<li><a href="#orge01d0f8">2.2. Теорема о единственности \(f^*\)</a>
+<li><a href="#org7accec0">2.1. Определение</a></li>
+<li><a href="#orgf8b69a4">2.2. Теорема о единственности \(f^*\)</a>
 <ul>
-<li><a href="#orgc476cb9">2.2.1. <b>Доказательство</b></a></li>
+<li><a href="#orgadf1b59">2.2.1. <b>Доказательство</b></a></li>
 </ul>
 </li>
-<li><a href="#org331a0e2">2.3. Определение</a></li>
-<li><a href="#org8817852">2.4. Пример пространства функционалов над \(V\)</a></li>
-<li><a href="#org3bb4340">2.5. Изоморфизм \(V \cong V^{**}\) с нуля (попытка расписать понятно)</a></li>
+<li><a href="#orge4a826a">2.3. Определение</a></li>
+<li><a href="#orgb0dc491">2.4. Пример пространства функционалов над \(V\)</a></li>
+<li><a href="#orgb40d0a2">2.5. Изоморфизм \(V \cong V^{**}\) с нуля (попытка расписать понятно)</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orge784b42" class="outline-2">
-<h2 id="orge784b42"><span class="section-number-2">1.</span> Post about my day</h2>
+<div id="outline-container-orgc88197f" class="outline-2">
+<h2 id="orgc88197f"><span class="section-number-2">1.</span> Post about my day</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 <a href="./testfile2.html">./testfile2.html</a>
@@ -188,7 +392,7 @@ It was a good day
 </div>
 
 
-<div id="org8ee4a00" class="figure">
+<div id="org85ce7b7" class="figure">
 <p><img src="../../../../Notes/assets/Post_about_my_day/2023-04-13_10-41-06_screenshot.png" alt="2023-04-13_10-41-06_screenshot.png" />
 </p>
 </div>
@@ -201,8 +405,8 @@ If your a human, your a human
 </blockquote>
 </div>
 </div>
-<div id="outline-container-orgb974b48" class="outline-2">
-<h2 id="orgb974b48"><span class="section-number-2">2.</span> СОпряженное пространство</h2>
+<div id="outline-container-org75763c4" class="outline-2">
+<h2 id="org75763c4"><span class="section-number-2">2.</span> СОпряженное пространство</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Пусть \(V, W\) - евклидовы пространства
@@ -212,8 +416,8 @@ If your a human, your a human
 \(f: V \to W\) - линейный оператор
 </p>
 </div>
-<div id="outline-container-org53d2f5e" class="outline-3">
-<h3 id="org53d2f5e"><span class="section-number-3">2.1.</span> Определение</h3>
+<div id="outline-container-org7accec0" class="outline-3">
+<h3 id="org7accec0"><span class="section-number-3">2.1.</span> Определение</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Оператор \(f^*: W \to V\) называется сопряженным к \(f\), если
@@ -221,15 +425,15 @@ If your a human, your a human
 </p>
 </div>
 </div>
-<div id="outline-container-orge01d0f8" class="outline-3">
-<h3 id="orge01d0f8"><span class="section-number-3">2.2.</span> Теорема о единственности \(f^*\)</h3>
+<div id="outline-container-orgf8b69a4" class="outline-3">
+<h3 id="orgf8b69a4"><span class="section-number-3">2.2.</span> Теорема о единственности \(f^*\)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Если в \(V\) и \(W\) выбраны ортонормированные базисы и \(f\) имеет в этих базисах метрику \(A\) то \(f^* = A^T\)
 </p>
 </div>
-<div id="outline-container-orgc476cb9" class="outline-4">
-<h4 id="orgc476cb9"><span class="section-number-4">2.2.1.</span> <b>Доказательство</b></h4>
+<div id="outline-container-orgadf1b59" class="outline-4">
+<h4 id="orgadf1b59"><span class="section-number-4">2.2.1.</span> <b>Доказательство</b></h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
 \(x = \sum\limits_{i} x_i e_i , \ y = \sum \limits_{i}y_kf_j\)
@@ -242,15 +446,15 @@ If your a human, your a human
 
 <div class="org-center">
 <p>
-Можно начать читать сразу с <a href="#org3bb4340">изоморфизма  \(V\) и \(V^{**}\)</a>
+Можно начать читать сразу с <a href="#orgb40d0a2">изоморфизма  \(V\) и \(V^{**}\)</a>
 </p>
 </div>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org331a0e2" class="outline-3">
-<h3 id="org331a0e2"><span class="section-number-3">2.3.</span> Определение</h3>
+<div id="outline-container-orge4a826a" class="outline-3">
+<h3 id="orge4a826a"><span class="section-number-3">2.3.</span> Определение</h3>
 <div class="outline-text-3" id="text-2-3">
 <blockquote>
 <p>
@@ -271,8 +475,8 @@ If your a human, your a human
 </div>
 </div>
 
-<div id="outline-container-org8817852" class="outline-3">
-<h3 id="org8817852"><span class="section-number-3">2.4.</span> Пример пространства функционалов над \(V\)</h3>
+<div id="outline-container-orgb0dc491" class="outline-3">
+<h3 id="orgb0dc491"><span class="section-number-3">2.4.</span> Пример пространства функционалов над \(V\)</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 Пусть \(\alpha(x)\)  - линейная функция \(\alpha: V \to K\) в пространстве \(V\) над полем \(K\). То есть линейный функционал.
@@ -299,8 +503,8 @@ If your a human, your a human
 </div>
 </div>
 
-<div id="outline-container-org3bb4340" class="outline-3">
-<h3 id="org3bb4340"><span class="section-number-3">2.5.</span> Изоморфизм \(V \cong V^{**}\) с нуля (попытка расписать понятно)</h3>
+<div id="outline-container-orgb40d0a2" class="outline-3">
+<h3 id="orgb40d0a2"><span class="section-number-3">2.5.</span> Изоморфизм \(V \cong V^{**}\) с нуля (попытка расписать понятно)</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 Есть линейное пространство  \(V\) над \(K\)
