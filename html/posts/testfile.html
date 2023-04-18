@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-04-18 Tue 00:41 -->
+<!-- 2023-04-18 Tue 09:49 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Сопряженный оператор</title>
@@ -76,8 +76,28 @@
   </div>
   <div class="head-right">
     <a href="../index.html">Home</a>
+    <button id="theme-button"> undefined LOL!! 😜 </button>
    </div>
 </header>
+
+ <script>
+      const themeButton = document.getElementById('theme-button');
+
+      themeButton.addEventListener('click', () => {
+        const root = document.documentElement;
+        const hueMain = getComputedStyle(root).getPropertyValue('--lightness').trim();
+	  console.log(hueMain);
+
+        if (hueMain == '93%') {
+          root.style.setProperty('--lightness', '93%');
+          themeButton.textContent = '😎';
+        } else {
+          root.style.setProperty('--lightness', '10%');
+          themeButton.textContent = '🌚';
+        }
+
+      });
+</script>
 </div>
 <div id="content" class="content">
 <h1 class="title">Сопряженный оператор
@@ -88,25 +108,25 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgda2315e">1. Post about my day</a></li>
-<li><a href="#orgef3af64">2. СОпряженное пространство</a>
+<li><a href="#org9587abb">1. Post about my day</a></li>
+<li><a href="#org1c218a0">2. СОпряженное пространство</a>
 <ul>
-<li><a href="#org4897516">2.1. Определение</a></li>
-<li><a href="#org540e7fb">2.2. Теорема о единственности \(f^*\)</a>
+<li><a href="#org4b97a96">2.1. Определение</a></li>
+<li><a href="#org1a40b9c">2.2. Теорема о единственности \(f^*\)</a>
 <ul>
-<li><a href="#orgf81b418">2.2.1. <b>Доказательство</b></a></li>
+<li><a href="#org685191b">2.2.1. <b>Доказательство</b></a></li>
 </ul>
 </li>
-<li><a href="#org68bbb3b">2.3. Определение</a></li>
-<li><a href="#orge6ae852">2.4. Пример пространства функционалов над \(V\)</a></li>
-<li><a href="#org4b40e41">2.5. Изоморфизм \(V \cong V^{**}\) с нуля (попытка расписать понятно)</a></li>
+<li><a href="#orgb251771">2.3. Определение</a></li>
+<li><a href="#orgca11e36">2.4. Пример пространства функционалов над \(V\)</a></li>
+<li><a href="#org68810c9">2.5. Изоморфизм \(V \cong V^{**}\) с нуля (попытка расписать понятно)</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgda2315e" class="outline-2">
-<h2 id="orgda2315e"><span class="section-number-2">1.</span> Post about my day</h2>
+<div id="outline-container-org9587abb" class="outline-2">
+<h2 id="org9587abb"><span class="section-number-2">1.</span> Post about my day</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 <a href="./testfile2.html">./testfile2.html</a>
@@ -143,7 +163,7 @@ It was a good day
 </div>
 
 
-<div id="org1e0fab9" class="figure">
+<div id="org384d40f" class="figure">
 <p><img src="../../../../Notes/assets/Post_about_my_day/2023-04-13_10-41-06_screenshot.png" alt="2023-04-13_10-41-06_screenshot.png" />
 </p>
 </div>
@@ -156,8 +176,8 @@ If your a human, your a human
 </blockquote>
 </div>
 </div>
-<div id="outline-container-orgef3af64" class="outline-2">
-<h2 id="orgef3af64"><span class="section-number-2">2.</span> СОпряженное пространство</h2>
+<div id="outline-container-org1c218a0" class="outline-2">
+<h2 id="org1c218a0"><span class="section-number-2">2.</span> СОпряженное пространство</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Пусть \(V, W\) - евклидовы пространства
@@ -167,8 +187,8 @@ If your a human, your a human
 \(f: V \to W\) - линейный оператор
 </p>
 </div>
-<div id="outline-container-org4897516" class="outline-3">
-<h3 id="org4897516"><span class="section-number-3">2.1.</span> Определение</h3>
+<div id="outline-container-org4b97a96" class="outline-3">
+<h3 id="org4b97a96"><span class="section-number-3">2.1.</span> Определение</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Оператор \(f^*: W \to V\) называется сопряженным к \(f\), если
@@ -176,15 +196,15 @@ If your a human, your a human
 </p>
 </div>
 </div>
-<div id="outline-container-org540e7fb" class="outline-3">
-<h3 id="org540e7fb"><span class="section-number-3">2.2.</span> Теорема о единственности \(f^*\)</h3>
+<div id="outline-container-org1a40b9c" class="outline-3">
+<h3 id="org1a40b9c"><span class="section-number-3">2.2.</span> Теорема о единственности \(f^*\)</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Если в \(V\) и \(W\) выбраны ортонормированные базисы и \(f\) имеет в этих базисах метрику \(A\) то \(f^* = A^T\)
 </p>
 </div>
-<div id="outline-container-orgf81b418" class="outline-4">
-<h4 id="orgf81b418"><span class="section-number-4">2.2.1.</span> <b>Доказательство</b></h4>
+<div id="outline-container-org685191b" class="outline-4">
+<h4 id="org685191b"><span class="section-number-4">2.2.1.</span> <b>Доказательство</b></h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
 \(x = \sum\limits_{i} x_i e_i , \ y = \sum \limits_{i}y_kf_j\)
@@ -197,15 +217,15 @@ If your a human, your a human
 
 <div class="org-center">
 <p>
-Можно начать читать сразу с <a href="#org4b40e41">изоморфизма  \(V\) и \(V^{**}\)</a>
+Можно начать читать сразу с <a href="#org68810c9">изоморфизма  \(V\) и \(V^{**}\)</a>
 </p>
 </div>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org68bbb3b" class="outline-3">
-<h3 id="org68bbb3b"><span class="section-number-3">2.3.</span> Определение</h3>
+<div id="outline-container-orgb251771" class="outline-3">
+<h3 id="orgb251771"><span class="section-number-3">2.3.</span> Определение</h3>
 <div class="outline-text-3" id="text-2-3">
 <blockquote>
 <p>
@@ -226,8 +246,8 @@ If your a human, your a human
 </div>
 </div>
 
-<div id="outline-container-orge6ae852" class="outline-3">
-<h3 id="orge6ae852"><span class="section-number-3">2.4.</span> Пример пространства функционалов над \(V\)</h3>
+<div id="outline-container-orgca11e36" class="outline-3">
+<h3 id="orgca11e36"><span class="section-number-3">2.4.</span> Пример пространства функционалов над \(V\)</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 Пусть \(\alpha(x)\)  - линейная функция \(\alpha: V \to K\) в пространстве \(V\) над полем \(K\). То есть линейный функционал.
@@ -254,8 +274,8 @@ If your a human, your a human
 </div>
 </div>
 
-<div id="outline-container-org4b40e41" class="outline-3">
-<h3 id="org4b40e41"><span class="section-number-3">2.5.</span> Изоморфизм \(V \cong V^{**}\) с нуля (попытка расписать понятно)</h3>
+<div id="outline-container-org68810c9" class="outline-3">
+<h3 id="org68810c9"><span class="section-number-3">2.5.</span> Изоморфизм \(V \cong V^{**}\) с нуля (попытка расписать понятно)</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 Есть линейное пространство  \(V\) над \(K\)

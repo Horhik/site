@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-04-18 Tue 00:41 -->
+<!-- 2023-04-18 Tue 09:49 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>spanish</title>
@@ -46,8 +46,28 @@
   </div>
   <div class="head-right">
     <a href="../index.html">Home</a>
+    <button id="theme-button"> undefined LOL!! 😜 </button>
    </div>
 </header>
+
+ <script>
+      const themeButton = document.getElementById('theme-button');
+
+      themeButton.addEventListener('click', () => {
+        const root = document.documentElement;
+        const hueMain = getComputedStyle(root).getPropertyValue('--lightness').trim();
+	  console.log(hueMain);
+
+        if (hueMain == '93%') {
+          root.style.setProperty('--lightness', '93%');
+          themeButton.textContent = '😎';
+        } else {
+          root.style.setProperty('--lightness', '10%');
+          themeButton.textContent = '🌚';
+        }
+
+      });
+</script>
 </div>
 <div id="content" class="content">
 <h1 class="title">spanish
@@ -58,143 +78,143 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgbf15599">1. Lecciones</a>
+<li><a href="#org71cc1fc">1. Lecciones</a>
 <ul>
-<li><a href="#orga291246">1.1. Deber 1</a>
+<li><a href="#org6a503c7">1.1. Deber 1</a>
 <ul>
-<li><a href="#org7f8fed1">1.1.1. EL padre</a></li>
-<li><a href="#orgcecbfdb">1.1.2. El madre</a></li>
-<li><a href="#org1c836d3">1.1.3. El hermana</a></li>
-<li><a href="#org0502f98">1.1.4. El Abuela</a></li>
+<li><a href="#orge3c2d38">1.1.1. EL padre</a></li>
+<li><a href="#orgb018b2e">1.1.2. El madre</a></li>
+<li><a href="#orgd4ef6fb">1.1.3. El hermana</a></li>
+<li><a href="#orgff1675d">1.1.4. El Abuela</a></li>
 </ul>
 </li>
-<li><a href="#org6e20048">1.2. Lesson 22-10-17</a>
+<li><a href="#org6f61618">1.2. Lesson 22-10-17</a>
 <ul>
-<li><a href="#orgf4a6a9f">1.2.1. Parablas</a></li>
-<li><a href="#org8fe03cb">1.2.2. LLEVAR</a></li>
-<li><a href="#org54bdec2">1.2.3. Comprar</a></li>
+<li><a href="#org305696f">1.2.1. Parablas</a></li>
+<li><a href="#orgd19b269">1.2.2. LLEVAR</a></li>
+<li><a href="#orgce7254f">1.2.3. Comprar</a></li>
 </ul>
 </li>
-<li><a href="#org1dc99c7">1.3. Lección 22-10-20</a>
+<li><a href="#org0b8f8fd">1.3. Lección 22-10-20</a>
 <ul>
-<li><a href="#orgbfaf817">1.3.1. Parablas</a></li>
-<li><a href="#orgd23e50f">1.3.2. ESTAR</a></li>
-<li><a href="#org5bac575">1.3.3. Utilizar por</a></li>
-<li><a href="#orgd6ab549">1.3.4. Ehemplos</a></li>
+<li><a href="#orgc2be2ac">1.3.1. Parablas</a></li>
+<li><a href="#org14ab0ff">1.3.2. ESTAR</a></li>
+<li><a href="#orgcb5e65c">1.3.3. Utilizar por</a></li>
+<li><a href="#orgfee863a">1.3.4. Ehemplos</a></li>
 </ul>
 </li>
-<li><a href="#orgea7360f">1.4. Lección 22-10-24</a>
+<li><a href="#orgdcf4903">1.4. Lección 22-10-24</a>
 <ul>
-<li><a href="#org65ffd61">1.4.1. Parablas</a></li>
-<li><a href="#orgbd4f17c">1.4.2. Anked</a></li>
-<li><a href="#orgaa1e1c5">1.4.3. De + el = del</a></li>
-<li><a href="#orge4d48bc">1.4.4. Al + el = al</a></li>
+<li><a href="#org7749ddc">1.4.1. Parablas</a></li>
+<li><a href="#org65e9efe">1.4.2. Anked</a></li>
+<li><a href="#orgd53c86b">1.4.3. De + el = del</a></li>
+<li><a href="#org918726d">1.4.4. Al + el = al</a></li>
 </ul>
 </li>
-<li><a href="#org7fd13f6">1.5. Leccion 22-10-31</a>
+<li><a href="#org79a1083">1.5. Leccion 22-10-31</a>
 <ul>
-<li><a href="#org929ff99">1.5.1. 16</a></li>
-<li><a href="#org4def789">1.5.2. Anked</a></li>
-<li><a href="#org6c2b886">1.5.3. Parablas</a></li>
-<li><a href="#org14d026f">1.5.4. NÚMEROS ordinales</a></li>
+<li><a href="#orge1526dd">1.5.1. 16</a></li>
+<li><a href="#org1bbc986">1.5.2. Anked</a></li>
+<li><a href="#org840acac">1.5.3. Parablas</a></li>
+<li><a href="#orgab14a37">1.5.4. NÚMEROS ordinales</a></li>
 </ul>
 </li>
-<li><a href="#orge0f6b3b">1.6. Leccion 22-11-03</a>
+<li><a href="#orgfe64190">1.6. Leccion 22-11-03</a>
 <ul>
-<li><a href="#org6b074c4">1.6.1. anked</a></li>
-<li><a href="#org17f177e">1.6.2. Parablas</a></li>
+<li><a href="#org9f8db79">1.6.1. anked</a></li>
+<li><a href="#org210339f">1.6.2. Parablas</a></li>
 </ul>
 </li>
-<li><a href="#org5cd5f20">1.7. Leccion 22-11-07</a>
+<li><a href="#org338eb00">1.7. Leccion 22-11-07</a>
 <ul>
-<li><a href="#orgde90564">1.7.1. Parablas</a></li>
+<li><a href="#orgccbbca3">1.7.1. Parablas</a></li>
 </ul>
 </li>
-<li><a href="#orgb76976d">1.8. Leccion 22-11-10</a>
+<li><a href="#org07c6377">1.8. Leccion 22-11-10</a>
 <ul>
-<li><a href="#org6bc4803">1.8.1. Verbos regulares</a></li>
-<li><a href="#org90bfbbf">1.8.2. Parablas</a></li>
+<li><a href="#orga3ca968">1.8.1. Verbos regulares</a></li>
+<li><a href="#org8aa429b">1.8.2. Parablas</a></li>
 </ul>
 </li>
-<li><a href="#org900b31c">1.9. Leccion 22-11-14</a>
+<li><a href="#orgfedd1c4">1.9. Leccion 22-11-14</a>
 <ul>
-<li><a href="#org51c67b8">1.9.1. Prablas</a></li>
+<li><a href="#org6499a92">1.9.1. Prablas</a></li>
 </ul>
 </li>
-<li><a href="#org4a584b2">1.10. Leccion 22-24-14</a>
+<li><a href="#org632a857">1.10. Leccion 22-24-14</a>
 <ul>
-<li><a href="#org6e27901">1.10.1. Parablas</a></li>
-<li><a href="#org90a1241">1.10.2. Leccion 22-28-11</a></li>
+<li><a href="#org2f6ccb4">1.10.1. Parablas</a></li>
+<li><a href="#org9351fef">1.10.2. Leccion 22-28-11</a></li>
 </ul>
 </li>
-<li><a href="#org52872bd">1.11. Leccion 2201-12</a>
+<li><a href="#org3e39acc">1.11. Leccion 2201-12</a>
 <ul>
-<li><a href="#org6e8636d">1.11.1. Parablas</a></li>
-<li><a href="#orgd09b21b">1.11.2. Irregulares</a></li>
-<li><a href="#org1c3ad56">1.11.3. Verbos irregulares</a></li>
-<li><a href="#orgd1a7e55">1.11.4. Deber</a></li>
+<li><a href="#org4b4872d">1.11.1. Parablas</a></li>
+<li><a href="#orgfdaeedf">1.11.2. Irregulares</a></li>
+<li><a href="#org7c58fef">1.11.3. Verbos irregulares</a></li>
+<li><a href="#orga04d2e9">1.11.4. Deber</a></li>
 </ul>
 </li>
-<li><a href="#org98996dc">1.12. Leccion 22-05-12</a>
+<li><a href="#org913f3e5">1.12. Leccion 22-05-12</a>
 <ul>
-<li><a href="#org9fdfc46">1.12.1. Parablas</a></li>
-<li><a href="#org351bc64">1.12.2. Verbos Irregulares</a></li>
+<li><a href="#org86a57e2">1.12.1. Parablas</a></li>
+<li><a href="#org3c33443">1.12.2. Verbos Irregulares</a></li>
 </ul>
 </li>
-<li><a href="#org15b154c">1.13. Leccion 22-08-12</a>
+<li><a href="#org2c06358">1.13. Leccion 22-08-12</a>
 <ul>
-<li><a href="#orgd5e673c">1.13.1. Deber</a></li>
-<li><a href="#orgabf34ca">1.13.2. Mi deber</a></li>
+<li><a href="#org31a3f45">1.13.1. Deber</a></li>
+<li><a href="#orgf71ad0a">1.13.2. Mi deber</a></li>
 </ul>
 </li>
-<li><a href="#orga5a929a">1.14. Leccion 22-12-12</a>
+<li><a href="#org03ef35c">1.14. Leccion 22-12-12</a>
 <ul>
-<li><a href="#org7e281c5">1.14.1. Leccion</a></li>
+<li><a href="#org7ae8341">1.14.1. Leccion</a></li>
 </ul>
 </li>
-<li><a href="#org1fc85c1">1.15. Leccion 22-12-19</a>
+<li><a href="#org2a8a099">1.15. Leccion 22-12-19</a>
 <ul>
-<li><a href="#org9d03322">1.15.1. Parablas</a></li>
+<li><a href="#org2f7225e">1.15.1. Parablas</a></li>
 </ul>
 </li>
-<li><a href="#org0150c72">1.16. Leccion de 23-02-13 <code>Futuro Próximo</code></a></li>
-<li><a href="#org385bc41">1.17. Leccion de 2023-02-27 <code>Vervos Reflectivos (se)</code></a></li>
-<li><a href="#org40c2f11">1.18. Leccion de 2024-03-13 <code>GERUNDIO</code></a></li>
-<li><a href="#orgbcc72b8">1.19. Leccion de 2023-03-22 <code>Pretérito Perfecto de Modo Indicativo</code></a>
+<li><a href="#org2a9a545">1.16. Leccion de 23-02-13 <code>Futuro Próximo</code></a></li>
+<li><a href="#org09621c1">1.17. Leccion de 2023-02-27 <code>Vervos Reflectivos (se)</code></a></li>
+<li><a href="#org056ef7b">1.18. Leccion de 2024-03-13 <code>GERUNDIO</code></a></li>
+<li><a href="#orgc1342e9">1.19. Leccion de 2023-03-22 <code>Pretérito Perfecto de Modo Indicativo</code></a>
 <ul>
-<li><a href="#org69764c4">1.19.1. P. Perfecto</a></li>
-<li><a href="#org9d49686">1.19.2. P. Imperfecto</a></li>
-<li><a href="#org8a8796c">1.19.3. P. Pluscamperfecto</a></li>
-<li><a href="#org3973ba5">1.19.4. P- Indefinido</a></li>
-<li><a href="#org6575770">1.19.5. P. Anterior</a></li>
+<li><a href="#orgb41c96c">1.19.1. P. Perfecto</a></li>
+<li><a href="#org30e64ed">1.19.2. P. Imperfecto</a></li>
+<li><a href="#org4c76dcd">1.19.3. P. Pluscamperfecto</a></li>
+<li><a href="#org295f1ea">1.19.4. P- Indefinido</a></li>
+<li><a href="#org0837283">1.19.5. P. Anterior</a></li>
 </ul>
 </li>
-<li><a href="#orgd1feb8b">1.20. Leccion de 2023-04-13 <code>Futuro Imperfecto (Simple)</code></a></li>
+<li><a href="#org3540174">1.20. Leccion de 2023-04-13 <code>Futuro Imperfecto (Simple)</code></a></li>
 </ul>
 </li>
-<li><a href="#org01ea2e1">2. Verbos irregulares</a>
+<li><a href="#org659b5cb">2. Verbos irregulares</a>
 <ul>
-<li><a href="#org0a473c1">2.1. Grupo 6</a>
+<li><a href="#org49e6f61">2.1. Grupo 6</a>
 <ul>
-<li><a href="#orgba0e837">2.1.1. Haber</a></li>
+<li><a href="#orgf38be6f">2.1.1. Haber</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org793a42e">3. Parablas nuevas</a>
+<li><a href="#orgbd1c89a">3. Parablas nuevas</a>
 <ul>
-<li><a href="#org571a720">3.1. Leccion..</a></li>
-<li><a href="#org982da3f">3.2. Leccion 2023-03-02</a></li>
-<li><a href="#org45072ca">3.3. Leccion 2023-03-23</a></li>
-<li><a href="#org3950cc3">3.4. Leccion de 2023-04-13</a></li>
+<li><a href="#org1d98d95">3.1. Leccion..</a></li>
+<li><a href="#org00a5209">3.2. Leccion 2023-03-02</a></li>
+<li><a href="#org556c3bb">3.3. Leccion 2023-03-23</a></li>
+<li><a href="#org94faec4">3.4. Leccion de 2023-04-13</a></li>
 </ul>
 </li>
-<li><a href="#orgfdccb06">4. Deberes</a>
+<li><a href="#org48ed045">4. Deberes</a>
 <ul>
-<li><a href="#org24f9c12">4.1. 2023-02-27</a></li>
+<li><a href="#orge72208b">4.1. 2023-02-27</a></li>
 </ul>
 </li>
-<li><a href="#org3710d1b">5. Pronombres</a></li>
+<li><a href="#org27ddbc1">5. Pronombres</a></li>
 </ul>
 </div>
 </div>
@@ -203,40 +223,40 @@
 <a href="http://lib.rudn.ru/MegaPro/UserEntry?Action=FindDocs&amp;ids=492396&amp;idb=All">http://lib.rudn.ru/MegaPro/UserEntry?Action=FindDocs&amp;ids=492396&amp;idb=All</a>
 </p>
 
-<div id="outline-container-orgbf15599" class="outline-2">
-<h2 id="orgbf15599"><span class="section-number-2">1.</span> Lecciones</h2>
+<div id="outline-container-org71cc1fc" class="outline-2">
+<h2 id="org71cc1fc"><span class="section-number-2">1.</span> Lecciones</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orga291246" class="outline-3">
-<h3 id="orga291246"><span class="section-number-3">1.1.</span> Deber 1</h3>
+<div id="outline-container-org6a503c7" class="outline-3">
+<h3 id="org6a503c7"><span class="section-number-3">1.1.</span> Deber 1</h3>
 <div class="outline-text-3" id="text-1-1">
 </div>
-<div id="outline-container-org7f8fed1" class="outline-4">
-<h4 id="org7f8fed1"><span class="section-number-4">1.1.1.</span> EL padre</h4>
+<div id="outline-container-orge3c2d38" class="outline-4">
+<h4 id="orge3c2d38"><span class="section-number-4">1.1.1.</span> EL padre</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <p>
 Mi padre se llama Ivan, tiene es 52 años, tiene el pelo corte liso y gris, la nariz mediana y los ojos marron. El es alto y  delgado . Mi padre tiene camisa roja y pantalones del mismo color. Su caracter es tranquilo, pero veces es iracible, el es intelegente.~
 </p>
 </div>
 </div>
-<div id="outline-container-orgcecbfdb" class="outline-4">
-<h4 id="orgcecbfdb"><span class="section-number-4">1.1.2.</span> El madre</h4>
+<div id="outline-container-orgb018b2e" class="outline-4">
+<h4 id="orgb018b2e"><span class="section-number-4">1.1.2.</span> El madre</h4>
 <div class="outline-text-4" id="text-1-1-2">
 <p>
 <code>Mí madre es morena, tiene el pelo largo y liso, su  estatura es mediana y su ojos  son verdes, tiene 47 años y ella no es muy alta.  Su caracter es divertido, sociable  y ella es muy habladora. Ella tiene un vestido largo azul , café sandalias y lentes ovales.</code>
 </p>
 </div>
 </div>
-<div id="outline-container-org1c836d3" class="outline-4">
-<h4 id="org1c836d3"><span class="section-number-4">1.1.3.</span> El hermana</h4>
+<div id="outline-container-orgd4ef6fb" class="outline-4">
+<h4 id="orgd4ef6fb"><span class="section-number-4">1.1.3.</span> El hermana</h4>
 <div class="outline-text-4" id="text-1-1-3">
 <p>
 <code>Mi hermana tiene 12 años y es muy activa y sociable, pero irascible. Ella tiene ojos marrones y pelo corto,  anaranjado camiseta y shorts azules</code>
 </p>
 </div>
 </div>
-<div id="outline-container-org0502f98" class="outline-4">
-<h4 id="org0502f98"><span class="section-number-4">1.1.4.</span> El Abuela</h4>
+<div id="outline-container-orgff1675d" class="outline-4">
+<h4 id="orgff1675d"><span class="section-number-4">1.1.4.</span> El Abuela</h4>
 <div class="outline-text-4" id="text-1-1-4">
 <p>
 <code>Mí abuela tiene 74 años, ella tiene pelo gris mediano y ojos oscuro-marron , ella tiene  gafas redonas, bufanda roja, pantalones largos y blancos  y camisa grande blanca .  Ella hablar muy ruidoso y su caracter es muy amable, cariñosa y ciudadosa</code>
@@ -244,49 +264,49 @@ Mi padre se llama Ivan, tiene es 52 años, tiene el pelo corte liso y gris, la n
 </div>
 </div>
 </div>
-<div id="outline-container-org6e20048" class="outline-3">
-<h3 id="org6e20048"><span class="section-number-3">1.2.</span> Lesson 22-10-17</h3>
+<div id="outline-container-org6f61618" class="outline-3">
+<h3 id="org6f61618"><span class="section-number-3">1.2.</span> Lesson 22-10-17</h3>
 <div class="outline-text-3" id="text-1-2">
 </div>
-<div id="outline-container-orgf4a6a9f" class="outline-4">
-<h4 id="orgf4a6a9f"><span class="section-number-4">1.2.1.</span> Parablas</h4>
+<div id="outline-container-org305696f" class="outline-4">
+<h4 id="org305696f"><span class="section-number-4">1.2.1.</span> Parablas</h4>
 <div class="outline-text-4" id="text-1-2-1">
 </div>
 <ol class="org-ol">
-<li><a id="org9762550"></a>Necesariamente<br /></li>
-<li><a id="org45b7f69"></a>Verde azulado<br /></li>
-<li><a id="org028044c"></a>Medias<br /></li>
-<li><a id="org49d2126"></a>Traje<br /></li>
-<li><a id="org185c4d3"></a>Calcetines<br /></li>
-<li><a id="org270728d"></a>Demodera<br /></li>
-<li><a id="orga513b07"></a>Placico<br /></li>
-<li><a id="orgc1671d6"></a>cristal<br /></li>
-<li><a id="orgdcce012"></a>Cómodo<br /></li>
-<li><a id="org339cf25"></a>No es alta, tampoco es baja<br /></li>
-<li><a id="orgd939d1a"></a>Alta<br /></li>
-<li><a id="org88a6818"></a>Baja<br /></li>
-<li><a id="orga7fe2f1"></a>Cordés<br /></li>
-<li><a id="orgcc5bd4e"></a>perezoso<br /></li>
-<li><a id="orgc64487d"></a>laborioso<br /></li>
-<li><a id="orgac13d53"></a>zapatos de portivos<br /></li>
-<li><a id="org660190e"></a>sombrero<br /></li>
-<li><a id="orga9c60f7"></a>aburrido<br /></li>
-<li><a id="orge7ac53c"></a>armario<br /></li>
-<li><a id="org589fd38"></a>conción<br /></li>
-<li><a id="orgad4ee79"></a>rayos<br /></li>
-<li><a id="org665ac8d"></a>abierta<br />
+<li><a id="org8b8e025"></a>Necesariamente<br /></li>
+<li><a id="org660f517"></a>Verde azulado<br /></li>
+<li><a id="orgfd980cf"></a>Medias<br /></li>
+<li><a id="orga1d3d75"></a>Traje<br /></li>
+<li><a id="orge9a4369"></a>Calcetines<br /></li>
+<li><a id="org854da11"></a>Demodera<br /></li>
+<li><a id="orge7f4290"></a>Placico<br /></li>
+<li><a id="org842d6d9"></a>cristal<br /></li>
+<li><a id="org6f84abe"></a>Cómodo<br /></li>
+<li><a id="org2cc1b0b"></a>No es alta, tampoco es baja<br /></li>
+<li><a id="orgfebb8ad"></a>Alta<br /></li>
+<li><a id="orgf0b4c63"></a>Baja<br /></li>
+<li><a id="org577dff1"></a>Cordés<br /></li>
+<li><a id="org5424ab9"></a>perezoso<br /></li>
+<li><a id="orgf43fc05"></a>laborioso<br /></li>
+<li><a id="org3dc1d91"></a>zapatos de portivos<br /></li>
+<li><a id="orgcff5686"></a>sombrero<br /></li>
+<li><a id="org4fc9048"></a>aburrido<br /></li>
+<li><a id="org539222e"></a>armario<br /></li>
+<li><a id="org29a4c71"></a>conción<br /></li>
+<li><a id="org2e094fe"></a>rayos<br /></li>
+<li><a id="orga5bd09b"></a>abierta<br />
 <ol class="org-ol">
-<li><a id="org30037f9"></a>Открытый, открыть<br /></li>
+<li><a id="orgbac866e"></a>Открытый, открыть<br /></li>
 </ol>
 </li>
-<li><a id="org967c928"></a>hospitalarios<br /></li>
-<li><a id="orgccbaefd"></a>orgullosos<br /></li>
-<li><a id="org8b84e75"></a>separatistas<br /></li>
-<li><a id="org7fb8d87"></a>trabajadores<br /></li>
-<li><a id="org4c82acf"></a>tacaños<br /></li>
-<li><a id="org6077871"></a>juerguistats<br />
+<li><a id="org92d6777"></a>hospitalarios<br /></li>
+<li><a id="org86ed00d"></a>orgullosos<br /></li>
+<li><a id="orgec2261b"></a>separatistas<br /></li>
+<li><a id="orga8bfc36"></a>trabajadores<br /></li>
+<li><a id="org6916a76"></a>tacaños<br /></li>
+<li><a id="org9aab5dd"></a>juerguistats<br />
 <ol class="org-ol">
-<li><a id="orgb6c604d"></a>Гуляка, бездельник<br />
+<li><a id="orgf9b7c16"></a>Гуляка, бездельник<br />
 <div class="outline-text-6" id="text-1-2-1-28-1">
 <p>
 <b>**</b>
@@ -295,124 +315,124 @@ Mi padre se llama Ivan, tiene es 52 años, tiene el pelo corte liso y gris, la n
 </li>
 </ol>
 </li>
-<li><a id="org0262215"></a>alegres<br /></li>
-<li><a id="org8d35403"></a>supersticiosos<br /></li>
-<li><a id="org9ce79ac"></a>conservadores<br /></li>
-<li><a id="orgcce3026"></a>humildes<br /></li>
-<li><a id="org1c25f43"></a>amantes<br /></li>
-<li><a id="org4a02254"></a>humildes<br /></li>
-<li><a id="orgbdbdb7a"></a>amantes<br />
+<li><a id="orgad0993f"></a>alegres<br /></li>
+<li><a id="org999842c"></a>supersticiosos<br /></li>
+<li><a id="org12e7bc7"></a>conservadores<br /></li>
+<li><a id="orgac885bd"></a>humildes<br /></li>
+<li><a id="org62e41ce"></a>amantes<br /></li>
+<li><a id="orgc4ad0c0"></a>humildes<br /></li>
+<li><a id="org9e1013c"></a>amantes<br />
 <ol class="org-ol">
-<li><a id="org5fc980c"></a>Веселый, жизнерадостный, счастливый<br /></li>
-<li><a id="org36f03f0"></a><a href="https://glosbe.com/fb_aud/mp3/at1944418_audio-by-166373.mp3">https://glosbe.com/fb_aud/mp3/at1944418_audio-by-166373.mp3</a><br /></li>
+<li><a id="orgd78d0f2"></a>Веселый, жизнерадостный, счастливый<br /></li>
+<li><a id="org0ee7920"></a><a href="https://glosbe.com/fb_aud/mp3/at1944418_audio-by-166373.mp3">https://glosbe.com/fb_aud/mp3/at1944418_audio-by-166373.mp3</a><br /></li>
 </ol>
 </li>
-<li><a id="org3679d5a"></a>gracioso<br />
+<li><a id="orged4d9f1"></a>gracioso<br />
 <ol class="org-ol">
-<li><a id="org4e2a320"></a>Забавный, остроумный<br /></li>
-<li><a id="org5c26ee7"></a><a href="https://glosbe.com/fb_aud/mp3/MR1920333_audio-by-166373.mp3">https://glosbe.com/fb_aud/mp3/MR1920333_audio-by-166373.mp3</a><br /></li>
+<li><a id="orgd342869"></a>Забавный, остроумный<br /></li>
+<li><a id="org5a5b405"></a><a href="https://glosbe.com/fb_aud/mp3/MR1920333_audio-by-166373.mp3">https://glosbe.com/fb_aud/mp3/MR1920333_audio-by-166373.mp3</a><br /></li>
 </ol>
 </li>
-<li><a id="orgebd4ea2"></a>charlatanes<br /></li>
+<li><a id="orgfbb29ea"></a>charlatanes<br /></li>
 </ol>
 </div>
-<div id="outline-container-org8fe03cb" class="outline-4">
-<h4 id="org8fe03cb"><span class="section-number-4">1.2.2.</span> LLEVAR</h4>
+<div id="outline-container-orgd19b269" class="outline-4">
+<h4 id="orgd19b269"><span class="section-number-4">1.2.2.</span> LLEVAR</h4>
 <div class="outline-text-4" id="text-1-2-2">
 <p>
 Носить
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="orgcb83b15"></a>Yo llev <span class="underline">o</span><br /></li>
-<li><a id="org410fab7"></a>Tú llev <span class="underline">as</span><br /></li>
-<li><a id="org01d5c16"></a>Ella llev <span class="underline">a</span><br /></li>
-<li><a id="orgea5f457"></a>Nosotros Lleva <span class="underline">mos</span><br /></li>
-<li><a id="org7228227"></a>Vosotros Llev <span class="underline">áis</span><br /></li>
-<li><a id="orgf66a071"></a>Ellas LLev <span class="underline">an</span><br /></li>
+<li><a id="org21dd53c"></a>Yo llev <span class="underline">o</span><br /></li>
+<li><a id="orgf34d595"></a>Tú llev <span class="underline">as</span><br /></li>
+<li><a id="org38c1f5c"></a>Ella llev <span class="underline">a</span><br /></li>
+<li><a id="org0157090"></a>Nosotros Lleva <span class="underline">mos</span><br /></li>
+<li><a id="orgf14ec04"></a>Vosotros Llev <span class="underline">áis</span><br /></li>
+<li><a id="orgbc38359"></a>Ellas LLev <span class="underline">an</span><br /></li>
 </ol>
 </div>
-<div id="outline-container-org54bdec2" class="outline-4">
-<h4 id="org54bdec2"><span class="section-number-4">1.2.3.</span> Comprar</h4>
+<div id="outline-container-orgce7254f" class="outline-4">
+<h4 id="orgce7254f"><span class="section-number-4">1.2.3.</span> Comprar</h4>
 <div class="outline-text-4" id="text-1-2-3">
 </div>
 <ol class="org-ol">
-<li><a id="org6727eb3"></a>YO compr <span class="underline">o</span><br /></li>
-<li><a id="org4ee96c1"></a>Tú Compr <span class="underline">as</span><br /></li>
+<li><a id="orgfeb4954"></a>YO compr <span class="underline">o</span><br /></li>
+<li><a id="org749fe6c"></a>Tú Compr <span class="underline">as</span><br /></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org1dc99c7" class="outline-3">
-<h3 id="org1dc99c7"><span class="section-number-3">1.3.</span> Lección 22-10-20</h3>
+<div id="outline-container-org0b8f8fd" class="outline-3">
+<h3 id="org0b8f8fd"><span class="section-number-3">1.3.</span> Lección 22-10-20</h3>
 <div class="outline-text-3" id="text-1-3">
 </div>
-<div id="outline-container-orgbfaf817" class="outline-4">
-<h4 id="orgbfaf817"><span class="section-number-4">1.3.1.</span> Parablas</h4>
+<div id="outline-container-orgc2be2ac" class="outline-4">
+<h4 id="orgc2be2ac"><span class="section-number-4">1.3.1.</span> Parablas</h4>
 <div class="outline-text-4" id="text-1-3-1">
 </div>
 <ol class="org-ol">
-<li><a id="org3988e39"></a>limpia<br />
+<li><a id="orgd79ccb0"></a>limpia<br />
 <div class="outline-text-5" id="text-1-3-1-1">
 <p>
 Чистый
 </p>
 </div>
 </li>
-<li><a id="orge96d76e"></a>Donde<br /></li>
-<li><a id="orgd575196"></a>abierta<br /></li>
-<li><a id="org738feb2"></a>estado<br />
+<li><a id="org859b505"></a>Donde<br /></li>
+<li><a id="org5ba7e21"></a>abierta<br /></li>
+<li><a id="orgde0fa9c"></a>estado<br />
 <div class="outline-text-5" id="text-1-3-1-4">
 <p>
 состояние
 </p>
 </div>
 </li>
-<li><a id="org7d03fc8"></a>Lugar<br /></li>
-<li><a id="org5daca5c"></a>Ejemplos<br /></li>
-<li><a id="org4623637"></a>El basurero<br />
+<li><a id="org801d847"></a>Lugar<br /></li>
+<li><a id="orga19d488"></a>Ejemplos<br /></li>
+<li><a id="orge78a69f"></a>El basurero<br />
 <div class="outline-text-5" id="text-1-3-1-7">
 <p>
 Мусорка
 </p>
 </div>
 </li>
-<li><a id="org6c27593"></a>Vacío<br />
+<li><a id="org334ef98"></a>Vacío<br />
 <div class="outline-text-5" id="text-1-3-1-8">
 <p>
 Пустой
 </p>
 </div>
 </li>
-<li><a id="orgd6e4fde"></a>Lleno<br />
+<li><a id="org0f4656e"></a>Lleno<br />
 <div class="outline-text-5" id="text-1-3-1-9">
 <p>
 Полный
 </p>
 </div>
 </li>
-<li><a id="orgd2fe22e"></a>Cansado<br />
+<li><a id="orgc1a8617"></a>Cansado<br />
 <div class="outline-text-5" id="text-1-3-1-10">
 <p>
 Уставший
 </p>
 </div>
 </li>
-<li><a id="org04c8596"></a>¿Cómo está?<br /></li>
-<li><a id="org9f2e841"></a>Habitación<br />
+<li><a id="org4c95d76"></a>¿Cómo está?<br /></li>
+<li><a id="org5a97308"></a>Habitación<br />
 <div class="outline-text-5" id="text-1-3-1-12">
 <p>
 комната
 </p>
 </div>
 </li>
-<li><a id="org8cda864"></a>Pronombre<br />
+<li><a id="org7507236"></a>Pronombre<br />
 <div class="outline-text-5" id="text-1-3-1-13">
 <p>
 Существительное
 </p>
 </div>
 </li>
-<li><a id="org7d0776c"></a>Verbo<br />
+<li><a id="orga4043ee"></a>Verbo<br />
 <div class="outline-text-5" id="text-1-3-1-14">
 <p>
 Глаго
@@ -421,8 +441,8 @@ Mi padre se llama Ivan, tiene es 52 años, tiene el pelo corte liso y gris, la n
 </li>
 </ol>
 </div>
-<div id="outline-container-orgd23e50f" class="outline-4">
-<h4 id="orgd23e50f"><span class="section-number-4">1.3.2.</span> ESTAR</h4>
+<div id="outline-container-org14ab0ff" class="outline-4">
+<h4 id="org14ab0ff"><span class="section-number-4">1.3.2.</span> ESTAR</h4>
 <div class="outline-text-4" id="text-1-3-2">
 <p>
 иногда быть, иногда находится
@@ -473,34 +493,34 @@ se utiliza para temporal
 </table>
 </div>
 </div>
-<div id="outline-container-org5bac575" class="outline-4">
-<h4 id="org5bac575"><span class="section-number-4">1.3.3.</span> Utilizar por</h4>
+<div id="outline-container-orgcb5e65c" class="outline-4">
+<h4 id="orgcb5e65c"><span class="section-number-4">1.3.3.</span> Utilizar por</h4>
 <div class="outline-text-4" id="text-1-3-3">
 </div>
 <ol class="org-ol">
-<li><a id="orgfd25bb5"></a>Lugar (местонахождение)<br /></li>
-<li><a id="orgf5bc17f"></a>Estado (состояние)<br /></li>
+<li><a id="orgd9bd6b2"></a>Lugar (местонахождение)<br /></li>
+<li><a id="org4af9737"></a>Estado (состояние)<br /></li>
 </ol>
 </div>
-<div id="outline-container-orgd6ab549" class="outline-4">
-<h4 id="orgd6ab549"><span class="section-number-4">1.3.4.</span> Ehemplos</h4>
+<div id="outline-container-orgfee863a" class="outline-4">
+<h4 id="orgfee863a"><span class="section-number-4">1.3.4.</span> Ehemplos</h4>
 <div class="outline-text-4" id="text-1-3-4">
 </div>
 <ol class="org-ol">
-<li><a id="orga3a5021"></a>Esto <span class="underline">está</span> aquí<br /></li>
-<li><a id="org8d57c83"></a><span class="underline">Estoy</span> ahi<br /></li>
+<li><a id="orgf520a39"></a>Esto <span class="underline">está</span> aquí<br /></li>
+<li><a id="org0f07738"></a><span class="underline">Estoy</span> ahi<br /></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgea7360f" class="outline-3">
-<h3 id="orgea7360f"><span class="section-number-3">1.4.</span> Lección 22-10-24</h3>
+<div id="outline-container-orgdcf4903" class="outline-3">
+<h3 id="orgdcf4903"><span class="section-number-3">1.4.</span> Lección 22-10-24</h3>
 <div class="outline-text-3" id="text-1-4">
 </div>
-<div id="outline-container-org65ffd61" class="outline-4">
-<h4 id="org65ffd61"><span class="section-number-4">1.4.1.</span> Parablas</h4>
+<div id="outline-container-org7749ddc" class="outline-4">
+<h4 id="org7749ddc"><span class="section-number-4">1.4.1.</span> Parablas</h4>
 </div>
-<div id="outline-container-orgbd4f17c" class="outline-4">
-<h4 id="orgbd4f17c"><span class="section-number-4">1.4.2.</span> Anked</h4>
+<div id="outline-container-org65e9efe" class="outline-4">
+<h4 id="org65e9efe"><span class="section-number-4">1.4.2.</span> Anked</h4>
 <div class="outline-text-4" id="text-1-4-2">
 <p>
 redonde
@@ -531,9 +551,9 @@ Detrás de - сзади
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="orgd32f490"></a>Preposiciones<br />
+<li><a id="orga93bc70"></a>Preposiciones<br />
 <ol class="org-ol">
-<li><a id="org81cf449"></a>sobre<br />
+<li><a id="org7ef1965"></a>sobre<br />
 <div class="outline-text-6" id="text-1-4-2-1-1">
 <p>
 el libro está sobre el quaderno
@@ -544,49 +564,49 @@ el libro está sobre el quaderno
 </li>
 </ol>
 </li>
-<li><a id="org30098d0"></a>Izquerda<br />
+<li><a id="org20a0e1f"></a>Izquerda<br />
 <div class="outline-text-5" id="text-1-4-2-2">
 <p>
 &#x2026; a la izquerda de &#x2026;
 </p>
 </div>
 </li>
-<li><a id="org6437ed7"></a>Derecha<br />
+<li><a id="org876ea0e"></a>Derecha<br />
 <div class="outline-text-5" id="text-1-4-2-3">
 <p>
 &#x2026; a la derecha de &#x2026;
 </p>
 </div>
 </li>
-<li><a id="orgb51def1"></a>Lado/junto<br />
+<li><a id="org16951e4"></a>Lado/junto<br />
 <div class="outline-text-5" id="text-1-4-2-4">
 <p>
 &#x2026; al lado de &#x2026;/ junto a
 </p>
 </div>
 </li>
-<li><a id="org2d10d3d"></a>Detrás de<br />
+<li><a id="orgcc8cf3d"></a>Detrás de<br />
 <div class="outline-text-5" id="text-1-4-2-5">
 <p>
 &#x2026; detrás de &#x2026;
 </p>
 </div>
 </li>
-<li><a id="orgf03e546"></a>Delante<br />
+<li><a id="orge5c4bca"></a>Delante<br />
 <div class="outline-text-5" id="text-1-4-2-6">
 <p>
 &#x2026; delante de ..
 </p>
 </div>
 </li>
-<li><a id="org8bf8c7e"></a>Entre<br />
+<li><a id="org5c0e2a6"></a>Entre<br />
 <div class="outline-text-5" id="text-1-4-2-7">
 <p>
 entre
 </p>
 </div>
 </li>
-<li><a id="orgb9e044c"></a>Dentro<br />
+<li><a id="org32dfa98"></a>Dentro<br />
 <div class="outline-text-5" id="text-1-4-2-8">
 <p>
 dentro de
@@ -594,7 +614,7 @@ dentro de
 </p>
 </div>
 </li>
-<li><a id="orgd582b14"></a>Fuera<br />
+<li><a id="orgd9c805b"></a>Fuera<br />
 <div class="outline-text-5" id="text-1-4-2-9">
 <p>
 fuero de
@@ -602,7 +622,7 @@ fuero de
 </p>
 </div>
 </li>
-<li><a id="orge30f0b4"></a>Debajo de<br />
+<li><a id="org2bf3bc1"></a>Debajo de<br />
 <div class="outline-text-5" id="text-1-4-2-10">
 <p>
 debajo de
@@ -610,37 +630,37 @@ debajo de
 </p>
 </div>
 </li>
-<li><a id="org6649072"></a>Encima de<br />
+<li><a id="org4bf369b"></a>Encima de<br />
 <div class="outline-text-5" id="text-1-4-2-11">
 <p>
 над
 </p>
 </div>
 </li>
-<li><a id="org5f37d2f"></a>Al frente de<br />
+<li><a id="org920c075"></a>Al frente de<br />
 <div class="outline-text-5" id="text-1-4-2-12">
 <p>
 перед
 </p>
 </div>
 </li>
-<li><a id="org12db5f1"></a>Al Lado de hunto A<br /></li>
-<li><a id="org592e4b0"></a>Arriba Abata<br /></li>
+<li><a id="orgb10633d"></a>Al Lado de hunto A<br /></li>
+<li><a id="org90dc281"></a>Arriba Abata<br /></li>
 </ol>
 </div>
-<div id="outline-container-orgaa1e1c5" class="outline-4">
-<h4 id="orgaa1e1c5"><span class="section-number-4">1.4.3.</span> De + el = del</h4>
+<div id="outline-container-orgd53c86b" class="outline-4">
+<h4 id="orgd53c86b"><span class="section-number-4">1.4.3.</span> De + el = del</h4>
 </div>
-<div id="outline-container-orge4d48bc" class="outline-4">
-<h4 id="orge4d48bc"><span class="section-number-4">1.4.4.</span> Al + el = al</h4>
+<div id="outline-container-org918726d" class="outline-4">
+<h4 id="org918726d"><span class="section-number-4">1.4.4.</span> Al + el = al</h4>
 </div>
 </div>
-<div id="outline-container-org7fd13f6" class="outline-3">
-<h3 id="org7fd13f6"><span class="section-number-3">1.5.</span> Leccion 22-10-31</h3>
+<div id="outline-container-org79a1083" class="outline-3">
+<h3 id="org79a1083"><span class="section-number-3">1.5.</span> Leccion 22-10-31</h3>
 <div class="outline-text-3" id="text-1-5">
 </div>
-<div id="outline-container-org929ff99" class="outline-4">
-<h4 id="org929ff99"><span class="section-number-4">1.5.1.</span> 16</h4>
+<div id="outline-container-orge1526dd" class="outline-4">
+<h4 id="orge1526dd"><span class="section-number-4">1.5.1.</span> 16</h4>
 <div class="outline-text-4" id="text-1-5-1">
 <ol class="org-ol">
 <li>El coche está dentro de el garaje</li>
@@ -664,8 +684,8 @@ esta canción
 </p>
 </div>
 </div>
-<div id="outline-container-org4def789" class="outline-4">
-<h4 id="org4def789"><span class="section-number-4">1.5.2.</span> Anked</h4>
+<div id="outline-container-org1bbc986" class="outline-4">
+<h4 id="org1bbc986"><span class="section-number-4">1.5.2.</span> Anked</h4>
 <div class="outline-text-4" id="text-1-5-2">
 <p>
 botella
@@ -689,7 +709,7 @@ cuatro = habitacion комната
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org89eff1c"></a>sober<br />
+<li><a id="org5250443"></a>sober<br />
 <div class="outline-text-5" id="text-1-5-2-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -727,14 +747,14 @@ cuatro = habitacion комната
 </table>
 </div>
 </li>
-<li><a id="org95167f4"></a>compitición<br />
+<li><a id="orgdee3839"></a>compitición<br />
 <div class="outline-text-5" id="text-1-5-2-2">
 <p>
 sober
 </p>
 </div>
 </li>
-<li><a id="org8a94a49"></a>Hay<br />
+<li><a id="org2a2205b"></a>Hay<br />
 <div class="outline-text-5" id="text-1-5-2-3">
 <p>
 просто указать наличие. Estar местоположения
@@ -742,9 +762,9 @@ sober
 </p>
 </div>
 </li>
-<li><a id="org95a6cec"></a>Mucha gente (много людей)<br /></li>
-<li><a id="orgf20d873"></a>Personas<br /></li>
-<li><a id="org14e06e2"></a>Ir<br />
+<li><a id="org745485e"></a>Mucha gente (много людей)<br /></li>
+<li><a id="org9d86a51"></a>Personas<br /></li>
+<li><a id="org5c6f17d"></a>Ir<br />
 <div class="outline-text-5" id="text-1-5-2-6">
 <p>
 Ir + a
@@ -789,38 +809,38 @@ el va a aula
 </table>
 </div>
 </li>
-<li><a id="orgc878fe5"></a>Ultima<br /></li>
-<li><a id="orgefd7b4e"></a>arededor de la casa - вокруг/возле<br /></li>
-<li><a id="orgb497d4e"></a>Un recibidor<br /></li>
-<li><a id="org9abac69"></a>Un comedor<br /></li>
-<li><a id="org2fef10d"></a>Una cocina<br /></li>
-<li><a id="orgc2b782c"></a>Un cuatro de baño<br /></li>
-<li><a id="org0c6d690"></a>Arriba<br /></li>
-<li><a id="orgcb04a31"></a>Un dormitorio<br /></li>
-<li><a id="org6550c77"></a>Un sótano<br /></li>
-<li><a id="orga495944"></a>Un estudio<br /></li>
-<li><a id="org1b097c7"></a>Preciosa<br /></li>
-<li><a id="org438d299"></a>La electricidad<br /></li>
-<li><a id="org06bea19"></a>La calefacción<br /></li>
-<li><a id="orgf2c1d95"></a>De acuerdo<br /></li>
-<li><a id="orgbed731e"></a>Alguno - alguna<br /></li>
-<li><a id="orgc1a0a53"></a>Algunos - algunas<br /></li>
-<li><a id="orgbedb284"></a>algo<br /></li>
-<li><a id="org0c19f25"></a>Alguien<br /></li>
-<li><a id="org7a9484c"></a>ordenador - computador<br /></li>
-<li><a id="orga4bbcb3"></a>ningún<br /></li>
-<li><a id="orgbc74090"></a>Nada<br /></li>
-<li><a id="org8f5493a"></a>Limpiador<br /></li>
-<li><a id="org0ea2c5f"></a>maquinista<br /></li>
-<li><a id="orgba179f2"></a>conductor<br /></li>
-<li><a id="org94cdc61"></a>chofer<br /></li>
+<li><a id="org925c25d"></a>Ultima<br /></li>
+<li><a id="orgbae6b8a"></a>arededor de la casa - вокруг/возле<br /></li>
+<li><a id="org2072aca"></a>Un recibidor<br /></li>
+<li><a id="orgaaabf77"></a>Un comedor<br /></li>
+<li><a id="orgafbd145"></a>Una cocina<br /></li>
+<li><a id="org24a9ba8"></a>Un cuatro de baño<br /></li>
+<li><a id="org9e13efa"></a>Arriba<br /></li>
+<li><a id="org26ec26c"></a>Un dormitorio<br /></li>
+<li><a id="org8d42920"></a>Un sótano<br /></li>
+<li><a id="org47c78e8"></a>Un estudio<br /></li>
+<li><a id="org3c2df4e"></a>Preciosa<br /></li>
+<li><a id="org4ce78a0"></a>La electricidad<br /></li>
+<li><a id="org520fe37"></a>La calefacción<br /></li>
+<li><a id="org8aea3d4"></a>De acuerdo<br /></li>
+<li><a id="org4b8c8e6"></a>Alguno - alguna<br /></li>
+<li><a id="org45a9bf2"></a>Algunos - algunas<br /></li>
+<li><a id="org4fcb274"></a>algo<br /></li>
+<li><a id="orge913daa"></a>Alguien<br /></li>
+<li><a id="orgf937f56"></a>ordenador - computador<br /></li>
+<li><a id="org8bb8561"></a>ningún<br /></li>
+<li><a id="org004d3bc"></a>Nada<br /></li>
+<li><a id="org74fbaa6"></a>Limpiador<br /></li>
+<li><a id="orge24a41b"></a>maquinista<br /></li>
+<li><a id="orge06cc35"></a>conductor<br /></li>
+<li><a id="orgf93e8a1"></a>chofer<br /></li>
 </ol>
 </div>
-<div id="outline-container-org6c2b886" class="outline-4">
-<h4 id="org6c2b886"><span class="section-number-4">1.5.3.</span> Parablas</h4>
+<div id="outline-container-org840acac" class="outline-4">
+<h4 id="org840acac"><span class="section-number-4">1.5.3.</span> Parablas</h4>
 </div>
-<div id="outline-container-org14d026f" class="outline-4">
-<h4 id="org14d026f"><span class="section-number-4">1.5.4.</span> NÚMEROS ordinales</h4>
+<div id="outline-container-orgab14a37" class="outline-4">
+<h4 id="orgab14a37"><span class="section-number-4">1.5.4.</span> NÚMEROS ordinales</h4>
 <div class="outline-text-4" id="text-1-5-4">
 <p>
 x1
@@ -828,12 +848,12 @@ x1
 </div>
 </div>
 </div>
-<div id="outline-container-orge0f6b3b" class="outline-3">
-<h3 id="orge0f6b3b"><span class="section-number-3">1.6.</span> Leccion 22-11-03</h3>
+<div id="outline-container-orgfe64190" class="outline-3">
+<h3 id="orgfe64190"><span class="section-number-3">1.6.</span> Leccion 22-11-03</h3>
 <div class="outline-text-3" id="text-1-6">
 </div>
-<div id="outline-container-org6b074c4" class="outline-4">
-<h4 id="org6b074c4"><span class="section-number-4">1.6.1.</span> anked</h4>
+<div id="outline-container-org9f8db79" class="outline-4">
+<h4 id="org9f8db79"><span class="section-number-4">1.6.1.</span> anked</h4>
 <div class="outline-text-4" id="text-1-6-1">
 <p>
 Despacho
@@ -853,16 +873,16 @@ cajones
 </p>
 </div>
 </div>
-<div id="outline-container-org17f177e" class="outline-4">
-<h4 id="org17f177e"><span class="section-number-4">1.6.2.</span> Parablas</h4>
+<div id="outline-container-org210339f" class="outline-4">
+<h4 id="org210339f"><span class="section-number-4">1.6.2.</span> Parablas</h4>
 </div>
 </div>
-<div id="outline-container-org5cd5f20" class="outline-3">
-<h3 id="org5cd5f20"><span class="section-number-3">1.7.</span> Leccion 22-11-07</h3>
+<div id="outline-container-org338eb00" class="outline-3">
+<h3 id="org338eb00"><span class="section-number-3">1.7.</span> Leccion 22-11-07</h3>
 <div class="outline-text-3" id="text-1-7">
 </div>
-<div id="outline-container-orgde90564" class="outline-4">
-<h4 id="orgde90564"><span class="section-number-4">1.7.1.</span> Parablas</h4>
+<div id="outline-container-orgccbbca3" class="outline-4">
+<h4 id="orgccbbca3"><span class="section-number-4">1.7.1.</span> Parablas</h4>
 <div class="outline-text-4" id="text-1-7-1">
 <p>
 bañera
@@ -922,48 +942,48 @@ climatizador
 </div>
 </div>
 </div>
-<div id="outline-container-orgb76976d" class="outline-3">
-<h3 id="orgb76976d"><span class="section-number-3">1.8.</span> Leccion 22-11-10</h3>
+<div id="outline-container-org07c6377" class="outline-3">
+<h3 id="org07c6377"><span class="section-number-3">1.8.</span> Leccion 22-11-10</h3>
 <div class="outline-text-3" id="text-1-8">
 </div>
-<div id="outline-container-org6bc4803" class="outline-4">
-<h4 id="org6bc4803"><span class="section-number-4">1.8.1.</span> Verbos regulares</h4>
+<div id="outline-container-orga3ca968" class="outline-4">
+<h4 id="orga3ca968"><span class="section-number-4">1.8.1.</span> Verbos regulares</h4>
 <div class="outline-text-4" id="text-1-8-1">
 </div>
 <ol class="org-ol">
-<li><a id="org4275e24"></a>Trabaj <code>AR</code><br />
+<li><a id="orga521e6e"></a>Trabaj <code>AR</code><br />
 <ol class="org-ol">
-<li><a id="orgc2f595e"></a>o<br /></li>
-<li><a id="orgda507f0"></a>as<br /></li>
-<li><a id="org246aa1f"></a>amos<br /></li>
-<li><a id="orgde49ed9"></a>áis<br /></li>
-<li><a id="org8eaf9d2"></a>an<br /></li>
+<li><a id="org86ef2b3"></a>o<br /></li>
+<li><a id="org52ec75d"></a>as<br /></li>
+<li><a id="org253456d"></a>amos<br /></li>
+<li><a id="org012753e"></a>áis<br /></li>
+<li><a id="org09e36bc"></a>an<br /></li>
 </ol>
 </li>
-<li><a id="org6dccc44"></a>Com <code>ER</code><br />
+<li><a id="org410a3f6"></a>Com <code>ER</code><br />
 <ol class="org-ol">
-<li><a id="orgc2dbbb7"></a>O<br /></li>
-<li><a id="org8a32578"></a>ES<br /></li>
-<li><a id="org1c27e9f"></a>E<br /></li>
-<li><a id="org2de348b"></a>EMOS<br /></li>
-<li><a id="org01f3ff0"></a>ÉIS<br /></li>
-<li><a id="orgc54bd0d"></a>EN<br /></li>
+<li><a id="org04ecf15"></a>O<br /></li>
+<li><a id="orgbaa7de0"></a>ES<br /></li>
+<li><a id="orgfc67841"></a>E<br /></li>
+<li><a id="orgef6aefc"></a>EMOS<br /></li>
+<li><a id="orgc66331a"></a>ÉIS<br /></li>
+<li><a id="org6424160"></a>EN<br /></li>
 </ol>
 </li>
-<li><a id="orgad11c74"></a>Escrib <code>IR</code><br />
+<li><a id="org56396e0"></a>Escrib <code>IR</code><br />
 <ol class="org-ol">
-<li><a id="org971b3cf"></a>O<br /></li>
-<li><a id="org035a45f"></a>ES<br /></li>
-<li><a id="org460ffcb"></a>E<br /></li>
-<li><a id="orgea244a9"></a>IMOS<br /></li>
-<li><a id="org0eced64"></a>ÍS<br /></li>
-<li><a id="org78a2453"></a>EN<br /></li>
+<li><a id="orgca58290"></a>O<br /></li>
+<li><a id="org48fd729"></a>ES<br /></li>
+<li><a id="org71b99e6"></a>E<br /></li>
+<li><a id="org26fd057"></a>IMOS<br /></li>
+<li><a id="org4520ed9"></a>ÍS<br /></li>
+<li><a id="orga0ebb45"></a>EN<br /></li>
 </ol>
 </li>
 </ol>
 </div>
-<div id="outline-container-org90bfbbf" class="outline-4">
-<h4 id="org90bfbbf"><span class="section-number-4">1.8.2.</span> Parablas</h4>
+<div id="outline-container-org8aa429b" class="outline-4">
+<h4 id="org8aa429b"><span class="section-number-4">1.8.2.</span> Parablas</h4>
 <div class="outline-text-4" id="text-1-8-2">
 <p>
 companeros
@@ -1012,8 +1032,8 @@ usar
 </div>
 </div>
 </div>
-<div id="outline-container-org900b31c" class="outline-3">
-<h3 id="org900b31c"><span class="section-number-3">1.9.</span> Leccion 22-11-14</h3>
+<div id="outline-container-orgfedd1c4" class="outline-3">
+<h3 id="orgfedd1c4"><span class="section-number-3">1.9.</span> Leccion 22-11-14</h3>
 <div class="outline-text-3" id="text-1-9">
 <p>
 Quiero aydar<sub>te</sub>_
@@ -1032,8 +1052,8 @@ de 9 a 18
 9 55 / son las 5 para las 10
 </p>
 </div>
-<div id="outline-container-org51c67b8" class="outline-4">
-<h4 id="org51c67b8"><span class="section-number-4">1.9.1.</span> Prablas</h4>
+<div id="outline-container-org6499a92" class="outline-4">
+<h4 id="org6499a92"><span class="section-number-4">1.9.1.</span> Prablas</h4>
 <div class="outline-text-4" id="text-1-9-1">
 <p>
 aydar
@@ -1057,12 +1077,12 @@ Es la una
 </div>
 </div>
 </div>
-<div id="outline-container-org4a584b2" class="outline-3">
-<h3 id="org4a584b2"><span class="section-number-3">1.10.</span> Leccion 22-24-14</h3>
+<div id="outline-container-org632a857" class="outline-3">
+<h3 id="org632a857"><span class="section-number-3">1.10.</span> Leccion 22-24-14</h3>
 <div class="outline-text-3" id="text-1-10">
 </div>
-<div id="outline-container-org6e27901" class="outline-4">
-<h4 id="org6e27901"><span class="section-number-4">1.10.1.</span> Parablas</h4>
+<div id="outline-container-org2f6ccb4" class="outline-4">
+<h4 id="org2f6ccb4"><span class="section-number-4">1.10.1.</span> Parablas</h4>
 <div class="outline-text-4" id="text-1-10-1">
 <p>
 salir - выйти/гулять/встречаться  (yo salgo)
@@ -1073,12 +1093,12 @@ agradecer (y agradezco)
 </p>
 </div>
 </div>
-<div id="outline-container-org90a1241" class="outline-4">
-<h4 id="org90a1241"><span class="section-number-4">1.10.2.</span> Leccion 22-28-11</h4>
+<div id="outline-container-org9351fef" class="outline-4">
+<h4 id="org9351fef"><span class="section-number-4">1.10.2.</span> Leccion 22-28-11</h4>
 <div class="outline-text-4" id="text-1-10-2">
 </div>
 <ol class="org-ol">
-<li><a id="org340670f"></a>Parablas<br />
+<li><a id="orga5d6041"></a>Parablas<br />
 <div class="outline-text-5" id="text-1-10-2-1">
 <p>
 La pupila - Зрачок
@@ -1091,7 +1111,7 @@ Coger
 </p>
 </div>
 </li>
-<li><a id="orge405bf8"></a>5<br />
+<li><a id="orga9aef44"></a>5<br />
 <div class="outline-text-5" id="text-1-10-2-2">
 <p>
 Vivo en el campo
@@ -1114,12 +1134,12 @@ El carnet de conducir
 </ol>
 </div>
 </div>
-<div id="outline-container-org52872bd" class="outline-3">
-<h3 id="org52872bd"><span class="section-number-3">1.11.</span> Leccion 2201-12</h3>
+<div id="outline-container-org3e39acc" class="outline-3">
+<h3 id="org3e39acc"><span class="section-number-3">1.11.</span> Leccion 2201-12</h3>
 <div class="outline-text-3" id="text-1-11">
 </div>
-<div id="outline-container-org6e8636d" class="outline-4">
-<h4 id="org6e8636d"><span class="section-number-4">1.11.1.</span> Parablas</h4>
+<div id="outline-container-org4b4872d" class="outline-4">
+<h4 id="org4b4872d"><span class="section-number-4">1.11.1.</span> Parablas</h4>
 <div class="outline-text-4" id="text-1-11-1">
 <p>
 deja
@@ -1137,8 +1157,8 @@ curar - лечится
 </p>
 </div>
 </div>
-<div id="outline-container-orgd09b21b" class="outline-4">
-<h4 id="orgd09b21b"><span class="section-number-4">1.11.2.</span> Irregulares</h4>
+<div id="outline-container-orgfdaeedf" class="outline-4">
+<h4 id="orgfdaeedf"><span class="section-number-4">1.11.2.</span> Irregulares</h4>
 <div class="outline-text-4" id="text-1-11-2">
 <p>
 llegar 
@@ -1159,54 +1179,54 @@ caer - упасть
 </p>
 </div>
 </div>
-<div id="outline-container-org1c3ad56" class="outline-4">
-<h4 id="org1c3ad56"><span class="section-number-4">1.11.3.</span> Verbos irregulares</h4>
+<div id="outline-container-org7c58fef" class="outline-4">
+<h4 id="org7c58fef"><span class="section-number-4">1.11.3.</span> Verbos irregulares</h4>
 <div class="outline-text-4" id="text-1-11-3">
 </div>
 <ol class="org-ol">
-<li><a id="orgfc2d0d7"></a>1 group<br />
+<li><a id="orgf089cd2"></a>1 group<br />
 <div class="outline-text-5" id="text-1-11-3-1">
 <p>
 e por ie <code>(-ar, -er, -ir)</code>
 </p>
 </div>
 </li>
-<li><a id="org7ea8011"></a>2 group <code>(-ar, -er, -ir)</code><br />
+<li><a id="orgbd4246e"></a>2 group <code>(-ar, -er, -ir)</code><br />
 <div class="outline-text-5" id="text-1-11-3-2">
 <p>
 o por ue <code>(-ir)</code>
 </p>
 </div>
 </li>
-<li><a id="org297bdfc"></a>3 group<br />
+<li><a id="org7699826"></a>3 group<br />
 <div class="outline-text-5" id="text-1-11-3-3">
 <p>
 e por i
 </p>
 </div>
 </li>
-<li><a id="org1b3c7e3"></a>4 group<br />
+<li><a id="org78a88e8"></a>4 group<br />
 <div class="outline-text-5" id="text-1-11-3-4">
 <p>
 Tienen doble irregularidad
 </p>
 </div>
 </li>
-<li><a id="orgd5a922d"></a>5 group<br />
+<li><a id="orgd4be6bc"></a>5 group<br />
 <div class="outline-text-5" id="text-1-11-3-5">
 <p>
 Cambio solo la primera persona (yo)
 </p>
 </div>
 </li>
-<li><a id="org3b9db62"></a>6 group<br />
+<li><a id="org71b39eb"></a>6 group<br />
 <div class="outline-text-5" id="text-1-11-3-6">
 <p>
 Aumenta la (y) (-uir)
 </p>
 </div>
 </li>
-<li><a id="org767c605"></a>7 group<br />
+<li><a id="org8747a53"></a>7 group<br />
 <div class="outline-text-5" id="text-1-11-3-7">
 <p>
 Totalmente irregulares
@@ -1215,8 +1235,8 @@ Totalmente irregulares
 </li>
 </ol>
 </div>
-<div id="outline-container-orgd1a7e55" class="outline-4">
-<h4 id="orgd1a7e55"><span class="section-number-4">1.11.4.</span> Deber</h4>
+<div id="outline-container-orga04d2e9" class="outline-4">
+<h4 id="orga04d2e9"><span class="section-number-4">1.11.4.</span> Deber</h4>
 <div class="outline-text-4" id="text-1-11-4">
 <p>
 El sabado duermo y leo algunos libros, a veces me paseo al parque o tomo  monopatín
@@ -1232,12 +1252,12 @@ A veces,
 </div>
 </div>
 </div>
-<div id="outline-container-org98996dc" class="outline-3">
-<h3 id="org98996dc"><span class="section-number-3">1.12.</span> Leccion 22-05-12</h3>
+<div id="outline-container-org913f3e5" class="outline-3">
+<h3 id="org913f3e5"><span class="section-number-3">1.12.</span> Leccion 22-05-12</h3>
 <div class="outline-text-3" id="text-1-12">
 </div>
-<div id="outline-container-org9fdfc46" class="outline-4">
-<h4 id="org9fdfc46"><span class="section-number-4">1.12.1.</span> Parablas</h4>
+<div id="outline-container-org86a57e2" class="outline-4">
+<h4 id="org86a57e2"><span class="section-number-4">1.12.1.</span> Parablas</h4>
 <div class="outline-text-4" id="text-1-12-1">
 <p>
 época de examenes - эпоха экзаменов/сессия 
@@ -1251,8 +1271,8 @@ privada
 </p>
 </div>
 </div>
-<div id="outline-container-org351bc64" class="outline-4">
-<h4 id="org351bc64"><span class="section-number-4">1.12.2.</span> Verbos Irregulares</h4>
+<div id="outline-container-org3c33443" class="outline-4">
+<h4 id="org3c33443"><span class="section-number-4">1.12.2.</span> Verbos Irregulares</h4>
 <div class="outline-text-4" id="text-1-12-2">
 <p>
 sonar - Звучать 
@@ -1263,12 +1283,12 @@ tanto
 </div>
 </div>
 </div>
-<div id="outline-container-org15b154c" class="outline-3">
-<h3 id="org15b154c"><span class="section-number-3">1.13.</span> Leccion 22-08-12</h3>
+<div id="outline-container-org2c06358" class="outline-3">
+<h3 id="org2c06358"><span class="section-number-3">1.13.</span> Leccion 22-08-12</h3>
 <div class="outline-text-3" id="text-1-13">
 </div>
-<div id="outline-container-orgd5e673c" class="outline-4">
-<h4 id="orgd5e673c"><span class="section-number-4">1.13.1.</span> Deber</h4>
+<div id="outline-container-org31a3f45" class="outline-4">
+<h4 id="org31a3f45"><span class="section-number-4">1.13.1.</span> Deber</h4>
 <div class="outline-text-4" id="text-1-13-1">
 <p>
 Меня зовут карлос. Я из румынии. Я работаю на одну компанию по импорту, а по вечерам учусь. Я учусь на курсах по иностранным языкам. Учу испанский. Я немного говорю по испански. Мне нужно улучшать мой язык. Я пользуюсь испанским на работе. Мы импортируем продукты из испании и южной америки. Я говорю на английском и французком и также хочу говорить на испанском
@@ -1291,8 +1311,8 @@ tanto
 </p>
 </div>
 </div>
-<div id="outline-container-orgabf34ca" class="outline-4">
-<h4 id="orgabf34ca"><span class="section-number-4">1.13.2.</span> Mi deber</h4>
+<div id="outline-container-orgf71ad0a" class="outline-4">
+<h4 id="orgf71ad0a"><span class="section-number-4">1.13.2.</span> Mi deber</h4>
 <div class="outline-text-4" id="text-1-13-2">
 <p>
 Me llama Jorge. Por la mañana duermo cada día en mi cama. Despierto de mi despertador y bebo té de un termo. Después tomo desayuno y pogo los cosas en mi mochila. Salgo de casa a las nuevo y media y vengo a la universidad. Después de estudiar yo siento en sala de lectura y trabajo hasta de cierre de la universidad. A las veinte yo tomo tranvía y voy a mi casa. Mientras conduzco voy, yo leo. Después elaboro de té en casa y vengo duermo.
@@ -1300,18 +1320,18 @@ Me llama Jorge. Por la mañana duermo cada día en mi cama. Despierto de mi desp
 </div>
 </div>
 </div>
-<div id="outline-container-orga5a929a" class="outline-3">
-<h3 id="orga5a929a"><span class="section-number-3">1.14.</span> Leccion 22-12-12</h3>
+<div id="outline-container-org03ef35c" class="outline-3">
+<h3 id="org03ef35c"><span class="section-number-3">1.14.</span> Leccion 22-12-12</h3>
 <div class="outline-text-3" id="text-1-14">
 </div>
-<div id="outline-container-org7e281c5" class="outline-4">
-<h4 id="org7e281c5"><span class="section-number-4">1.14.1.</span> Leccion</h4>
+<div id="outline-container-org7ae8341" class="outline-4">
+<h4 id="org7ae8341"><span class="section-number-4">1.14.1.</span> Leccion</h4>
 <div class="outline-text-4" id="text-1-14-1">
 </div>
 <ol class="org-ol">
-<li><a id="org405e286"></a>Verbos (-ir)<br />
+<li><a id="org5de8272"></a>Verbos (-ir)<br />
 <ol class="org-ol">
-<li><a id="org48bd47d"></a>Irrgeulares grupo 1<br />
+<li><a id="orge78ed60"></a>Irrgeulares grupo 1<br />
 <div class="outline-text-6" id="text-1-14-1-1-1">
 <ul class="org-ul">
 <li>Preferir  - почитать</li>
@@ -1320,7 +1340,7 @@ Me llama Jorge. Por la mañana duermo cada día en mi cama. Despierto de mi desp
 </ul>
 </div>
 </li>
-<li><a id="org88ef21f"></a>Irregulares grupo 2<br />
+<li><a id="orgb6f53e6"></a>Irregulares grupo 2<br />
 <div class="outline-text-6" id="text-1-14-1-1-2">
 <ul class="org-ul">
 <li>morir - умереть</li>
@@ -1328,7 +1348,7 @@ Me llama Jorge. Por la mañana duermo cada día en mi cama. Despierto de mi desp
 </ul>
 </div>
 </li>
-<li><a id="org9e92102"></a>Irregulares grupo 3<br />
+<li><a id="orgadbbd04"></a>Irregulares grupo 3<br />
 <div class="outline-text-6" id="text-1-14-1-1-3">
 <ul class="org-ul">
 <li>pedir        - просить</li>
@@ -1346,12 +1366,12 @@ Me llama Jorge. Por la mañana duermo cada día en mi cama. Despierto de mi desp
 </ol>
 </div>
 </div>
-<div id="outline-container-org1fc85c1" class="outline-3">
-<h3 id="org1fc85c1"><span class="section-number-3">1.15.</span> Leccion 22-12-19</h3>
+<div id="outline-container-org2a8a099" class="outline-3">
+<h3 id="org2a8a099"><span class="section-number-3">1.15.</span> Leccion 22-12-19</h3>
 <div class="outline-text-3" id="text-1-15">
 </div>
-<div id="outline-container-org9d03322" class="outline-4">
-<h4 id="org9d03322"><span class="section-number-4">1.15.1.</span> Parablas</h4>
+<div id="outline-container-org2f7225e" class="outline-4">
+<h4 id="org2f7225e"><span class="section-number-4">1.15.1.</span> Parablas</h4>
 <div class="outline-text-4" id="text-1-15-1">
 <p>
 Falta
@@ -1364,8 +1384,8 @@ sub
 </div>
 </div>
 </div>
-<div id="outline-container-org0150c72" class="outline-3">
-<h3 id="org0150c72"><span class="section-number-3">1.16.</span> Leccion de 23-02-13 <code>Futuro Próximo</code></h3>
+<div id="outline-container-org2a9a545" class="outline-3">
+<h3 id="org2a9a545"><span class="section-number-3">1.16.</span> Leccion de 23-02-13 <code>Futuro Próximo</code></h3>
 <div class="outline-text-3" id="text-1-16">
 <p>
 IR <b>A</b> * infinitivo
@@ -1373,8 +1393,8 @@ Y voy
 </p>
 </div>
 </div>
-<div id="outline-container-org385bc41" class="outline-3">
-<h3 id="org385bc41"><span class="section-number-3">1.17.</span> Leccion de 2023-02-27 <code>Vervos Reflectivos (se)</code></h3>
+<div id="outline-container-org09621c1" class="outline-3">
+<h3 id="org09621c1"><span class="section-number-3">1.17.</span> Leccion de 2023-02-27 <code>Vervos Reflectivos (se)</code></h3>
 <div class="outline-text-3" id="text-1-17">
 <p>
 levantar
@@ -1405,8 +1425,8 @@ me pongo:
 </ul>
 </div>
 </div>
-<div id="outline-container-org40c2f11" class="outline-3">
-<h3 id="org40c2f11"><span class="section-number-3">1.18.</span> Leccion de 2024-03-13 <code>GERUNDIO</code></h3>
+<div id="outline-container-org056ef7b" class="outline-3">
+<h3 id="org056ef7b"><span class="section-number-3">1.18.</span> Leccion de 2024-03-13 <code>GERUNDIO</code></h3>
 <div class="outline-text-3" id="text-1-18">
 <p>
 ESTAR + GERUNDIO
@@ -1415,15 +1435,15 @@ ESTAR + <i>-iendo</i> <code>(-er, -ir)</code>
 </p>
 </div>
 </div>
-<div id="outline-container-orgbcc72b8" class="outline-3">
-<h3 id="orgbcc72b8"><span class="section-number-3">1.19.</span> Leccion de 2023-03-22 <code>Pretérito Perfecto de Modo Indicativo</code></h3>
+<div id="outline-container-orgc1342e9" class="outline-3">
+<h3 id="orgc1342e9"><span class="section-number-3">1.19.</span> Leccion de 2023-03-22 <code>Pretérito Perfecto de Modo Indicativo</code></h3>
 <div class="outline-text-3" id="text-1-19">
 <p>
 Indicativo
 </p>
 </div>
-<div id="outline-container-org69764c4" class="outline-4">
-<h4 id="org69764c4"><span class="section-number-4">1.19.1.</span> P. Perfecto</h4>
+<div id="outline-container-orgb41c96c" class="outline-4">
+<h4 id="orgb41c96c"><span class="section-number-4">1.19.1.</span> P. Perfecto</h4>
 <div class="outline-text-4" id="text-1-19-1">
 <p>
      haber         +     participio <code>(-ar, -er ir) |-&gt; (-ado; -ido)</code>
@@ -1438,25 +1458,25 @@ Han
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="orgda2dad8"></a>escrito -  <code>NO Escribido</code><br /></li>
-<li><a id="org244c1db"></a>Hecho - <code>No hacido</code><br /></li>
+<li><a id="orgd600afd"></a>escrito -  <code>NO Escribido</code><br /></li>
+<li><a id="orga2b2106"></a>Hecho - <code>No hacido</code><br /></li>
 </ol>
 </div>
-<div id="outline-container-org9d49686" class="outline-4">
-<h4 id="org9d49686"><span class="section-number-4">1.19.2.</span> P. Imperfecto</h4>
+<div id="outline-container-org30e64ed" class="outline-4">
+<h4 id="org30e64ed"><span class="section-number-4">1.19.2.</span> P. Imperfecto</h4>
 </div>
-<div id="outline-container-org8a8796c" class="outline-4">
-<h4 id="org8a8796c"><span class="section-number-4">1.19.3.</span> P. Pluscamperfecto</h4>
+<div id="outline-container-org4c76dcd" class="outline-4">
+<h4 id="org4c76dcd"><span class="section-number-4">1.19.3.</span> P. Pluscamperfecto</h4>
 </div>
-<div id="outline-container-org3973ba5" class="outline-4">
-<h4 id="org3973ba5"><span class="section-number-4">1.19.4.</span> P- Indefinido</h4>
+<div id="outline-container-org295f1ea" class="outline-4">
+<h4 id="org295f1ea"><span class="section-number-4">1.19.4.</span> P- Indefinido</h4>
 </div>
-<div id="outline-container-org6575770" class="outline-4">
-<h4 id="org6575770"><span class="section-number-4">1.19.5.</span> P. Anterior</h4>
+<div id="outline-container-org0837283" class="outline-4">
+<h4 id="org0837283"><span class="section-number-4">1.19.5.</span> P. Anterior</h4>
 </div>
 </div>
-<div id="outline-container-orgd1feb8b" class="outline-3">
-<h3 id="orgd1feb8b"><span class="section-number-3">1.20.</span> Leccion de 2023-04-13 <code>Futuro Imperfecto (Simple)</code></h3>
+<div id="outline-container-org3540174" class="outline-3">
+<h3 id="org3540174"><span class="section-number-3">1.20.</span> Leccion de 2023-04-13 <code>Futuro Imperfecto (Simple)</code></h3>
 <div class="outline-text-3" id="text-1-20">
 <p>
 Hacer - harél
@@ -1486,16 +1506,16 @@ infinitivo &#x2026;
 </div>
 </div>
 </div>
-<div id="outline-container-org01ea2e1" class="outline-2">
-<h2 id="org01ea2e1"><span class="section-number-2">2.</span> Verbos irregulares</h2>
+<div id="outline-container-org659b5cb" class="outline-2">
+<h2 id="org659b5cb"><span class="section-number-2">2.</span> Verbos irregulares</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org0a473c1" class="outline-3">
-<h3 id="org0a473c1"><span class="section-number-3">2.1.</span> Grupo 6</h3>
+<div id="outline-container-org49e6f61" class="outline-3">
+<h3 id="org49e6f61"><span class="section-number-3">2.1.</span> Grupo 6</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-orgba0e837" class="outline-4">
-<h4 id="orgba0e837"><span class="section-number-4">2.1.1.</span> Haber</h4>
+<div id="outline-container-orgf38be6f" class="outline-4">
+<h4 id="orgf38be6f"><span class="section-number-4">2.1.1.</span> Haber</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <ul class="org-ul">
 <li>he</li>
@@ -1513,12 +1533,12 @@ infinitivo &#x2026;
 </div>
 </div>
 </div>
-<div id="outline-container-org793a42e" class="outline-2">
-<h2 id="org793a42e"><span class="section-number-2">3.</span> Parablas nuevas</h2>
+<div id="outline-container-orgbd1c89a" class="outline-2">
+<h2 id="orgbd1c89a"><span class="section-number-2">3.</span> Parablas nuevas</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org571a720" class="outline-3">
-<h3 id="org571a720"><span class="section-number-3">3.1.</span> Leccion..</h3>
+<div id="outline-container-org1d98d95" class="outline-3">
+<h3 id="org1d98d95"><span class="section-number-3">3.1.</span> Leccion..</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 Ahijado(a) - Крестный сын/дочь
@@ -1570,8 +1590,8 @@ pag 155 number 13 - muchas parablas
 </ul>
 </div>
 </div>
-<div id="outline-container-org982da3f" class="outline-3">
-<h3 id="org982da3f"><span class="section-number-3">3.2.</span> Leccion 2023-03-02</h3>
+<div id="outline-container-org00a5209" class="outline-3">
+<h3 id="org00a5209"><span class="section-number-3">3.2.</span> Leccion 2023-03-02</h3>
 <div class="outline-text-3" id="text-3-2">
 <ul class="org-ul">
 <li>dependienta</li>
@@ -1611,8 +1631,8 @@ pag 155 number 13 - muchas parablas
 </ul>
 </div>
 </div>
-<div id="outline-container-org45072ca" class="outline-3">
-<h3 id="org45072ca"><span class="section-number-3">3.3.</span> Leccion 2023-03-23</h3>
+<div id="outline-container-org556c3bb" class="outline-3">
+<h3 id="org556c3bb"><span class="section-number-3">3.3.</span> Leccion 2023-03-23</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 Silbar - свистеть
@@ -1621,8 +1641,8 @@ Pretérido - pasado
 </p>
 </div>
 </div>
-<div id="outline-container-org3950cc3" class="outline-3">
-<h3 id="org3950cc3"><span class="section-number-3">3.4.</span> Leccion de 2023-04-13</h3>
+<div id="outline-container-org94faec4" class="outline-3">
+<h3 id="org94faec4"><span class="section-number-3">3.4.</span> Leccion de 2023-04-13</h3>
 <div class="outline-text-3" id="text-3-4">
 <p>
 Valer 
@@ -1631,12 +1651,12 @@ Valer
 </div>
 </div>
 
-<div id="outline-container-orgfdccb06" class="outline-2">
-<h2 id="orgfdccb06"><span class="section-number-2">4.</span> Deberes</h2>
+<div id="outline-container-org48ed045" class="outline-2">
+<h2 id="org48ed045"><span class="section-number-2">4.</span> Deberes</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org24f9c12" class="outline-3">
-<h3 id="org24f9c12"><span class="section-number-3">4.1.</span> 2023-02-27</h3>
+<div id="outline-container-orge72208b" class="outline-3">
+<h3 id="orge72208b"><span class="section-number-3">4.1.</span> 2023-02-27</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 Мы живем в мадриде. В доме на улице Santa Teresa, под номером 54. Мой отец работает в банке, который не слишком далеко от дома. Кажддоые утро он ездит в банк на машине. Мама по утрам работает сама на себя. Она работает продавцом в обувном магазине
@@ -1657,8 +1677,8 @@ Valer
 </div>
 </div>
 </div>
-<div id="outline-container-org3710d1b" class="outline-2">
-<h2 id="org3710d1b"><span class="section-number-2">5.</span> Pronombres</h2>
+<div id="outline-container-org27ddbc1" class="outline-2">
+<h2 id="org27ddbc1"><span class="section-number-2">5.</span> Pronombres</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 <b>Pronombres reflectivos:</b>

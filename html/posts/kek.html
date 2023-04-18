@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-04-18 Tue 00:41 -->
+<!-- 2023-04-18 Tue 09:49 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -45,21 +45,41 @@
   </div>
   <div class="head-right">
     <a href="../index.html">Home</a>
+    <button id="theme-button"> undefined LOL!! 😜 </button>
    </div>
 </header>
+
+ <script>
+      const themeButton = document.getElementById('theme-button');
+
+      themeButton.addEventListener('click', () => {
+        const root = document.documentElement;
+        const hueMain = getComputedStyle(root).getPropertyValue('--lightness').trim();
+	  console.log(hueMain);
+
+        if (hueMain == '93%') {
+          root.style.setProperty('--lightness', '93%');
+          themeButton.textContent = '😎';
+        } else {
+          root.style.setProperty('--lightness', '10%');
+          themeButton.textContent = '🌚';
+        }
+
+      });
+</script>
 </div>
 <div id="content" class="content">
 <div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org6b650bb">1. And i'm feeling good</a></li>
+<li><a href="#org2635742">1. And i'm feeling good</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org6b650bb" class="outline-2">
-<h2 id="org6b650bb"><span class="section-number-2">1.</span> And i'm feeling good</h2>
+<div id="outline-container-org2635742" class="outline-2">
+<h2 id="org2635742"><span class="section-number-2">1.</span> And i'm feeling good</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 very good.

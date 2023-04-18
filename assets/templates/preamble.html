@@ -30,7 +30,27 @@
   </div>
   <div class="head-right">
     <a href="../index.html">Home</a>
+    <button id="theme-button"> undefined LOL!! 😜 </button>
    </div>
 </header>
+
+ <script>
+      const themeButton = document.getElementById('theme-button');
+
+      themeButton.addEventListener('click', () => {
+        const root = document.documentElement;
+        const hueMain = getComputedStyle(root).getPropertyValue('--lightness').trim();
+	  console.log(hueMain);
+
+        if (hueMain == '93%') {
+          root.style.setProperty('--lightness', '10%');
+          themeButton.textContent = '🌚';
+        } else {
+            root.style.setProperty('--lightness', '93%')
+          themeButton.textContent = '😎';
+        }
+
+      });
+</script>
 
 
