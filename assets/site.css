@@ -10,7 +10,7 @@
     --hover-color: hsl(calc(var(--hue-main) ), 55%, 59%);
     --visited-color: hsl(calc(var(--hue-main) + var(--hue-shift)), 40%, 45%);
     --inverted-color: hsl(var(--hue-main), 50%, var(--lightness));
-    --main-font: 'Liberation Sans';
+    --main-font: 'mononoki';
     --second-font: "Mononoki Nerd Font", "mononoki";
 
 }
@@ -19,7 +19,7 @@ html{
     color: var(--font-color);
 }
 body {
-    font-family: var(--main-font), serif;
+    font-family: var(--main-font), sans;
     width: 80vw;
     margin: 0 auto;
     background-color: var(--background-second);

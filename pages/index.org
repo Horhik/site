@@ -12,8 +12,6 @@
 #+exclude_tags: noexport
 #+creator: Emacs 28.2 (Org mode 9.6)
 #+cite_export:
-
-Hi, I'm horhik and that's my blog. You can't.,.
-aaaaaa
+Hi, I'm horhik and that's my (=test...)= blog. 
 ** Posts
 #+INCLUDE: ./posts/index.org

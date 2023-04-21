@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-04-18 Tue 10:57 -->
+<!-- 2023-04-21 Fri 19:43 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Emacs config.</title>
@@ -14,224 +14,31 @@
 </head>
 <body>
 <div id="preamble" class="status">
-    <style>
-:root{
-    --hue-main: 235;
-    --hue-shift: 98;
-    --lightness: 93%;
-    --font-color: hsl(var(--hue-main), 5%, calc(100% - var(--lightness)));
-    --background-main: hsl(var(--hue-main), 5%, var(--lightness));
-    --background-second: hsl(var(--hue-main), 14%, calc(5% + var(--lightness)));
-    --background-shadow: hsl(var(--hue-main), 30%, calc(70% - var(--lightness)));
-    --link-color: hsl(var(--hue-main), 15%, calc(100%-var(--lightness)));
-    --hover-color: hsl(calc(var(--hue-main) ), 55%, 59%);
-    --visited-color: hsl(calc(var(--hue-main) + var(--hue-shift)), 40%, 45%);
-    --inverted-color: hsl(var(--hue-main), 50%, var(--lightness));
-    --main-font: 'Liberation Sans';
-    --second-font: "Mononoki Nerd Font", "mononoki";
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="/static/site.css">
 
-}
-html{
-    background: var(--background-main);
-    color: var(--font-color);
-}
-body {
-    font-family: var(--main-font), serif;
-    width: 80vw;
-    margin: 0 auto;
-    background-color: var(--background-second);
-    padding: 20px 24px;
-}
-
-header {
-    margin: 0 auto;
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-}
-
-*content{
-    width: 80vw;
-}
-ul{
-    list-style: upper-roman;
-}
-
-header ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    font-size: 1em;
-}
-
-header li {
-    list-style: none;
-    padding: 10px;
-}
-
-header a{
-    font-weight: bold;4
-    font-size: 1.5em;
-    color: var(--link-color);
-}
-
-a {
-    color: var(--link-color);
-    font-family: var(--second-font);
-    text-decoration: underline;
-    text-decoration-color: currentcolor;
-    text-decoration-thickness: auto;
-    text-decoration-thickness: 2px;
-    text-decoration-line: underline;
-    text-decoration-color: var(--link-color);
-    transition:0.2s;
-
-}
-
-li a{
-    font-family: var(--second-font);
-    font-size: 1.4em;
-    transition: 0.2s;
-    
-}
-
-code{
-    background: var(--background-main);
-    padding: 7px 10px;
-    line-height: 2em;
-    border-radius: 10px;
-}
-
- .src, .org-src{
-
-    background: var(--background-main);
-    border-radius: 10px;
-    padding: 15px;
-    font-family: var(--second-font);
-    line-height: 1.7em;
-    overflow: scroll;
-}
-
-a:visited {
-
-    text-decoration-color: var(--visited-color);
-}
-
-a:hover, a:focus {
-    text-decoration-color: var(--hover-color);
-    text-decoration-thickness: 7px;
-    
-}
-
-a:active{
-    background: var(--hover-color);
-    color: var(--background-main);
-}
-
-
-.footer {
-    padding: 20px;
-    background: var(--background-main);
-    line-height: 2em;
-    border-radius: 10px;
-		
-}
-
-
-.title{
-    margin: 0 auto;
-    text-align: center;
-    padding: 15px;
-    font-size: 2.6em;
-    font-weight: bold;
-    font-family: var(--second-font);
-}
-
-.subtitle{
-    font-size: 0.6em;
-    opacity: 0.4;
-}
-
-#table-of-contents ul{
-    list-style: none;
-    margin: 0;
-}
-
-@media (min-width: 900px) { 
-
-#table-of-contents{
-  font-size: 11pt;
-  position: fixed;
-  z-index: 1000000;
-  background: var(--background-main); 
-  right: 40px;
-  bottom: -540px;
-  text-align: center;
-  -webkit-box-shadow: 0px 20px 46px var(--background-shadow);
-  -moz-box-shadow: 0px 20px 46px var(--background-shadow);
-  border-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  height: 600px;
-  overflow: auto;
-  padding: 0px;
-  line-height: 1.7em;
-  transition:0.2s;
-  width: 500px;
-
-}
-
-#table-of-contents:hover {
-
-  bottom: 0%;
-  transform: rotate(0deg);
-}
-
-#table-of-contents li, #table-of-contents ul{
-    
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-}
-
-#theme-button{
-    background-color: --background-main: hsl(var(--hue-main), 5%, calc(100%  -var(--lightness)));
-    margin: 10px;
-    border-width: 5px;
-}
-#theme-button:hover{
-    filter:invert(1);
-    color: red;
-}
-
-    </style>
 <header>
   <div class="head-right">
   <ul>
     <li>
       <a href='../posts/index.html'>
-	Posts 📜</a>
+	POSTS 📜</a>
     </li>
     <li>
       <a href='../portfolio/index.html'>
-	Portfolio 📓   </a>
+	PORTFOLIO 📓   </a>
     </li>
     <li>
       <a href='../about/index.html'>
-	About 🫠</a>
+	ABOUT 🫠</a>
     </li>
     <li>
       <a href='../donate/index.html'>
-	Donate 💸</a>
+	DONATE 💸</a>
     </li>
     <li>
       <a href='../projects/index.html'>
-	Projects 📦</a>
+	PROJECTS 📦</a>
     </li>
   </ul>
   </div>
@@ -295,7 +102,6 @@ themeButton.addEventListener('click', () => {
     }
 
 });
-
  </script>
 </div>
 <div id="content" class="content">
@@ -307,13 +113,13 @@ themeButton.addEventListener('click', () => {
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgd886185">1. Orb Publish</a>
+<li><a href="#org2f0abf8">1. Orb Publish</a>
 <ul>
-<li><a href="#org62db935">1.1. Setting up variables</a></li>
-<li><a href="#org1c6f258">1.2. Custom sections</a></li>
-<li><a href="#org10338ec">1.3. Sitemap</a></li>
-<li><a href="#orgb161c83">1.4. Preambles and postambles</a></li>
-<li><a href="#orgb3b59f6">1.5. list</a></li>
+<li><a href="#org792dc91">1.1. Setting up variables</a></li>
+<li><a href="#org8f57567">1.2. Custom sections</a></li>
+<li><a href="#org02bf273">1.3. Sitemap</a></li>
+<li><a href="#org475c672">1.4. Preambles and postambles</a></li>
+<li><a href="#org2968285">1.5. list</a></li>
 </ul>
 </li>
 </ul>
@@ -325,86 +131,86 @@ themeButton.addEventListener('click', () => {
 <p>
 Here's part of my config for <code>org-publish</code>
 </p>
-<div id="outline-container-orgd886185" class="outline-2">
-<h2 id="orgd886185"><span class="section-number-2">1.</span> Orb Publish</h2>
+<div id="outline-container-org2f0abf8" class="outline-2">
+<h2 id="org2f0abf8"><span class="section-number-2">1.</span> Orb Publish</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org62db935" class="outline-3">
-<h3 id="org62db935"><span class="section-number-3">1.1.</span> Setting up variables</h3>
+<div id="outline-container-org792dc91" class="outline-3">
+<h3 id="org792dc91"><span class="section-number-3">1.1.</span> Setting up variables</h3>
 <div class="outline-text-3" id="text-1-1">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp"><span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">setq</span> blog-path <span style="color: #2aa198;">"~/Space/Code/Blog/"</span><span style="color: #2aa198;">)</span>
-<span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">setq</span> blog-static-path <span style="color: #2aa198;">"~/Space/Code/Blog/html/"</span><span style="color: #2aa198;">)</span>
-<span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">setq</span> blog-content-path <span style="color: #2aa198;">"~/Space/Code/Blog/pages/"</span><span style="color: #2aa198;">)</span>
-<span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">setq</span> blog-templates <span style="color: #2aa198;">"~/Space/Code/Blog/assets/templates/"</span><span style="color: #2aa198;">)</span>
+<pre class="src src-emacs-lisp"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">setq</span> blog-path <span style="color: #2aa198;">"~/Space/Code/Blog/"</span><span style="color: #268bd2;">)</span>
+<span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">setq</span> blog-static-path <span style="color: #2aa198;">"~/Space/Code/Blog/html/"</span><span style="color: #268bd2;">)</span>
+<span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">setq</span> blog-content-path <span style="color: #2aa198;">"~/Space/Code/Blog/pages/"</span><span style="color: #268bd2;">)</span>
+<span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">setq</span> blog-templates <span style="color: #2aa198;">"~/Space/Code/Blog/assets/templates/"</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org1c6f258" class="outline-3">
-<h3 id="org1c6f258"><span class="section-number-3">1.2.</span> Custom sections</h3>
+<div id="outline-container-org8f57567" class="outline-3">
+<h3 id="org8f57567"><span class="section-number-3">1.2.</span> Custom sections</h3>
 <div class="outline-text-3" id="text-1-2">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp"><span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">defvar</span> <span style="color: #268bd2;">this-date-format</span> <span style="color: #2aa198;">"%b %d, %Y"</span><span style="color: #2aa198;">)</span>
-<span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">defun</span> <span style="color: #268bd2;">blog/html-postamble</span> <span style="color: #b58900;">(</span>plist<span style="color: #b58900;">)</span>
-    <span style="color: #2aa198;">"PLIST."</span>
-    <span style="color: #b58900;">(</span>concat <span style="color: #268bd2;">(</span>format
+<pre class="src src-emacs-lisp"><span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defvar</span> <span style="color: #6c71c4;">this-date-format</span> <span style="color: #2aa198;">"%b %d, %Y"</span><span style="color: #268bd2;">)</span>
+<span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defun</span> <span style="color: #268bd2;">blog/html-postamble</span> <span style="color: #d33682;">(</span>plist<span style="color: #d33682;">)</span>
+    <span style="color: #35a69c;">"PLIST."</span>
+    <span style="color: #d33682;">(</span>concat <span style="color: #859900;">(</span>format
              <span style="color: #6c71c4;">(</span><span style="color: #859900; font-weight: bold;">with-temp-buffer</span>
-               <span style="color: #859900;">(</span>insert-file-contents <span style="color: #b58900;">(</span>concat blog-templates <span style="color: #2aa198;">"postamble.html"</span><span style="color: #b58900;">)</span><span style="color: #859900;">)</span> <span style="color: #859900;">(</span>buffer-string<span style="color: #859900;">)</span><span style="color: #6c71c4;">)</span>
-             <span style="color: #6c71c4;">(</span>format-time-string this-date-format <span style="color: #859900;">(</span>plist-get plist <span style="color: #839496; font-weight: bold;">:time</span><span style="color: #859900;">)</span><span style="color: #6c71c4;">)</span> <span style="color: #6c71c4;">(</span>plist-get plist <span style="color: #839496; font-weight: bold;">:creator</span><span style="color: #6c71c4;">)</span><span style="color: #268bd2;">)</span><span style="color: #b58900;">)</span><span style="color: #2aa198;">)</span>
+               <span style="color: #35a69c;">(</span>insert-file-contents <span style="color: #268bd2;">(</span>concat blog-templates <span style="color: #2aa198;">"postamble.html"</span><span style="color: #268bd2;">)</span><span style="color: #35a69c;">)</span> <span style="color: #35a69c;">(</span>buffer-string<span style="color: #35a69c;">)</span><span style="color: #6c71c4;">)</span>
+             <span style="color: #6c71c4;">(</span>format-time-string this-date-format <span style="color: #35a69c;">(</span>plist-get plist <span style="color: #268bd2;">:time</span><span style="color: #35a69c;">)</span><span style="color: #6c71c4;">)</span> <span style="color: #6c71c4;">(</span>plist-get plist <span style="color: #268bd2;">:creator</span><span style="color: #6c71c4;">)</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 
-  <span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">defun</span> <span style="color: #268bd2;">blog/html-preamble</span> <span style="color: #b58900;">(</span>plist<span style="color: #b58900;">)</span>
-  <span style="color: #2aa198;">"PLIST: An entry."</span>
-  <span style="color: #b58900;">(</span><span style="color: #859900; font-weight: bold;">if</span> <span style="color: #268bd2;">(</span>org-export-get-date plist this-date-format<span style="color: #268bd2;">)</span>
-      <span style="color: #268bd2;">(</span>plist-put plist
-                 <span style="color: #839496; font-weight: bold;">:subtitle</span> <span style="color: #6c71c4;">(</span>format <span style="color: #2aa198;">"Published on %s by %s."</span>
-                                   <span style="color: #859900;">(</span>org-export-get-date plist this-date-format<span style="color: #859900;">)</span>
-                                   <span style="color: #859900;">(</span>car <span style="color: #b58900;">(</span>plist-get plist <span style="color: #839496; font-weight: bold;">:author</span><span style="color: #b58900;">)</span><span style="color: #859900;">)</span><span style="color: #6c71c4;">)</span><span style="color: #268bd2;">)</span><span style="color: #b58900;">)</span>
-  <span style="color: #586e75;">;; </span><span style="color: #586e75;">Preamble</span>
-  <span style="color: #b58900;">(</span><span style="color: #859900; font-weight: bold;">with-temp-buffer</span>
-    <span style="color: #268bd2;">(</span>insert-file-contents <span style="color: #6c71c4;">(</span>concat blog-templates <span style="color: #2aa198;">"preamble.html"</span><span style="color: #6c71c4;">)</span><span style="color: #268bd2;">)</span> <span style="color: #268bd2;">(</span>buffer-string<span style="color: #268bd2;">)</span><span style="color: #b58900;">)</span><span style="color: #2aa198;">)</span>
+  <span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defun</span> <span style="color: #268bd2;">blog/html-preamble</span> <span style="color: #d33682;">(</span>plist<span style="color: #d33682;">)</span>
+  <span style="color: #35a69c;">"PLIST: An entry."</span>
+  <span style="color: #d33682;">(</span><span style="color: #859900; font-weight: bold;">if</span> <span style="color: #859900;">(</span>org-export-get-date plist this-date-format<span style="color: #859900;">)</span>
+      <span style="color: #859900;">(</span>plist-put plist
+                 <span style="color: #268bd2;">:subtitle</span> <span style="color: #6c71c4;">(</span>format <span style="color: #2aa198;">"Published on %s by %s."</span>
+                                   <span style="color: #35a69c;">(</span>org-export-get-date plist this-date-format<span style="color: #35a69c;">)</span>
+                                   <span style="color: #35a69c;">(</span>car <span style="color: #268bd2;">(</span>plist-get plist <span style="color: #268bd2;">:author</span><span style="color: #268bd2;">)</span><span style="color: #35a69c;">)</span><span style="color: #6c71c4;">)</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span>
+  <span style="color: #405A61;">;; </span><span style="color: #405A61;">Preamble</span>
+  <span style="color: #d33682;">(</span><span style="color: #859900; font-weight: bold;">with-temp-buffer</span>
+    <span style="color: #859900;">(</span>insert-file-contents <span style="color: #6c71c4;">(</span>concat blog-templates <span style="color: #2aa198;">"preamble.html"</span><span style="color: #6c71c4;">)</span><span style="color: #859900;">)</span> <span style="color: #859900;">(</span>buffer-string<span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 
-<span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">defun</span> <span style="color: #268bd2;">blog/html-index-preamble</span> <span style="color: #b58900;">(</span>plist<span style="color: #b58900;">)</span>
-  <span style="color: #2aa198;">"PLIST: An entry."</span>
-  <span style="color: #b58900;">(</span><span style="color: #859900; font-weight: bold;">if</span> <span style="color: #268bd2;">(</span>org-export-get-date plist this-date-format<span style="color: #268bd2;">)</span>
-      <span style="color: #268bd2;">(</span>plist-put plist
-                 <span style="color: #839496; font-weight: bold;">:subtitle</span> <span style="color: #6c71c4;">(</span>format <span style="color: #2aa198;">"Published on %s by %s."</span>
-                                   <span style="color: #859900;">(</span>org-export-get-date plist this-date-format<span style="color: #859900;">)</span>
-                                   <span style="color: #859900;">(</span>car <span style="color: #b58900;">(</span>plist-get plist <span style="color: #839496; font-weight: bold;">:author</span><span style="color: #b58900;">)</span><span style="color: #859900;">)</span><span style="color: #6c71c4;">)</span><span style="color: #268bd2;">)</span><span style="color: #b58900;">)</span>
-  <span style="color: #586e75;">;; </span><span style="color: #586e75;">Preamble</span>
-  <span style="color: #b58900;">(</span><span style="color: #859900; font-weight: bold;">with-temp-buffer</span>
-    <span style="color: #268bd2;">(</span>insert-file-contents <span style="color: #6c71c4;">(</span>concat blog-templates <span style="color: #2aa198;">"index-preamble.html"</span><span style="color: #6c71c4;">)</span><span style="color: #268bd2;">)</span> <span style="color: #268bd2;">(</span>buffer-string<span style="color: #268bd2;">)</span><span style="color: #b58900;">)</span><span style="color: #2aa198;">)</span>
+<span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defun</span> <span style="color: #268bd2;">blog/html-index-preamble</span> <span style="color: #d33682;">(</span>plist<span style="color: #d33682;">)</span>
+  <span style="color: #35a69c;">"PLIST: An entry."</span>
+  <span style="color: #d33682;">(</span><span style="color: #859900; font-weight: bold;">if</span> <span style="color: #859900;">(</span>org-export-get-date plist this-date-format<span style="color: #859900;">)</span>
+      <span style="color: #859900;">(</span>plist-put plist
+                 <span style="color: #268bd2;">:subtitle</span> <span style="color: #6c71c4;">(</span>format <span style="color: #2aa198;">"Published on %s by %s."</span>
+                                   <span style="color: #35a69c;">(</span>org-export-get-date plist this-date-format<span style="color: #35a69c;">)</span>
+                                   <span style="color: #35a69c;">(</span>car <span style="color: #268bd2;">(</span>plist-get plist <span style="color: #268bd2;">:author</span><span style="color: #268bd2;">)</span><span style="color: #35a69c;">)</span><span style="color: #6c71c4;">)</span><span style="color: #859900;">)</span><span style="color: #d33682;">)</span>
+  <span style="color: #405A61;">;; </span><span style="color: #405A61;">Preamble</span>
+  <span style="color: #d33682;">(</span><span style="color: #859900; font-weight: bold;">with-temp-buffer</span>
+    <span style="color: #859900;">(</span>insert-file-contents <span style="color: #6c71c4;">(</span>concat blog-templates <span style="color: #2aa198;">"index-preamble.html"</span><span style="color: #6c71c4;">)</span><span style="color: #859900;">)</span> <span style="color: #859900;">(</span>buffer-string<span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org10338ec" class="outline-3">
-<h3 id="org10338ec"><span class="section-number-3">1.3.</span> Sitemap</h3>
+<div id="outline-container-org02bf273" class="outline-3">
+<h3 id="org02bf273"><span class="section-number-3">1.3.</span> Sitemap</h3>
 <div class="outline-text-3" id="text-1-3">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">  <span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">defun</span> <span style="color: #268bd2;">me/org-sitemap-format-entry</span> <span style="color: #b58900;">(</span>entry style project<span style="color: #b58900;">)</span>
-    <span style="color: #2aa198;">"Format posts with author and published data in the index page.</span>
+<pre class="src src-emacs-lisp">  <span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">defun</span> <span style="color: #268bd2;">me/org-sitemap-format-entry</span> <span style="color: #d33682;">(</span>entry style project<span style="color: #d33682;">)</span>
+    <span style="color: #35a69c;">"Format posts with author and published data in the index page.</span>
 
-<span style="color: #2aa198;">ENTRY: file-name</span>
-<span style="color: #2aa198;">STYLE:</span>
-<span style="color: #2aa198;">PROJECT: `posts in this case."</span>
-    <span style="color: #b58900;">(</span><span style="color: #859900; font-weight: bold;">cond</span> <span style="color: #268bd2;">(</span><span style="color: #6c71c4;">(</span>not <span style="color: #859900;">(</span>directory-name-p entry<span style="color: #859900;">)</span><span style="color: #6c71c4;">)</span>
+<span style="color: #35a69c;">ENTRY: file-name</span>
+<span style="color: #35a69c;">STYLE:</span>
+<span style="color: #35a69c;">PROJECT: `posts in this case."</span>
+    <span style="color: #d33682;">(</span><span style="color: #859900; font-weight: bold;">cond</span> <span style="color: #859900;">(</span><span style="color: #6c71c4;">(</span>not <span style="color: #35a69c;">(</span>directory-name-p entry<span style="color: #35a69c;">)</span><span style="color: #6c71c4;">)</span>
            <span style="color: #6c71c4;">(</span>format <span style="color: #2aa198;">"*[[file:%s][%s]]*</span>
-<span style="color: #2aa198;">                 #+HTML: &lt;p class='</span><span style="color: #268bd2; font-weight: bold;">pubdate</span><span style="color: #2aa198;">'&gt;by %s on %s.&lt;/p&gt;"</span>
+<span style="color: #2aa198;">                 #+HTML: &lt;p class='</span><span style="color: #d33682; font-weight: bold;">pubdate</span><span style="color: #2aa198;">'&gt;by %s on %s.&lt;/p&gt;"</span>
                    entry
-                   <span style="color: #859900;">(</span>org-publish-find-title entry project<span style="color: #859900;">)</span>
-                   <span style="color: #859900;">(</span>car <span style="color: #b58900;">(</span>org-publish-find-property entry <span style="color: #839496; font-weight: bold;">:author</span> project<span style="color: #b58900;">)</span><span style="color: #859900;">)</span>
-                   <span style="color: #859900;">(</span>format-time-string this-date-format
-                                       <span style="color: #b58900;">(</span>org-publish-find-date entry project<span style="color: #b58900;">)</span><span style="color: #859900;">)</span><span style="color: #6c71c4;">)</span><span style="color: #268bd2;">)</span>
-          <span style="color: #268bd2;">(</span><span style="color: #6c71c4;">(</span>eq style 'tree<span style="color: #6c71c4;">)</span> <span style="color: #6c71c4;">(</span>file-name-nondirectory <span style="color: #859900;">(</span>directory-file-name entry<span style="color: #859900;">)</span><span style="color: #6c71c4;">)</span><span style="color: #268bd2;">)</span>
-          <span style="color: #268bd2;">(</span>t entry<span style="color: #268bd2;">)</span><span style="color: #b58900;">)</span><span style="color: #2aa198;">)</span>
+                   <span style="color: #35a69c;">(</span>org-publish-find-title entry project<span style="color: #35a69c;">)</span>
+                   <span style="color: #35a69c;">(</span>car <span style="color: #268bd2;">(</span>org-publish-find-property entry <span style="color: #268bd2;">:author</span> project<span style="color: #268bd2;">)</span><span style="color: #35a69c;">)</span>
+                   <span style="color: #35a69c;">(</span>format-time-string this-date-format
+                                       <span style="color: #268bd2;">(</span>org-publish-find-date entry project<span style="color: #268bd2;">)</span><span style="color: #35a69c;">)</span><span style="color: #6c71c4;">)</span><span style="color: #859900;">)</span>
+          <span style="color: #859900;">(</span><span style="color: #6c71c4;">(</span>eq style 'tree<span style="color: #6c71c4;">)</span> <span style="color: #6c71c4;">(</span>file-name-nondirectory <span style="color: #35a69c;">(</span>directory-file-name entry<span style="color: #35a69c;">)</span><span style="color: #6c71c4;">)</span><span style="color: #859900;">)</span>
+          <span style="color: #859900;">(</span>t entry<span style="color: #859900;">)</span><span style="color: #d33682;">)</span><span style="color: #268bd2;">)</span>
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgb161c83" class="outline-3">
-<h3 id="orgb161c83"><span class="section-number-3">1.4.</span> Preambles and postambles</h3>
+<div id="outline-container-org475c672" class="outline-3">
+<h3 id="org475c672"><span class="section-number-3">1.4.</span> Preambles and postambles</h3>
 <div class="outline-text-3" id="text-1-4">
 <div class="org-center">
 <p>
@@ -440,102 +246,102 @@ Here's part of my config for <code>org-publish</code>
 </div>
 </div>
 </div>
-<div id="outline-container-orgb3b59f6" class="outline-3">
-<h3 id="orgb3b59f6"><span class="section-number-3">1.5.</span> list</h3>
+<div id="outline-container-org2968285" class="outline-3">
+<h3 id="org2968285"><span class="section-number-3">1.5.</span> list</h3>
 <div class="outline-text-3" id="text-1-5">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">  <span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">require</span> '<span style="color: #268bd2; font-weight: bold;">ox-publish</span><span style="color: #2aa198;">)</span>
+<pre class="src src-emacs-lisp">  <span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">require</span> '<span style="color: #d33682; font-weight: bold;">ox-publish</span><span style="color: #268bd2;">)</span>
 
 
-  <span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">setq</span> org-publish-project-alist
-        `<span style="color: #b58900;">(</span>
-          <span style="color: #268bd2;">(</span><span style="color: #2aa198;">"blogposts"</span>
-           <span style="color: #839496; font-weight: bold;">:base-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-content-path <span style="color: #2aa198;">"posts"</span><span style="color: #6c71c4;">)</span>
-           <span style="color: #839496; font-weight: bold;">:base-extension</span> <span style="color: #2aa198;">"org"</span>
-           <span style="color: #839496; font-weight: bold;">:publishing-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-static-path <span style="color: #2aa198;">"posts"</span><span style="color: #6c71c4;">)</span>
-           <span style="color: #839496; font-weight: bold;">:publishing-function</span> org-html-publish-to-html
-           <span style="color: #839496; font-weight: bold;">:recursive</span> t
-           <span style="color: #839496; font-weight: bold;">:headline-levels</span> 8             
-           <span style="color: #839496; font-weight: bold;">:html-preamble</span> blog/html-preamble
-           <span style="color: #839496; font-weight: bold;">:html-postamble</span> blog/html-postamble
-           <span style="color: #839496; font-weight: bold;">:auto-sitemap</span> t
-           <span style="color: #839496; font-weight: bold;">:sitemap-filename</span> <span style="color: #2aa198;">"index.org"</span>
-           <span style="color: #839496; font-weight: bold;">:sitemap-title</span> <span style="color: #2aa198;">"Blog Index"</span>         
-           <span style="color: #839496; font-weight: bold;">:sitemap-format-entry</span> me/org-sitemap-format-entry
-           <span style="color: #839496; font-weight: bold;">:sitemap-style</span> list
-           <span style="color: #839496; font-weight: bold;">:with-tags</span> t
-           <span style="color: #839496; font-weight: bold;">:with-toc</span> t
-           <span style="color: #839496; font-weight: bold;">:section-numbers:</span> nil
-           <span style="color: #839496; font-weight: bold;">:table-of-contents</span> t
-           <span style="color: #839496; font-weight: bold;">:html-head-include-default-style</span> nil
-           <span style="color: #268bd2;">)</span>
-          <span style="color: #268bd2;">(</span><span style="color: #2aa198;">"portfolio"</span>
-           <span style="color: #839496; font-weight: bold;">:base-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-content-path  <span style="color: #2aa198;">"portfolio"</span><span style="color: #6c71c4;">)</span>
-           <span style="color: #839496; font-weight: bold;">:base-extension</span> <span style="color: #2aa198;">"org"</span>
-           <span style="color: #839496; font-weight: bold;">:publishing-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-static-path  <span style="color: #2aa198;">"portfolio"</span><span style="color: #6c71c4;">)</span>
-           <span style="color: #839496; font-weight: bold;">:publishing-function</span> org-html-publish-to-html
-           <span style="color: #839496; font-weight: bold;">:headline-levels</span> 8             
-           <span style="color: #839496; font-weight: bold;">:html-preamble</span> blog/html-preamble
-           <span style="color: #839496; font-weight: bold;">:html-postamble</span> blog/html-postamble
-           <span style="color: #839496; font-weight: bold;">:auto-sitemap:</span> t
-           <span style="color: #839496; font-weight: bold;">:sitemap-filename:</span> <span style="color: #2aa198;">"index.org"</span>
-           <span style="color: #839496; font-weight: bold;">:sitemap-title:</span> <span style="color: #2aa198;">"Portfolio"</span>
-           <span style="color: #839496; font-weight: bold;">:sitemap-format-entry</span> me/org-sitemap-format-entry
-           <span style="color: #839496; font-weight: bold;">:sitemap-style</span> list
-           <span style="color: #839496; font-weight: bold;">:validation-link</span> nil
-           <span style="color: #839496; font-weight: bold;">:table-of-contents</span> nil
-           <span style="color: #839496; font-weight: bold;">:html-head-include-default-style</span> nil
-           <span style="color: #268bd2;">)</span>
-          <span style="color: #268bd2;">(</span><span style="color: #2aa198;">"about"</span>
-           <span style="color: #839496; font-weight: bold;">:base-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-content-path  <span style="color: #2aa198;">"about"</span><span style="color: #6c71c4;">)</span>
-           <span style="color: #839496; font-weight: bold;">:base-extension</span> <span style="color: #2aa198;">"org"</span>
-           <span style="color: #839496; font-weight: bold;">:publishing-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-static-path  <span style="color: #2aa198;">"about"</span><span style="color: #6c71c4;">)</span>
-           <span style="color: #839496; font-weight: bold;">:publishing-function</span> org-html-publish-to-html
-           <span style="color: #839496; font-weight: bold;">:recursive</span> t
-           <span style="color: #839496; font-weight: bold;">:headline-levels</span> 8             
-           <span style="color: #839496; font-weight: bold;">:html-preamble</span> blog/html-preamble
-           <span style="color: #839496; font-weight: bold;">:html-postamble</span> blog/html-postamble
-           <span style="color: #839496; font-weight: bold;">:validation-link</span> nil
-           <span style="color: #839496; font-weight: bold;">:table-of-contents</span> nil
-           <span style="color: #839496; font-weight: bold;">:html-head-include-default-style</span> nil
-           <span style="color: #268bd2;">)</span>
-<span style="color: #268bd2;">(</span><span style="color: #2aa198;">"donate"</span>
-           <span style="color: #839496; font-weight: bold;">:base-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-content-path  <span style="color: #2aa198;">"donate"</span><span style="color: #6c71c4;">)</span>
-           <span style="color: #839496; font-weight: bold;">:base-extension</span> <span style="color: #2aa198;">"org"</span>
-           <span style="color: #839496; font-weight: bold;">:publishing-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-static-path  <span style="color: #2aa198;">"donate"</span><span style="color: #6c71c4;">)</span>
-           <span style="color: #839496; font-weight: bold;">:publishing-function</span> org-html-publish-to-html
-           <span style="color: #839496; font-weight: bold;">:recursive</span> t
-           <span style="color: #839496; font-weight: bold;">:headline-levels</span> 8             
-           <span style="color: #839496; font-weight: bold;">:html-preamble</span> blog/html-preamble
-           <span style="color: #839496; font-weight: bold;">:html-postamble</span> blog/html-postamble
-           <span style="color: #839496; font-weight: bold;">:validation-link</span> nil
-           <span style="color: #839496; font-weight: bold;">:table-of-contents</span> nil
-           <span style="color: #839496; font-weight: bold;">:html-head-include-default-style</span> nil
-           <span style="color: #268bd2;">)</span>
-          <span style="color: #268bd2;">(</span><span style="color: #2aa198;">"blogstatic"</span>
-           <span style="color: #839496; font-weight: bold;">:base-directory</span> <span style="color: #2aa198;">"~/Blog/pages/"</span>
-           <span style="color: #839496; font-weight: bold;">:base-extension</span> <span style="color: #2aa198;">"css</span><span style="color: #859900; font-weight: bold;">\\</span><span style="color: #b58900; font-weight: bold;">|</span><span style="color: #2aa198;">js</span><span style="color: #859900; font-weight: bold;">\\</span><span style="color: #b58900; font-weight: bold;">|</span><span style="color: #2aa198;">png</span><span style="color: #859900; font-weight: bold;">\\</span><span style="color: #b58900; font-weight: bold;">|</span><span style="color: #2aa198;">jpg</span><span style="color: #859900; font-weight: bold;">\\</span><span style="color: #b58900; font-weight: bold;">|</span><span style="color: #2aa198;">gif</span><span style="color: #859900; font-weight: bold;">\\</span><span style="color: #b58900; font-weight: bold;">|</span><span style="color: #2aa198;">pdf</span><span style="color: #859900; font-weight: bold;">\\</span><span style="color: #b58900; font-weight: bold;">|</span><span style="color: #2aa198;">mp3</span><span style="color: #859900; font-weight: bold;">\\</span><span style="color: #b58900; font-weight: bold;">|</span><span style="color: #2aa198;">ogg</span><span style="color: #859900; font-weight: bold;">\\</span><span style="color: #b58900; font-weight: bold;">|</span><span style="color: #2aa198;">swf"</span>
-           <span style="color: #839496; font-weight: bold;">:publishing-directory</span> <span style="color: #2aa198;">"/home/horhik/Code/Blog/html/"</span>
-           <span style="color: #839496; font-weight: bold;">:recursive</span> t
-           <span style="color: #839496; font-weight: bold;">:publishing-function</span> org-publish-attachment
-           <span style="color: #268bd2;">)</span>
-            <span style="color: #268bd2;">(</span><span style="color: #2aa198;">"index"</span>
-             <span style="color: #839496; font-weight: bold;">:base-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-content-path <span style="color: #2aa198;">""</span><span style="color: #6c71c4;">)</span>
-             <span style="color: #839496; font-weight: bold;">:base-extension</span> <span style="color: #2aa198;">"org"</span>
-             <span style="color: #839496; font-weight: bold;">:publishing-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-static-path <span style="color: #2aa198;">""</span><span style="color: #6c71c4;">)</span>
-             <span style="color: #839496; font-weight: bold;">:publishing-function</span> org-html-publish-to-html
-             <span style="color: #839496; font-weight: bold;">:site-toc</span> nil
-             <span style="color: #839496; font-weight: bold;">:table-of-contents:</span> nil
-             <span style="color: #839496; font-weight: bold;">:auto-sitemap:</span> t
-             <span style="color: #839496; font-weight: bold;">:sitemap-format-entry</span> me/org-sitemap-format-entry
-             <span style="color: #839496; font-weight: bold;">:sitemap-style</span> list
-             <span style="color: #839496; font-weight: bold;">:headline-levels</span> 8             
-             <span style="color: #839496; font-weight: bold;">:html-preamble</span> blog/html-index-preamble
-             <span style="color: #839496; font-weight: bold;">:html-postamble</span> blog/html-postamble
-             <span style="color: #268bd2;">)</span>
-          <span style="color: #268bd2;">(</span><span style="color: #2aa198;">"Blog"</span> <span style="color: #839496; font-weight: bold;">:components</span> <span style="color: #6c71c4;">(</span><span style="color: #2aa198;">"blogposts"</span> <span style="color: #2aa198;">"blogstatic"</span>  <span style="color: #2aa198;">"portfolio"</span> <span style="color: #2aa198;">"about"</span>  <span style="color: #2aa198;">"index"</span> <span style="color: #2aa198;">"donate"</span><span style="color: #6c71c4;">)</span><span style="color: #268bd2;">)</span>
-          <span style="color: #b58900;">)</span>
-        <span style="color: #2aa198;">)</span>
+  <span style="color: #268bd2;">(</span><span style="color: #859900; font-weight: bold;">setq</span> org-publish-project-alist
+        `<span style="color: #d33682;">(</span>
+          <span style="color: #859900;">(</span><span style="color: #2aa198;">"blogposts"</span>
+           <span style="color: #268bd2;">:base-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-content-path <span style="color: #2aa198;">"posts"</span><span style="color: #6c71c4;">)</span>
+           <span style="color: #268bd2;">:base-extension</span> <span style="color: #2aa198;">"org"</span>
+           <span style="color: #268bd2;">:publishing-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-static-path <span style="color: #2aa198;">"posts"</span><span style="color: #6c71c4;">)</span>
+           <span style="color: #268bd2;">:publishing-function</span> org-html-publish-to-html
+           <span style="color: #268bd2;">:recursive</span> t
+           <span style="color: #268bd2;">:headline-levels</span> 8             
+           <span style="color: #268bd2;">:html-preamble</span> blog/html-preamble
+           <span style="color: #268bd2;">:html-postamble</span> blog/html-postamble
+           <span style="color: #268bd2;">:auto-sitemap</span> t
+           <span style="color: #268bd2;">:sitemap-filename</span> <span style="color: #2aa198;">"index.org"</span>
+           <span style="color: #268bd2;">:sitemap-title</span> <span style="color: #2aa198;">"Blog Index"</span>         
+           <span style="color: #268bd2;">:sitemap-format-entry</span> me/org-sitemap-format-entry
+           <span style="color: #268bd2;">:sitemap-style</span> list
+           <span style="color: #268bd2;">:with-tags</span> t
+           <span style="color: #268bd2;">:with-toc</span> t
+           <span style="color: #268bd2;">:section-numbers:</span> nil
+           <span style="color: #268bd2;">:table-of-contents</span> t
+           <span style="color: #268bd2;">:html-head-include-default-style</span> nil
+           <span style="color: #859900;">)</span>
+          <span style="color: #859900;">(</span><span style="color: #2aa198;">"portfolio"</span>
+           <span style="color: #268bd2;">:base-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-content-path  <span style="color: #2aa198;">"portfolio"</span><span style="color: #6c71c4;">)</span>
+           <span style="color: #268bd2;">:base-extension</span> <span style="color: #2aa198;">"org"</span>
+           <span style="color: #268bd2;">:publishing-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-static-path  <span style="color: #2aa198;">"portfolio"</span><span style="color: #6c71c4;">)</span>
+           <span style="color: #268bd2;">:publishing-function</span> org-html-publish-to-html
+           <span style="color: #268bd2;">:headline-levels</span> 8             
+           <span style="color: #268bd2;">:html-preamble</span> blog/html-preamble
+           <span style="color: #268bd2;">:html-postamble</span> blog/html-postamble
+           <span style="color: #268bd2;">:auto-sitemap:</span> t
+           <span style="color: #268bd2;">:sitemap-filename:</span> <span style="color: #2aa198;">"index.org"</span>
+           <span style="color: #268bd2;">:sitemap-title:</span> <span style="color: #2aa198;">"Portfolio"</span>
+           <span style="color: #268bd2;">:sitemap-format-entry</span> me/org-sitemap-format-entry
+           <span style="color: #268bd2;">:sitemap-style</span> list
+           <span style="color: #268bd2;">:validation-link</span> nil
+           <span style="color: #268bd2;">:table-of-contents</span> nil
+           <span style="color: #268bd2;">:html-head-include-default-style</span> nil
+           <span style="color: #859900;">)</span>
+          <span style="color: #859900;">(</span><span style="color: #2aa198;">"about"</span>
+           <span style="color: #268bd2;">:base-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-content-path  <span style="color: #2aa198;">"about"</span><span style="color: #6c71c4;">)</span>
+           <span style="color: #268bd2;">:base-extension</span> <span style="color: #2aa198;">"org"</span>
+           <span style="color: #268bd2;">:publishing-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-static-path  <span style="color: #2aa198;">"about"</span><span style="color: #6c71c4;">)</span>
+           <span style="color: #268bd2;">:publishing-function</span> org-html-publish-to-html
+           <span style="color: #268bd2;">:recursive</span> t
+           <span style="color: #268bd2;">:headline-levels</span> 8             
+           <span style="color: #268bd2;">:html-preamble</span> blog/html-preamble
+           <span style="color: #268bd2;">:html-postamble</span> blog/html-postamble
+           <span style="color: #268bd2;">:validation-link</span> nil
+           <span style="color: #268bd2;">:table-of-contents</span> nil
+           <span style="color: #268bd2;">:html-head-include-default-style</span> nil
+           <span style="color: #859900;">)</span>
+<span style="color: #859900;">(</span><span style="color: #2aa198;">"donate"</span>
+           <span style="color: #268bd2;">:base-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-content-path  <span style="color: #2aa198;">"donate"</span><span style="color: #6c71c4;">)</span>
+           <span style="color: #268bd2;">:base-extension</span> <span style="color: #2aa198;">"org"</span>
+           <span style="color: #268bd2;">:publishing-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-static-path  <span style="color: #2aa198;">"donate"</span><span style="color: #6c71c4;">)</span>
+           <span style="color: #268bd2;">:publishing-function</span> org-html-publish-to-html
+           <span style="color: #268bd2;">:recursive</span> t
+           <span style="color: #268bd2;">:headline-levels</span> 8             
+           <span style="color: #268bd2;">:html-preamble</span> blog/html-preamble
+           <span style="color: #268bd2;">:html-postamble</span> blog/html-postamble
+           <span style="color: #268bd2;">:validation-link</span> nil
+           <span style="color: #268bd2;">:table-of-contents</span> nil
+           <span style="color: #268bd2;">:html-head-include-default-style</span> nil
+           <span style="color: #859900;">)</span>
+          <span style="color: #859900;">(</span><span style="color: #2aa198;">"blogstatic"</span>
+           <span style="color: #268bd2;">:base-directory</span> <span style="color: #2aa198;">"~/Blog/pages/"</span>
+           <span style="color: #268bd2;">:base-extension</span> <span style="color: #2aa198;">"css</span><span style="color: #cb4b16; font-weight: bold;">\\</span><span style="color: #cb4b16; font-weight: bold;">|</span><span style="color: #2aa198;">js</span><span style="color: #cb4b16; font-weight: bold;">\\</span><span style="color: #cb4b16; font-weight: bold;">|</span><span style="color: #2aa198;">png</span><span style="color: #cb4b16; font-weight: bold;">\\</span><span style="color: #cb4b16; font-weight: bold;">|</span><span style="color: #2aa198;">jpg</span><span style="color: #cb4b16; font-weight: bold;">\\</span><span style="color: #cb4b16; font-weight: bold;">|</span><span style="color: #2aa198;">gif</span><span style="color: #cb4b16; font-weight: bold;">\\</span><span style="color: #cb4b16; font-weight: bold;">|</span><span style="color: #2aa198;">pdf</span><span style="color: #cb4b16; font-weight: bold;">\\</span><span style="color: #cb4b16; font-weight: bold;">|</span><span style="color: #2aa198;">mp3</span><span style="color: #cb4b16; font-weight: bold;">\\</span><span style="color: #cb4b16; font-weight: bold;">|</span><span style="color: #2aa198;">ogg</span><span style="color: #cb4b16; font-weight: bold;">\\</span><span style="color: #cb4b16; font-weight: bold;">|</span><span style="color: #2aa198;">swf"</span>
+           <span style="color: #268bd2;">:publishing-directory</span> <span style="color: #2aa198;">"/home/horhik/Code/Blog/html/"</span>
+           <span style="color: #268bd2;">:recursive</span> t
+           <span style="color: #268bd2;">:publishing-function</span> org-publish-attachment
+           <span style="color: #859900;">)</span>
+            <span style="color: #859900;">(</span><span style="color: #2aa198;">"index"</span>
+             <span style="color: #268bd2;">:base-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-content-path <span style="color: #2aa198;">""</span><span style="color: #6c71c4;">)</span>
+             <span style="color: #268bd2;">:base-extension</span> <span style="color: #2aa198;">"org"</span>
+             <span style="color: #268bd2;">:publishing-directory</span> ,<span style="color: #6c71c4;">(</span>concat blog-static-path <span style="color: #2aa198;">""</span><span style="color: #6c71c4;">)</span>
+             <span style="color: #268bd2;">:publishing-function</span> org-html-publish-to-html
+             <span style="color: #268bd2;">:site-toc</span> nil
+             <span style="color: #268bd2;">:table-of-contents:</span> nil
+             <span style="color: #268bd2;">:auto-sitemap:</span> t
+             <span style="color: #268bd2;">:sitemap-format-entry</span> me/org-sitemap-format-entry
+             <span style="color: #268bd2;">:sitemap-style</span> list
+             <span style="color: #268bd2;">:headline-levels</span> 8             
+             <span style="color: #268bd2;">:html-preamble</span> blog/html-index-preamble
+             <span style="color: #268bd2;">:html-postamble</span> blog/html-postamble
+             <span style="color: #859900;">)</span>
+          <span style="color: #859900;">(</span><span style="color: #2aa198;">"Blog"</span> <span style="color: #268bd2;">:components</span> <span style="color: #6c71c4;">(</span><span style="color: #2aa198;">"blogposts"</span> <span style="color: #2aa198;">"blogstatic"</span>  <span style="color: #2aa198;">"portfolio"</span> <span style="color: #2aa198;">"about"</span>  <span style="color: #2aa198;">"index"</span> <span style="color: #2aa198;">"donate"</span><span style="color: #6c71c4;">)</span><span style="color: #859900;">)</span>
+          <span style="color: #d33682;">)</span>
+        <span style="color: #268bd2;">)</span>
 </pre>
 </div>
 </div>
@@ -544,8 +350,9 @@ Here's part of my config for <code>org-publish</code>
 </div>
 <div id="postamble" class="status">
 <footer class="footer">
-  <i> Last update: "Apr 18, 2023" </i> <br>
+  <i> Last update: "Apr 21, 2023" </i> <br>
   <b> Made by Horhik with ❤ and Emacs 28.2 (Org mode 9.6) </b> <br>
+
 </footer>
 </div>
 </body>

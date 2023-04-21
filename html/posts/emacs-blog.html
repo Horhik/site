@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-04-18 Tue 10:51 -->
+<!-- 2023-04-21 Fri 19:43 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Creating blog with emacs</title>
@@ -11,224 +11,31 @@
 </head>
 <body>
 <div id="preamble" class="status">
-    <style>
-:root{
-    --hue-main: 235;
-    --hue-shift: 98;
-    --lightness: 93%;
-    --font-color: hsl(var(--hue-main), 5%, calc(100% - var(--lightness)));
-    --background-main: hsl(var(--hue-main), 5%, var(--lightness));
-    --background-second: hsl(var(--hue-main), 14%, calc(5% + var(--lightness)));
-    --background-shadow: hsl(var(--hue-main), 30%, calc(70% - var(--lightness)));
-    --link-color: hsl(var(--hue-main), 15%, calc(100%-var(--lightness)));
-    --hover-color: hsl(calc(var(--hue-main) ), 55%, 59%);
-    --visited-color: hsl(calc(var(--hue-main) + var(--hue-shift)), 40%, 45%);
-    --inverted-color: hsl(var(--hue-main), 50%, var(--lightness));
-    --main-font: 'Liberation Sans';
-    --second-font: "Mononoki Nerd Font", "mononoki";
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="/static/site.css">
 
-}
-html{
-    background: var(--background-main);
-    color: var(--font-color);
-}
-body {
-    font-family: var(--main-font), serif;
-    width: 80vw;
-    margin: 0 auto;
-    background-color: var(--background-second);
-    padding: 20px 24px;
-}
-
-header {
-    margin: 0 auto;
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-}
-
-*content{
-    width: 80vw;
-}
-ul{
-    list-style: upper-roman;
-}
-
-header ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    font-size: 1em;
-}
-
-header li {
-    list-style: none;
-    padding: 10px;
-}
-
-header a{
-    font-weight: bold;4
-    font-size: 1.5em;
-    color: var(--link-color);
-}
-
-a {
-    color: var(--link-color);
-    font-family: var(--second-font);
-    text-decoration: underline;
-    text-decoration-color: currentcolor;
-    text-decoration-thickness: auto;
-    text-decoration-thickness: 2px;
-    text-decoration-line: underline;
-    text-decoration-color: var(--link-color);
-    transition:0.2s;
-
-}
-
-li a{
-    font-family: var(--second-font);
-    font-size: 1.4em;
-    transition: 0.2s;
-    
-}
-
-code{
-    background: var(--background-main);
-    padding: 7px 10px;
-    line-height: 2em;
-    border-radius: 10px;
-}
-
- .src, .org-src{
-
-    background: var(--background-main);
-    border-radius: 10px;
-    padding: 15px;
-    font-family: var(--second-font);
-    line-height: 1.7em;
-    overflow: scroll;
-}
-
-a:visited {
-
-    text-decoration-color: var(--visited-color);
-}
-
-a:hover, a:focus {
-    text-decoration-color: var(--hover-color);
-    text-decoration-thickness: 7px;
-    
-}
-
-a:active{
-    background: var(--hover-color);
-    color: var(--background-main);
-}
-
-
-.footer {
-    padding: 20px;
-    background: var(--background-main);
-    line-height: 2em;
-    border-radius: 10px;
-		
-}
-
-
-.title{
-    margin: 0 auto;
-    text-align: center;
-    padding: 15px;
-    font-size: 2.6em;
-    font-weight: bold;
-    font-family: var(--second-font);
-}
-
-.subtitle{
-    font-size: 0.6em;
-    opacity: 0.4;
-}
-
-#table-of-contents ul{
-    list-style: none;
-    margin: 0;
-}
-
-@media (min-width: 900px) { 
-
-#table-of-contents{
-  font-size: 11pt;
-  position: fixed;
-  z-index: 1000000;
-  background: var(--background-main); 
-  right: 40px;
-  bottom: -540px;
-  text-align: center;
-  -webkit-box-shadow: 0px 20px 46px var(--background-shadow);
-  -moz-box-shadow: 0px 20px 46px var(--background-shadow);
-  border-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  height: 600px;
-  overflow: auto;
-  padding: 0px;
-  line-height: 1.7em;
-  transition:0.2s;
-  width: 500px;
-
-}
-
-#table-of-contents:hover {
-
-  bottom: 0%;
-  transform: rotate(0deg);
-}
-
-#table-of-contents li, #table-of-contents ul{
-    
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-}
-
-#theme-button{
-    background-color: --background-main: hsl(var(--hue-main), 5%, calc(100%  -var(--lightness)));
-    margin: 10px;
-    border-width: 5px;
-}
-#theme-button:hover{
-    filter:invert(1);
-    color: red;
-}
-
-    </style>
 <header>
   <div class="head-right">
   <ul>
     <li>
       <a href='../posts/index.html'>
-	Posts 📜</a>
+	POSTS 📜</a>
     </li>
     <li>
       <a href='../portfolio/index.html'>
-	Portfolio 📓   </a>
+	PORTFOLIO 📓   </a>
     </li>
     <li>
       <a href='../about/index.html'>
-	About 🫠</a>
+	ABOUT 🫠</a>
     </li>
     <li>
       <a href='../donate/index.html'>
-	Donate 💸</a>
+	DONATE 💸</a>
     </li>
     <li>
       <a href='../projects/index.html'>
-	Projects 📦</a>
+	PROJECTS 📦</a>
     </li>
   </ul>
   </div>
@@ -292,22 +99,13 @@ themeButton.addEventListener('click', () => {
     }
 
 });
-
  </script>
 </div>
 <div id="content" class="content">
 <h1 class="title">Creating blog with emacs</h1>
-<div id="table-of-contents" role="doc-toc">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
-<ul>
-<li><a href="#org4a82103">1. References</a></li>
+<ul class="org-ul">
+<li>References</li>
 </ul>
-</div>
-</div>
-<div id="outline-container-org4a82103" class="outline-2">
-<h2 id="org4a82103"><span class="section-number-2">1.</span> References</h2>
-<div class="outline-text-2" id="text-1">
 <p>
 Sites:
 </p>
@@ -316,12 +114,11 @@ Sites:
 <li><a href="https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html">https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html</a></li>
 </ul>
 </div>
-</div>
-</div>
 <div id="postamble" class="status">
 <footer class="footer">
-  <i> Last update: "Apr 18, 2023" </i> <br>
+  <i> Last update: "Apr 21, 2023" </i> <br>
   <b> Made by Horhik with ❤ and <a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="https://orgmode.org">Org</a> mode 9.6) </b> <br>
+
 </footer>
 </div>
 </body>
