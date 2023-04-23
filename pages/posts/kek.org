@@ -1,9 +1,0 @@
-
-
-#+SETUPFILE: ~/Blog/assets/templates/main.org
-
-* And i'm feeling good
-
-very good.
-
-
