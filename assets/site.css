@@ -1,3 +1,92 @@
+@font-face {
+    font-family: 'mononoki';
+    src: local('mononoki BoldItalic'), local('mononoki-BoldItalic'),
+        url('/static/fonts/mononoki-BoldItalic.woff2') format('woff2'),
+        url('/static/fonts/mononoki-BoldItalic.woff') format('woff'),
+        url('/static/fonts/mononoki-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mononoki';
+    src: local('mononoki Italic'), local('mononoki-Italic'),
+        url('/static/fonts/mononoki-Italic.woff2') format('woff2'),
+        url('/static/fonts/mononoki-Italic.woff') format('woff'),
+        url('/static/fonts/mononoki-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mononoki';
+    src: local('mononoki Bold'), local('mononoki-Bold'),
+        url('/static/fonts/mononoki-Bold.woff2') format('woff2'),
+        url('/static/fonts/mononoki-Bold.woff') format('woff'),
+        url('/static/fonts/mononoki-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mononoki';
+    src: local('mononoki Regular'), local('mononoki-Regular'),
+        url('/static/fonts/mononoki-Regular.woff2') format('woff2'),
+        url('/static/fonts/mononoki-Regular.woff') format('woff'),
+        url('/static/fonts/mononoki-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mononoki';
+    src: local('mononoki Regular'), local('mononoki-Regular'),
+        url('/static/fonts/mononoki-Regular_1.woff2') format('woff2'),
+        url('/static/fonts/mononoki-Regular_1.woff') format('woff'),
+        url('/static/fonts/mononoki-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mononoki';
+    src: local('mononoki BoldItalic'), local('mononoki-BoldItalic'),
+        url('/static/fonts/mononoki-BoldItalic_1.woff2') format('woff2'),
+        url('/static/fonts/mononoki-BoldItalic_1.woff') format('woff'),
+        url('/static/fonts/mononoki-BoldItalic_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mononoki';
+    src: local('mononoki Bold'), local('mononoki-Bold'),
+        url('/static/fonts/mononoki-Bold_1.woff2') format('woff2'),
+        url('/static/fonts/mononoki-Bold_1.woff') format('woff'),
+        url('/static/fonts/mononoki-Bold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mononoki';
+    src: local('mononoki Italic'), local('mononoki-Italic'),
+        url('/static/fonts/mononoki-Italic_1.woff2') format('woff2'),
+        url('/static/fonts/mononoki-Italic_1.woff') format('woff'),
+        url('/static/fonts/mononoki-Italic_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
 :root{
     --hue-main: 235;
     --hue-shift: 98;
@@ -10,8 +99,8 @@
     --hover-color: hsl(calc(var(--hue-main) ), 55%, 59%);
     --visited-color: hsl(calc(var(--hue-main) + var(--hue-shift)), 40%, 45%);
     --inverted-color: hsl(var(--hue-main), 50%, var(--lightness));
-    --main-font: 'mononoki';
-    --second-font: "Mononoki Nerd Font", "mononoki";
+    --main-font: 'mononoki', monospace, sans-serif;
+    --second-font:  "mononoki", monospace, sans-serif;
 
 }
 html{
@@ -57,7 +146,7 @@ header li {
 
 header a{
     font-weight: bold;4
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: var(--link-color);
 }
 
@@ -76,7 +165,7 @@ a {
 
 li a{
     font-family: var(--second-font);
-    font-size: 1.4em;
+    font-size: 1.2em;
     transition: 0.2s;
     
 }
@@ -98,7 +187,7 @@ code{
     overflow: scroll;
 }
 
-a:visited {
+a {
 
     text-decoration-color: var(--visited-color);
 }
@@ -128,7 +217,7 @@ a:active{
     margin: 0 auto;
     text-align: center;
     padding: 15px;
-    font-size: 2.6em;
+    font-size: 1.7em;
     font-weight: bold;
     font-family: var(--second-font);
 }
@@ -141,12 +230,13 @@ a:active{
 #table-of-contents ul{
     list-style: none;
     margin: 0;
+    padding: 6px 14px;
 }
 
 @media (min-width: 900px) { 
 
 #table-of-contents{
-  font-size: 11pt;
+  font-size: 1em;
   position: fixed;
   z-index: 1000000;
   background: var(--background-main); 
@@ -190,4 +280,15 @@ a:active{
 #theme-button:hover{
     filter:invert(1);
     color: red;
+}
+
+
+
+.figure{
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
 }

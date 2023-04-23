@@ -11,4 +11,5 @@
 #+creator: Emacs 28.2 (Org mode 9.6)
 #+FILETAGS: :blogpost:
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../assets/site.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/static/site.css" />
 
